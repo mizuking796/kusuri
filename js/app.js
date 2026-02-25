@@ -79,7 +79,7 @@ const KusuriApp = (() => {
     try {
       // Phase 1: Fetch data
       setProgress(10, 'データをダウンロード中...');
-      const dataFile = window.__KUSURI_DATA || 'data/graph/graph.json';
+      const dataFile = window.__KUSURI_DATA || 'data/graph/graph-light.json';
       const res = await fetch(dataFile);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       setProgress(30, 'データを解析中...');

@@ -9,6 +9,7 @@ data/adverse_effects.json
 data/kegg_jp_drugs.json
 data/kegg_jp_drugs_raw.tsv
 data/jader_raw/
+data/graph/graph.json
 data/graph/edges.json
 data/graph/nodes.json
 
