@@ -397,23 +397,7 @@ const KusuriGraph = (() => {
   function zoomIn()  { cy.zoom({ level: cy.zoom() * 1.3, renderedPosition: { x: cy.width()/2, y: cy.height()/2 } }); }
   function zoomOut() { cy.zoom({ level: cy.zoom() / 1.3, renderedPosition: { x: cy.width()/2, y: cy.height()/2 } }); }
   function zoomFit() {
-    const bb = cy.nodes().boundingBox();
-    const w = cy.width();
-    const h = cy.height();
-    if (bb.w === 0 || bb.h === 0 || w === 0 || h === 0) return;
-
-    // Manual viewport calculation (bypass cy.fit which may have issues)
-    const padding = 60;
-    const zoom = Math.min((w - padding * 2) / bb.w, (h - padding * 2) / bb.h);
-    const cx = (bb.x1 + bb.x2) / 2;
-    const cy_ = (bb.y1 + bb.y2) / 2;
-    cy.viewport({
-      zoom: zoom,
-      pan: {
-        x: w / 2 - zoom * cx,
-        y: h / 2 - zoom * cy_,
-      }
-    });
+    cy.fit(cy.nodes().not('.hidden'), 40);
   }
 
   /** 全ノード取得 */
