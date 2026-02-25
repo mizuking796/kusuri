@@ -49,14 +49,6 @@ const KusuriApp = (() => {
       }
     });
 
-    // Also allow clicking even if disabled attr has issues
-    document.querySelector('.gate-btn')?.addEventListener('pointerdown', () => {
-      const val = document.querySelector('input[name="gate-role"]:checked')?.value;
-      if (val && val !== 'other') {
-        sessionStorage.setItem('kusuri_gate_passed', '1');
-        passGate();
-      }
-    });
   }
 
   function passGate() {
@@ -120,6 +112,9 @@ const KusuriApp = (() => {
       // Done
       setProgress(100, '完了');
       updateStats();
+
+      // Detail close button (register once)
+      document.getElementById('detail-close').addEventListener('click', hideDetail);
 
       // Hide loading
       document.getElementById('loading').classList.add('hidden');
@@ -211,7 +206,7 @@ const KusuriApp = (() => {
 
   function setupFilters() {
     document.querySelectorAll('[data-filter]').forEach(cb => {
-      cb.addEventListener('change', applyFilters);
+      cb.addEventListener('change', () => applyFilters());
     });
   }
 
@@ -684,8 +679,6 @@ const KusuriApp = (() => {
     // Translate buttons
     setupTranslateButtons();
 
-    // Close button
-    document.getElementById('detail-close').addEventListener('click', hideDetail);
   }
 
   function hideDetail() {
