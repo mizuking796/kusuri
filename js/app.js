@@ -485,14 +485,25 @@ const KusuriApp = (() => {
     const drugNodes = cy.nodes('[type="drug"]');
     const cache = {};
 
+    // Deduplicate by name: keep highest count per unique name
+    function dedup(list) {
+      const seen = new Map();
+      for (const item of list) {
+        const existing = seen.get(item.name);
+        if (!existing || item.count > existing.count) {
+          seen.set(item.name, item);
+        }
+      }
+      return [...seen.values()].sort((a, b) => b.count - a.count);
+    }
+
     // 1. 併用禁忌が多い薬 TOP20
     const ciList = [];
     drugNodes.forEach(node => {
       const count = node.connectedEdges('[type="contraindication"]').length;
       if (count > 0) ciList.push({ id: node.id(), name: node.data('name_ja') || node.data('name_en') || node.id(), count });
     });
-    ciList.sort((a, b) => b.count - a.count);
-    cache.ci = ciList.slice(0, 20);
+    cache.ci = dedup(ciList).slice(0, 20);
 
     // 2. 飲み合わせ注意が多い薬 TOP20 (contraindication + precaution)
     const ddiList = [];
@@ -500,8 +511,7 @@ const KusuriApp = (() => {
       const count = node.connectedEdges('[type="contraindication"], [type="precaution"]').length;
       if (count > 0) ddiList.push({ id: node.id(), name: node.data('name_ja') || node.data('name_en') || node.id(), count });
     });
-    ddiList.sort((a, b) => b.count - a.count);
-    cache.ddi = ddiList.slice(0, 20);
+    cache.ddi = dedup(ddiList).slice(0, 20);
 
     // 3. 副作用が多い薬 TOP20
     const aeList = [];
@@ -509,8 +519,7 @@ const KusuriApp = (() => {
       const ae = node.data('adverse_effects') || [];
       if (ae.length > 0) aeList.push({ id: node.id(), name: node.data('name_ja') || node.data('name_en') || node.id(), count: ae.length });
     });
-    aeList.sort((a, b) => b.count - a.count);
-    cache.ae = aeList.slice(0, 20);
+    cache.ae = dedup(aeList).slice(0, 20);
 
     // 4. CYP代謝が多い薬 TOP20
     const cypList = [];
@@ -518,10 +527,9 @@ const KusuriApp = (() => {
       const enzymes = node.data('cyp_enzymes') || [];
       if (enzymes.length > 0) cypList.push({ id: node.id(), name: node.data('name_ja') || node.data('name_en') || node.id(), count: enzymes.length });
     });
-    cypList.sort((a, b) => b.count - a.count);
-    cache.cyp = cypList.slice(0, 20);
+    cache.cyp = dedup(cypList).slice(0, 20);
 
-    // 5. 薬が多いCYP酵素（全件）
+    // 5. 関連薬が多いCYP酵素（全件）
     const cypNodes = cy.nodes('[type="cyp"]');
     const cypNodeList = [];
     cypNodes.forEach(node => {
@@ -531,7 +539,7 @@ const KusuriApp = (() => {
     cypNodeList.sort((a, b) => b.count - a.count);
     cache['cyp-node'] = cypNodeList;
 
-    // 6. 薬が多い副作用（全件）
+    // 6. 関連薬が多い副作用（全件）
     const aeNodes = cy.nodes('[type="adverse_effect"]');
     const aeNodeList = [];
     aeNodes.forEach(node => {
