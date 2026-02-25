@@ -1,0 +1,770 @@
+{
+  "Loxoprofen": {
+    "kegg_id": "D01709",
+    "name": "Loxoprofen sodium hydrate (JP18); Lorfenamin (TN); Loxonin (TN)"
+  },
+  "Acetaminophen": {
+    "kegg_id": "D00217",
+    "name": "Acetaminophen (JP18/USP); Paracetamol (INN); Tylenol (TN)"
+  },
+  "Ibuprofen": {
+    "kegg_id": "D00126",
+    "name": "Ibuprofen (JP18/USP/INN); Advil (TN); Motrin (TN)"
+  },
+  "Diclofenac": {
+    "kegg_id": "D00903",
+    "name": "Diclofenac potassium (USP); Cambia (TN); Cataflam (TN); Zipsor (TN)"
+  },
+  "Celecoxib": {
+    "kegg_id": "D00567",
+    "name": "Celecoxib (JP18/USP/INN); Celebrex (TN); Onsenal (TN)"
+  },
+  "Aspirin": {
+    "kegg_id": "D00109",
+    "name": "Aspirin (JP18/USP); Aspalon (JAN); Acetylsalicylic acid; Easprin (TN); Durlaza (TN)"
+  },
+  "Indomethacin": {
+    "kegg_id": "D00141",
+    "name": "Indomethacin (USP); Indometacin (JP18/INN); Aconip (TN); Indocin (TN)"
+  },
+  "Naproxen": {
+    "kegg_id": "D00118",
+    "name": "Naproxen (JP18/USP/INN); Naprosyn (TN)"
+  },
+  "Etodolac": {
+    "kegg_id": "D00315",
+    "name": "Etodolac (JP18/USP/INN); Lodine (TN)"
+  },
+  "Meloxicam": {
+    "kegg_id": "D00969",
+    "name": "Meloxicam (JAN/USP/INN); Mobic (TN)"
+  },
+  "Amlodipine": {
+    "kegg_id": "D00615",
+    "name": "Amlodipine besylate (USP); Amlodipine besilate (JP18); Norvasc (TN)"
+  },
+  "Nifedipine": {
+    "kegg_id": "D00437",
+    "name": "Nifedipine (JP18/USP/INN); Adalat (TN); Afeditab CR (TN); Procardia (TN)"
+  },
+  "Valsartan": {
+    "kegg_id": "D00400",
+    "name": "Valsartan (JP18/USP/INN); Diovan (TN)"
+  },
+  "Candesartan": {
+    "kegg_id": "D00522",
+    "name": "Candesartan (USAN/INN)"
+  },
+  "Olmesartan": {
+    "kegg_id": "D01204",
+    "name": "Olmesartan medoxomil (JP18/USP); Benicar (TN); Olmetec (TN)"
+  },
+  "Telmisartan": {
+    "kegg_id": "D00627",
+    "name": "Telmisartan (JP18/USP/INN); Micardis (TN)"
+  },
+  "Losartan": {
+    "kegg_id": "D00357",
+    "name": "Losartan potassium (JP18/USP); Cozaar (TN)"
+  },
+  "Azilsartan": {
+    "kegg_id": "D08067",
+    "name": "Azilsartan medoxomil (USAN)"
+  },
+  "Enalapril": {
+    "kegg_id": "D00621",
+    "name": "Enalapril maleate (JP18/USP); Renivace (TN); Vasotec (TN)"
+  },
+  "Lisinopril": {
+    "kegg_id": "D00362",
+    "name": "Lisinopril (USP); Lisinopril hydrate (JP18); Lisinopril dihydrate; Prinivil (TN); Zestril (TN)"
+  },
+  "Atenolol": {
+    "kegg_id": "D00235",
+    "name": "Atenolol (JP18/USP/INN); Tenormin (TN)"
+  },
+  "Bisoprolol": {
+    "kegg_id": "D00634",
+    "name": "Bisoprolol fumarate (JP18/USP); Zebeta (TN)"
+  },
+  "Carvedilol": {
+    "kegg_id": "D00255",
+    "name": "Carvedilol (JP18/USP/INN); Artist (TN); Coreg (TN)"
+  },
+  "Doxazosin": {
+    "kegg_id": "D00608",
+    "name": "Doxazosin mesylate (USP); Doxazosin mesilate (JP18); Cardura (TN)"
+  },
+  "Diltiazem": {
+    "kegg_id": "D00616",
+    "name": "Diltiazem hydrochloride (JP18/USP); Cardizem (TN); Cartia XT (TN); Dilacor XR (TN); Dilt-CD (TN)"
+  },
+  "Atorvastatin": {
+    "kegg_id": "D00887",
+    "name": "Atorvastatin calcium anhydorous; Lipitor (TN)"
+  },
+  "Rosuvastatin": {
+    "kegg_id": "D01915",
+    "name": "Rosuvastatin calcium (JP18/USP); ZD 4522; Crestor (TN)"
+  },
+  "Pravastatin": {
+    "kegg_id": "D00893",
+    "name": "Pravastatin sodium (JP18/USP); CS-514; Pravachol (TN)"
+  },
+  "Pitavastatin": {
+    "kegg_id": "D01862",
+    "name": "Pitavastatin calcium (JAN); NK 104; Livalo (TN)"
+  },
+  "Simvastatin": {
+    "kegg_id": "D00434",
+    "name": "Simvastatin (JP18/USP/INN); MK-733; Zocor (TN)"
+  },
+  "Ezetimibe": {
+    "kegg_id": "D01966",
+    "name": "Ezetimibe (JAN/USP/INN); Zetia (TN)"
+  },
+  "Bezafibrate": {
+    "kegg_id": "D01366",
+    "name": "Bezafibrate (JP18/USAN/INN); Bezatol SR (TN)"
+  },
+  "Fenofibrate": {
+    "kegg_id": "D00565",
+    "name": "Fenofibrate (JP18/USP/INN); Antara (TN); Lipantil (TN); Lipofen (TN); Tricor (TN); Triglide (TN)"
+  },
+  "Metformin": {
+    "kegg_id": "D00944",
+    "name": "Metformin hydrochloride (JP18/USP); Glucophage (TN)"
+  },
+  "Glimepiride": {
+    "kegg_id": "D00593",
+    "name": "Glimepiride (JP18/USP/INN); Amaryl (TN)"
+  },
+  "Glibenclamide": {
+    "kegg_id": "D00336",
+    "name": "Glyburide (USP); Glibenclamide (JP18/INN); Diabeta (TN); Glynase (TN); Micronase (TN)"
+  },
+  "Pioglitazone": {
+    "kegg_id": "D00945",
+    "name": "Pioglitazone hydrochloride (JP18/USP); Actos (TN)"
+  },
+  "Sitagliptin": {
+    "kegg_id": "D06645",
+    "name": "Sitagliptin phosphate (USAN); Sitagliptin phosphate hydrate (JP18); Sitagliptin phosphate monohydrate; Januvia (TN)"
+  },
+  "Vildagliptin": {
+    "kegg_id": "D07080",
+    "name": "Vildagliptin (JAN/USAN/INN); Equa (TN); Galvus (TN)"
+  },
+  "Alogliptin": {
+    "kegg_id": "D06553",
+    "name": "Alogliptin benzoate (JAN/USAN); Vipidia (TN); Nesina (TN)"
+  },
+  "Linagliptin": {
+    "kegg_id": "D09566",
+    "name": "Linagliptin (JAN/USAN/INN); Tradjenta (TN)"
+  },
+  "Teneligliptin": {
+    "kegg_id": "D08616",
+    "name": "Teneligliptin (INN)"
+  },
+  "Empagliflozin": {
+    "kegg_id": "D10459",
+    "name": "Empagliflozin (JAN/USAN/INN); Jardiance (TN)"
+  },
+  "Dapagliflozin": {
+    "kegg_id": "D08897",
+    "name": "Dapagliflozin (JAN/USAN/INN); Forxiga (TN)"
+  },
+  "Canagliflozin": {
+    "kegg_id": "D09592",
+    "name": "Canagliflozin (USAN/INN); Canagliflozin hydrate (JAN); Invokana (TN)"
+  },
+  "Luseogliflozin": {
+    "kegg_id": "D10195",
+    "name": "Luseogliflozin hydrate (JAN); Lusefi (TN)"
+  },
+  "Insulin glargine": {
+    "kegg_id": "D03250",
+    "name": "Insulin glargine (USAN/INN); Insulin glargine (genetical recombination) (JP18); Insulin glargine (genetical recombination) [Insulin glargin biosimilar 1] (JAN); Insulin glargine (genetical recombination) [Insulin glargin biosimilar 2] (JAN); Insulin glargine-yfgn; Lantus (TN)"
+  },
+  "Insulin aspart": {
+    "kegg_id": "D04475",
+    "name": "Insulin aspart (USP/INN); Insulin aspart (genetical recombination) (JP18); Insulin aspart (genetical recombination) [Insulin aspart biosimilar 1] (JAN); Insulin X 14; Insulin aspart-szjj; nsulin aspart-xjhz; Merilog (TN); NovoRapid (TN); Novolog (TN); Kirsty (TN)"
+  },
+  "Liraglutide": {
+    "kegg_id": "D06404",
+    "name": "Liraglutide (USAN/INN); Liraglutide (genetical recombination) (JAN); Victoza (TN)"
+  },
+  "Dulaglutide": {
+    "kegg_id": "D09889",
+    "name": "Dulaglutide (USAN/INN); Dulaglutide (genetical recombination) (JAN); Trulicity (TN)"
+  },
+  "Omeprazole": {
+    "kegg_id": "D00455",
+    "name": "Omeprazole (JP18/USP/INN); Prilosec (TN)"
+  },
+  "Lansoprazole": {
+    "kegg_id": "D00355",
+    "name": "Lansoprazole (JP18/USP/INN); Prevacid (TN)"
+  },
+  "Rabeprazole": {
+    "kegg_id": "D00724",
+    "name": "Rabeprazole sodium (JP18/USP); Aciphex (TN); Pariet (TN)"
+  },
+  "Esomeprazole": {
+    "kegg_id": "D01984",
+    "name": "Esomeprazole magnesium (USP); Esomeprazole magnesium hydrate (JAN); Esomeprazole magnesium trihydrate; Nexium (TN)"
+  },
+  "Vonoprazan": {
+    "kegg_id": "D10466",
+    "name": "Vonoprazan fumarate (JAN/USAN); Takecab (TN); Voquezna (TN)"
+  },
+  "Famotidine": {
+    "kegg_id": "D00318",
+    "name": "Famotidine (JP18/USP/INN); Fluxid (TN); Pepcid (TN)"
+  },
+  "Ranitidine": {
+    "kegg_id": "D00422",
+    "name": "Ranitidine (USAN/INN)"
+  },
+  "Teprenone": {
+    "kegg_id": "D01827",
+    "name": "Teprenone (JP18/INN); Selbex (TN)"
+  },
+  "Rebamipide": {
+    "kegg_id": "D01121",
+    "name": "Rebamipide (JP18/INN); Mucosta (TN)"
+  },
+  "Mosapride": {
+    "kegg_id": "D01994",
+    "name": "Mosapride citrate hydrate (JP18); Mosapride citrate dihydrate; Gasmotin (TN)"
+  },
+  "Metoclopramide": {
+    "kegg_id": "D00726",
+    "name": "Metoclopramide (JP18/INN); Elieten (TN); Terperan (TN)"
+  },
+  "Domperidone": {
+    "kegg_id": "D01745",
+    "name": "Domperidone (JP18/USAN/INN); Motilium (TN)"
+  },
+  "Sennoside": {
+    "kegg_id": "D02171",
+    "name": "Sennosides (USP); Pursennid (TN)"
+  },
+  "Warfarin": {
+    "kegg_id": "D00564",
+    "name": "Warfarin sodium (USP); Coumadin (TN); Jantoven (TN)"
+  },
+  "Clopidogrel": {
+    "kegg_id": "D00769",
+    "name": "Clopidogrel bisulfate (USP); Clopidogrel sulfate (JP18); Clopidogrel sulfate tablets (JP18); Clopidogrel hydrogen sulphate; Isocover (TN); Plavix (TN)"
+  },
+  "Prasugrel": {
+    "kegg_id": "D05597",
+    "name": "Prasugrel hydrochloride (JAN/USAN); Effient (TN)"
+  },
+  "Apixaban": {
+    "kegg_id": "D03213",
+    "name": "Apixaban (JAN/USAN/INN); Eliquis (TN)"
+  },
+  "Rivaroxaban": {
+    "kegg_id": "D07086",
+    "name": "Rivaroxaban (JAN/USAN/INN); Xarelto (TN)"
+  },
+  "Edoxaban": {
+    "kegg_id": "D09546",
+    "name": "Edoxaban tosilate hydrate (JAN); Edoxaban tosylate monohydrate; Lixiana (TN); Savaysa (TN)"
+  },
+  "Dabigatran": {
+    "kegg_id": "D07082",
+    "name": "Dabigatran etexilate mesylate (USAN); Dabigatran etexilate methanesulfonate (JAN); Dabigatran etexilate mesilate; Pradaxa (TN)"
+  },
+  "Cilostazol": {
+    "kegg_id": "D01896",
+    "name": "Cilostazol (JP18/USP/INN); Pletal (TN)"
+  },
+  "Ticlopidine": {
+    "kegg_id": "D01028",
+    "name": "Ticlopidine hydrochloride (JP18/USP); Ticlid (TN)"
+  },
+  "Amoxicillin": {
+    "kegg_id": "D00229",
+    "name": "Amoxicillin (USP); Amoxicillin hydrate (JP18); Amoxicilline (INN); Amoxicillin trihydrate; Amoxil (TN); Dispermox (TN); Pasetocin (TN)"
+  },
+  "Ampicillin": {
+    "kegg_id": "D00204",
+    "name": "Ampicillin (USP/INN); Anhydrous ampicillin (JP18); Omnipen (TN)"
+  },
+  "Cefcapene pivoxil": {
+    "kegg_id": "D01680",
+    "name": "Cefcapene pivoxil hydrochloride hydrate (JP18); S 1108; Flomox (TN)"
+  },
+  "Cefditoren pivoxil": {
+    "kegg_id": "D01628",
+    "name": "Cefditoren pivoxil (JP18/USAN); Meiact (TN); Spectracef (TN)"
+  },
+  "Cephalexin": {
+    "kegg_id": "D00906",
+    "name": "Cephalexin (USP); Cephalexin monohydrate; Cefalexin; Keftab (TN); Panixine disperdose (TN)"
+  },
+  "Azithromycin": {
+    "kegg_id": "D02134",
+    "name": "Azithromycin hydrate (JP18); Azithromycin dihydrate; Zithromac (TN); Zmax (TN); Azimycin (TN)"
+  },
+  "Clarithromycin": {
+    "kegg_id": "D00276",
+    "name": "Clarithromycin (JP18/USP/INN); Biaxin (TN)"
+  },
+  "Erythromycin": {
+    "kegg_id": "D00140",
+    "name": "Erythromycin (JP18/USP/INN); Akne-mycin (TN); Eryc (TN); Erygel (TN); Pce (TN); Staticin (TN); T-stat (TN)"
+  },
+  "Levofloxacin": {
+    "kegg_id": "D00588",
+    "name": "Levofloxacin (USP); Levofloxacin hydrate (JP18); Levofloxacin hemihydrate; Iquix (TN); Levaquin (TN); Quixin (TN)"
+  },
+  "Ciprofloxacin": {
+    "kegg_id": "D00186",
+    "name": "Ciprofloxacin (JP18/USP/INN); Cipro (TN); Otiprio (TN)"
+  },
+  "Moxifloxacin": {
+    "kegg_id": "D00874",
+    "name": "Moxifloxacin hydrochloride (JAN/USP); Avelox (TN); Vigamox (TN)"
+  },
+  "Minocycline": {
+    "kegg_id": "D00850",
+    "name": "Minocycline hydrochloride (JP18/USP); Arestin (TN); Dynacin (TN); Minocin (TN); Solodyn (TN)"
+  },
+  "Doxycycline": {
+    "kegg_id": "D00307",
+    "name": "Doxycycline (USP); Doxycycline hydrate; Monodox (TN); Oracea (TN); Vibramycin (TN)"
+  },
+  "Sulfamethoxazole": {
+    "kegg_id": "D00447",
+    "name": "Sulfamethoxazole (JP18/USP/INN); Gantanol (TN)"
+  },
+  "Vancomycin": {
+    "kegg_id": "D00212",
+    "name": "Vancomycin (USP); Vancocin (TN)"
+  },
+  "Meropenem": {
+    "kegg_id": "D02222",
+    "name": "Meropenem (USP); Meropenem hydrate (JP18); Meropenem trihydrate; Merrem (TN)"
+  },
+  "Metronidazole": {
+    "kegg_id": "D00409",
+    "name": "Metronidazole (JP18/USP/INN); Flagyl (TN); Noritate (TN); Nuvessa (TN); Vandazole (TN)"
+  },
+  "Diazepam": {
+    "kegg_id": "D00293",
+    "name": "Diazepam (JP18/USP/INN); Diastat (TN); Valium (TN)"
+  },
+  "Etizolam": {
+    "kegg_id": "D01514",
+    "name": "Etizolam (JP18/INN); Sedekopan (TN)"
+  },
+  "Alprazolam": {
+    "kegg_id": "D00225",
+    "name": "Alprazolam (JP18/USP/INN); Xanax (TN)"
+  },
+  "Lorazepam": {
+    "kegg_id": "D00365",
+    "name": "Lorazepam (JP18/USP/INN); Ativan (TN)"
+  },
+  "Clonazepam": {
+    "kegg_id": "D00280",
+    "name": "Clonazepam (JP18/USP/INN); Klonopin (TN)"
+  },
+  "Zolpidem": {
+    "kegg_id": "D00706",
+    "name": "Zolpidem tartrate (JP18/USP); Ambien (TN); Intermezzo (TN)"
+  },
+  "Zopiclone": {
+    "kegg_id": "D01372",
+    "name": "Zopiclone (JP18/INN); Amoban (TN)"
+  },
+  "Eszopiclone": {
+    "kegg_id": "D02624",
+    "name": "Eszopiclone (JAN/USP/INN); Estorra (TN); Lunesta (TN)"
+  },
+  "Suvorexant": {
+    "kegg_id": "D10082",
+    "name": "Suvorexant (JAN/USAN); MK-4305; Belsomra (TN)"
+  },
+  "Lemborexant": {
+    "kegg_id": "D11022",
+    "name": "Lemborexant (JAN/USAN/INN); Dayvigo (TN)"
+  },
+  "Ramelteon": {
+    "kegg_id": "D02689",
+    "name": "Ramelteon (JAN/USAN/INN); Rozerem (TN)"
+  },
+  "Sertraline": {
+    "kegg_id": "D00825",
+    "name": "Sertraline hydrochloride (JAN/USP); Zoloft (TN)"
+  },
+  "Paroxetine": {
+    "kegg_id": "D02260",
+    "name": "Paroxetine hydrochloride hemihydrate (USP); Paroxetine hydrochloride hydrate (JP18); Paxil (TN)"
+  },
+  "Escitalopram": {
+    "kegg_id": "D02567",
+    "name": "Escitalopram oxalate (JAN/USP); Lexapro (TN)"
+  },
+  "Fluvoxamine": {
+    "kegg_id": "D00824",
+    "name": "Fluvoxamine maleate (JP18/USP); Luvox (TN)"
+  },
+  "Duloxetine": {
+    "kegg_id": "D01179",
+    "name": "Duloxetine hydrochloride (JAN/USP); Cymbalta (TN); Yentreve (TN)"
+  },
+  "Venlafaxine": {
+    "kegg_id": "D00821",
+    "name": "Venlafaxine hydrochloride (JAN/USP); Effexor (TN)"
+  },
+  "Mirtazapine": {
+    "kegg_id": "D00563",
+    "name": "Mirtazapine (JAN/USP/INN); Remeron (TN); Reflex (TN)"
+  },
+  "Amitriptyline": {
+    "kegg_id": "D00809",
+    "name": "Amitriptyline hydrochloride (JP18/USP); Elavil (TN)"
+  },
+  "Aripiprazole": {
+    "kegg_id": "D01164",
+    "name": "Aripiprazole (JP18/USP/INN); Abilify (TN)"
+  },
+  "Olanzapine": {
+    "kegg_id": "D00454",
+    "name": "Olanzapine (JAN/USP/INN); Zyprexa (TN)"
+  },
+  "Quetiapine": {
+    "kegg_id": "D00458",
+    "name": "Quetiapine fumarate (JP18/USP); Seroquel (TN)"
+  },
+  "Risperidone": {
+    "kegg_id": "D00426",
+    "name": "Risperidone (JP18/USP/INN); Risperdal (TN)"
+  },
+  "Haloperidol": {
+    "kegg_id": "D00136",
+    "name": "Haloperidol (JP18/USP/INN); Haldol (TN)"
+  },
+  "Lithium carbonate": {
+    "kegg_id": "D00801",
+    "name": "Lithium carbonate (JP18/USP); Eskalith (TN); Lithobid (TN)"
+  },
+  "Valproic acid": {
+    "kegg_id": "D00399",
+    "name": "Valproic acid (USP); Depakene (TN)"
+  },
+  "Carbamazepine": {
+    "kegg_id": "D00252",
+    "name": "Carbamazepine (JP18/USP/INN); Equetro (TN); Tegretol (TN)"
+  },
+  "Lamotrigine": {
+    "kegg_id": "D00354",
+    "name": "Lamotrigine (JAN/USP/INN); Lamictal (TN)"
+  },
+  "Levodopa": {
+    "kegg_id": "D00059",
+    "name": "Levodopa (JP18/USP/INN); Dopar (TN)"
+  },
+  "Pramipexole": {
+    "kegg_id": "D00559",
+    "name": "Pramipexole dihydrochloride (USP); Pramipexole hydrochloride hydrate (JAN); Pramipexole dihydrochloride monohydrate; Mirapex (TN)"
+  },
+  "Ropinirole": {
+    "kegg_id": "D00784",
+    "name": "Ropinirole hydrochloride (JAN/USP); Requip (TN)"
+  },
+  "Donepezil": {
+    "kegg_id": "D00670",
+    "name": "Donepezil hydrochloride (JP18/USP); Aricept (TN)"
+  },
+  "Montelukast": {
+    "kegg_id": "D00529",
+    "name": "Montelukast sodium (JP18/USP); Singulair (TN)"
+  },
+  "Pranlukast": {
+    "kegg_id": "D02732",
+    "name": "Pranlukast hydrate (JP18); Onon (TN)"
+  },
+  "Theophylline": {
+    "kegg_id": "D00371",
+    "name": "Theophylline (JP18); Elixophyllin (TN); Quibron-t (TN); Theo-24 (TN); Theodur G (TN); Theolair (TN); Uniphyl (TN)"
+  },
+  "Budesonide": {
+    "kegg_id": "D00246",
+    "name": "Budesonide (JP18/USP/INN); Entocort EC (TN); Pulmicort (TN); Rhinocort (TN); Uceris (TN)"
+  },
+  "Fluticasone": {
+    "kegg_id": "D01708",
+    "name": "Fluticasone propionate (JAN/USP); Cutivate (TN); Flonase (TN); Flovent (TN)"
+  },
+  "Beclomethasone": {
+    "kegg_id": "D00689",
+    "name": "Beclomethasone dipropionate (USP); Beclometasone dipropionate (JP18); Beclovent (TN); Qnasl (TN); Vanceril (TN)"
+  },
+  "Tiotropium": {
+    "kegg_id": "D01929",
+    "name": "Tiotropium bromide hydrate (JAN); Tiotropium bromide monohydrate; Spiriva (TN)"
+  },
+  "Salmeterol": {
+    "kegg_id": "D00687",
+    "name": "Salmeterol xinafoate (JAN/USP); Serevent (TN)"
+  },
+  "Formoterol": {
+    "kegg_id": "D01373",
+    "name": "Formoterol fumarate (USP); Foradil (TN)"
+  },
+  "Codeine": {
+    "kegg_id": "D00195",
+    "name": "Codeine (USP); Codeine hydrate"
+  },
+  "Dextromethorphan": {
+    "kegg_id": "D00848",
+    "name": "Dextromethorphan hydrobromide (USP); Dextromethorphan hydrobromide hydrate (JP18); Benylin DM (TN)"
+  },
+  "Fexofenadine": {
+    "kegg_id": "D00671",
+    "name": "Fexofenadine hydrochloride (JP18/USP); Allegra (TN)"
+  },
+  "Cetirizine": {
+    "kegg_id": "D00664",
+    "name": "Cetirizine hydrochloride (JP18/USP); Zyrtec (TN)"
+  },
+  "Loratadine": {
+    "kegg_id": "D00364",
+    "name": "Loratadine (JAN/USP/INN); Claritin (TN)"
+  },
+  "Desloratadine": {
+    "kegg_id": "D03693",
+    "name": "Desloratadine (JAN/USP/INN); Clarinex (TN)"
+  },
+  "Olopatadine": {
+    "kegg_id": "D01192",
+    "name": "Olopatadine hydrochloride (JP18/USP); Allelock (TN); Patanol (TN); Opatanol (TN)"
+  },
+  "Bepotastine": {
+    "kegg_id": "D01654",
+    "name": "Bepotastine besylate (USAN); Bepotastine besilate (JP18); Bepreve (TN); Talion (TN)"
+  },
+  "Bilastine": {
+    "kegg_id": "D09570",
+    "name": "Bilastine (JAN/INN); Bilanoa (TN)"
+  },
+  "Epinastine": {
+    "kegg_id": "D01713",
+    "name": "Epinastine hydrochloride (JAN); Alesion (TN); Elestat (TN)"
+  },
+  "Prednisolone": {
+    "kegg_id": "D00407",
+    "name": "Methylprednisolone (JP18/USP/INN); Medrol (TN)"
+  },
+  "Dexamethasone": {
+    "kegg_id": "D00292",
+    "name": "Dexamethasone (JP18/USP/INN); Decadron (TN); Maxidex (TN)"
+  },
+  "Betamethasone": {
+    "kegg_id": "D00244",
+    "name": "Betamethasone (JP18/USP/INN); Celestone (TN); Rinderon (TN)"
+  },
+  "Tamsulosin": {
+    "kegg_id": "D01024",
+    "name": "Tamsulosin hydrochloride (JP18/USP); Flomax (TN); Harnal (TN)"
+  },
+  "Silodosin": {
+    "kegg_id": "D01965",
+    "name": "Silodosin (JP18/INN); KMD 3213; Rapaflo (TN); Urief (TN)"
+  },
+  "Naftopidil": {
+    "kegg_id": "D01674",
+    "name": "Naftopidil (JP18/INN); Flivas (TN)"
+  },
+  "Dutasteride": {
+    "kegg_id": "D03820",
+    "name": "Dutasteride (JAN/USP/INN); Avodart (TN)"
+  },
+  "Finasteride": {
+    "kegg_id": "D00321",
+    "name": "Finasteride (JAN/USP/INN); Propecia (TN); Proscar (TN)"
+  },
+  "Mirabegron": {
+    "kegg_id": "D09535",
+    "name": "Mirabegron (JAN/USAN/INN); Myrbetriq (TN)"
+  },
+  "Solifenacin": {
+    "kegg_id": "D01269",
+    "name": "Solifenacin succinate (JAN/USAN/INN); Vesicare (TN)"
+  },
+  "Tadalafil": {
+    "kegg_id": "D02008",
+    "name": "Tadalafil (JAN/USP/INN); Adcirca (TN); Cialis (TN); Zalutia (TN)"
+  },
+  "Alendronate": {
+    "kegg_id": "D00939",
+    "name": "Alendronate sodium (USP); Alendronate sodium hydrate (JP18); Binosto (TN); Fosamax (TN)"
+  },
+  "Risedronate": {
+    "kegg_id": "D00942",
+    "name": "Risedronate sodium (USP); Actonel (TN)"
+  },
+  "Denosumab": {
+    "kegg_id": "D03684",
+    "name": "Denosumab (USAN); Denosumab (genetical recombination) (JAN); Denosumab (genetical recombination) [Denosumab biosimilar 1] (JAN); Denosumab-dssb; Denosumab-bmwo; Ospomyv (TN); Prolia (TN); Ranmark (TN); Xbryk (TN); Xgeva (TN)"
+  },
+  "Eldecalcitol": {
+    "kegg_id": "D07578",
+    "name": "Eldecalcitol (JAN/INN); Edirol (TN)"
+  },
+  "Alfacalcidol": {
+    "kegg_id": "D01518",
+    "name": "Alfacalcidol (JAN/INN); Alsiodol (TN)"
+  },
+  "Levothyroxine": {
+    "kegg_id": "D01010",
+    "name": "Levothyroxine sodium (USP); Levothyroxine sodium hydrate (JP18); Levothroid (TN); Levoxyl (TN); Synthroid (TN)"
+  },
+  "Thiamazole": {
+    "kegg_id": "D00401",
+    "name": "Methimazole (USP); Thiamazole (JP18/INN); Tapazole (TN)"
+  },
+  "Allopurinol": {
+    "kegg_id": "D00224",
+    "name": "Allopurinol (JP18/USP/INN); Zyloprim (TN)"
+  },
+  "Febuxostat": {
+    "kegg_id": "D01206",
+    "name": "Febuxostat (JP18/USAN/INN); Uloric (TN); Feburic (TN)"
+  },
+  "Colchicine": {
+    "kegg_id": "D00570",
+    "name": "Colchicine (JP18/USP)"
+  },
+  "Benzbromarone": {
+    "kegg_id": "D01056",
+    "name": "Benzbromarone (JP18/USAN/INN); Uroleap (TN)"
+  },
+  "Acyclovir": {
+    "kegg_id": "D00222",
+    "name": "Acyclovir (USP); Aciclovir (JP18/INN); Sitavig (TN); Zovirax (TN)"
+  },
+  "Valacyclovir": {
+    "kegg_id": "D00398",
+    "name": "Valacyclovir hydrochloride (USP); Valaciclovir hydrochloride (JP18); Valtrex (TN)"
+  },
+  "Oseltamivir": {
+    "kegg_id": "D00900",
+    "name": "Oseltamivir phosphate (JAN/USP); Tamiflu (TN); Ebilfumin (TN)"
+  },
+  "Baloxavir marboxil": {
+    "kegg_id": "D11021",
+    "name": "Baloxavir marboxil (JAN/USAN/INN); Xofluza (TN)"
+  },
+  "Fluconazole": {
+    "kegg_id": "D00322",
+    "name": "Fluconazole (JP18/USP/INN); Diflucan (TN)"
+  },
+  "Itraconazole": {
+    "kegg_id": "D00350",
+    "name": "Itraconazole (JP18/USP); Itrizole (TN); Sporanox (TN)"
+  },
+  "Terbinafine": {
+    "kegg_id": "D02219",
+    "name": "Terbinafine hydrochloride (JP18/USP); Lamisil (TN)"
+  },
+  "Tacrolimus": {
+    "kegg_id": "D00107",
+    "name": "Tacrolimus (USP/INN); Tacrolimus hydrate (JP18); Prograf (TN); Protopic (TN)"
+  },
+  "Cyclosporine": {
+    "kegg_id": "D00184",
+    "name": "Cyclosporine (USP); Ciclosporin (JP18); Gengraf (TN); Neoral (TN); Restasis (TN); Sandimmune (TN)"
+  },
+  "Mycophenolate mofetil": {
+    "kegg_id": "D00752",
+    "name": "Mycophenolate mofetil (JAN/USP); Cellcept (TN)"
+  },
+  "Diphenhydramine": {
+    "kegg_id": "D00300",
+    "name": "Diphenhydramine (JP18/INN); Restamin (TN)"
+  },
+  "Chlorpheniramine": {
+    "kegg_id": "D00665",
+    "name": "Chlorpheniramine maleate (JP18/USP); Chlor-trimeton (TN); Teldrin (TN)"
+  },
+  "Caffeine": {
+    "kegg_id": "D00528",
+    "name": "Caffeine (USP); Anhydrous caffeine (JP18); Anhydrous caffeine (TN); Respia (TN)"
+  },
+  "Loperamide": {
+    "kegg_id": "D00729",
+    "name": "Loperamide hydrochloride (JAN/USP); Imodium (TN)"
+  },
+  "Bismuth": {
+    "kegg_id": "D00728",
+    "name": "Bismuth subsalicylate (JAN/USP); Pepto-bismol (TN)"
+  },
+  "Magnesium oxide": {
+    "kegg_id": "D01167",
+    "name": "Magnesium oxide (JP18/USP); Magmitt (TN)"
+  },
+  "Potassium chloride": {
+    "kegg_id": "D02060",
+    "name": "Potassium chloride (JP18/USP); K-dur (TN); KCL (TN); Kaon-Cl (TN); Klor-con (TN); Klotrix (TN)"
+  },
+  "Furosemide": {
+    "kegg_id": "D00331",
+    "name": "Furosemide (JP18/USP/INN); Frusemide; Lasix (TN)"
+  },
+  "Hydrochlorothiazide": {
+    "kegg_id": "D00340",
+    "name": "Hydrochlorothiazide (JP18/USP/INN); Esidrix (TN); Microzide (TN)"
+  },
+  "Spironolactone": {
+    "kegg_id": "D00443",
+    "name": "Spironolactone (JP18/USP/INN); Aldactone (TN)"
+  },
+  "Eplerenone": {
+    "kegg_id": "D01115",
+    "name": "Eplerenone (JP18/USAN/INN); Inspra (TN)"
+  },
+  "Digoxin": {
+    "kegg_id": "D00298",
+    "name": "Digoxin (JP18/USP); Lanoxicaps (TN); Lanoxin (TN)"
+  },
+  "Amiodarone": {
+    "kegg_id": "D00636",
+    "name": "Amiodarone hydrochloride (JP18/USP); Ancaron (TN); Cordarone (TN); Nexterone (TN)"
+  },
+  "Nicorandil": {
+    "kegg_id": "D01810",
+    "name": "Nicorandil (JP18/USAN/INN); Sigmart (TN)"
+  },
+  "Gabapentin": {
+    "kegg_id": "D00332",
+    "name": "Gabapentin (JAN/USP/INN); Neurontin (TN); Gralise (TN)"
+  },
+  "Pregabalin": {
+    "kegg_id": "D02716",
+    "name": "Pregabalin (JAN/USAN/INN); Lyrica (TN)"
+  },
+  "Tramadol": {
+    "kegg_id": "D01355",
+    "name": "Tramadol hydrochloride (JP18/USP); Ultram (TN)"
+  },
+  "Morphine": {
+    "kegg_id": "D00842",
+    "name": "Morphine sulfate (USP); Morphine sulfate hydrate (JP18); Morphine sulfate pentahydrate; Astramor PH (TN); Avinza (TN); Depodur (TN); Kadian (TN); MS contin (TN)"
+  },
+  "Fentanyl": {
+    "kegg_id": "D00320",
+    "name": "Fentanyl (JAN/USP/INN); Duragesic (TN); Subsys (TN)"
+  },
+  "Oxycodone": {
+    "kegg_id": "D00847",
+    "name": "Oxycodone hydrochloride (USP); Oxecta (TN); Oxycontin (TN); Roxicodone (TN)"
+  }
+}

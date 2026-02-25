@@ -1,0 +1,2246 @@
+[
+  {
+    "kegg_id": "D01709",
+    "name": "Loxoprofen",
+    "adverse_effects": [
+      {
+        "name": "胃腸障害",
+        "name_en": "Gastrointestinal disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "腎機能障害",
+        "name_en": "Renal impairment",
+        "frequency": "medium"
+      },
+      {
+        "name": "出血傾向",
+        "name_en": "Bleeding tendency",
+        "frequency": "medium"
+      },
+      {
+        "name": "肝機能障害",
+        "name_en": "Hepatic impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00217",
+    "name": "Acetaminophen",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00126",
+    "name": "Ibuprofen",
+    "adverse_effects": [
+      {
+        "name": "胃腸障害",
+        "name_en": "Gastrointestinal disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "腎機能障害",
+        "name_en": "Renal impairment",
+        "frequency": "medium"
+      },
+      {
+        "name": "出血傾向",
+        "name_en": "Bleeding tendency",
+        "frequency": "medium"
+      },
+      {
+        "name": "肝機能障害",
+        "name_en": "Hepatic impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00903",
+    "name": "Diclofenac",
+    "adverse_effects": [
+      {
+        "name": "胃腸障害",
+        "name_en": "Gastrointestinal disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "腎機能障害",
+        "name_en": "Renal impairment",
+        "frequency": "medium"
+      },
+      {
+        "name": "出血傾向",
+        "name_en": "Bleeding tendency",
+        "frequency": "medium"
+      },
+      {
+        "name": "肝機能障害",
+        "name_en": "Hepatic impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00567",
+    "name": "Celecoxib",
+    "adverse_effects": [
+      {
+        "name": "胃腸障害",
+        "name_en": "Gastrointestinal disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "腎機能障害",
+        "name_en": "Renal impairment",
+        "frequency": "medium"
+      },
+      {
+        "name": "出血傾向",
+        "name_en": "Bleeding tendency",
+        "frequency": "medium"
+      },
+      {
+        "name": "肝機能障害",
+        "name_en": "Hepatic impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00109",
+    "name": "Aspirin",
+    "adverse_effects": [
+      {
+        "name": "胃腸障害",
+        "name_en": "Gastrointestinal disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "腎機能障害",
+        "name_en": "Renal impairment",
+        "frequency": "medium"
+      },
+      {
+        "name": "出血傾向",
+        "name_en": "Bleeding tendency",
+        "frequency": "medium"
+      },
+      {
+        "name": "肝機能障害",
+        "name_en": "Hepatic impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00141",
+    "name": "Indomethacin",
+    "adverse_effects": [
+      {
+        "name": "胃腸障害",
+        "name_en": "Gastrointestinal disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "腎機能障害",
+        "name_en": "Renal impairment",
+        "frequency": "medium"
+      },
+      {
+        "name": "出血傾向",
+        "name_en": "Bleeding tendency",
+        "frequency": "medium"
+      },
+      {
+        "name": "肝機能障害",
+        "name_en": "Hepatic impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00118",
+    "name": "Naproxen",
+    "adverse_effects": [
+      {
+        "name": "胃腸障害",
+        "name_en": "Gastrointestinal disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "腎機能障害",
+        "name_en": "Renal impairment",
+        "frequency": "medium"
+      },
+      {
+        "name": "出血傾向",
+        "name_en": "Bleeding tendency",
+        "frequency": "medium"
+      },
+      {
+        "name": "肝機能障害",
+        "name_en": "Hepatic impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00315",
+    "name": "Etodolac",
+    "adverse_effects": [
+      {
+        "name": "胃腸障害",
+        "name_en": "Gastrointestinal disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "腎機能障害",
+        "name_en": "Renal impairment",
+        "frequency": "medium"
+      },
+      {
+        "name": "出血傾向",
+        "name_en": "Bleeding tendency",
+        "frequency": "medium"
+      },
+      {
+        "name": "肝機能障害",
+        "name_en": "Hepatic impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00969",
+    "name": "Meloxicam",
+    "adverse_effects": [
+      {
+        "name": "胃腸障害",
+        "name_en": "Gastrointestinal disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "腎機能障害",
+        "name_en": "Renal impairment",
+        "frequency": "medium"
+      },
+      {
+        "name": "出血傾向",
+        "name_en": "Bleeding tendency",
+        "frequency": "medium"
+      },
+      {
+        "name": "肝機能障害",
+        "name_en": "Hepatic impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00615",
+    "name": "Amlodipine",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00437",
+    "name": "Nifedipine",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00400",
+    "name": "Valsartan",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00522",
+    "name": "Candesartan",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01204",
+    "name": "Olmesartan",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00627",
+    "name": "Telmisartan",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00357",
+    "name": "Losartan",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D08067",
+    "name": "Azilsartan",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00621",
+    "name": "Enalapril",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00362",
+    "name": "Lisinopril",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00235",
+    "name": "Atenolol",
+    "adverse_effects": [
+      {
+        "name": "徐脈",
+        "name_en": "Bradycardia",
+        "frequency": "high"
+      },
+      {
+        "name": "低血圧",
+        "name_en": "Hypotension",
+        "frequency": "medium"
+      },
+      {
+        "name": "気管支痙攣",
+        "name_en": "Bronchospasm",
+        "frequency": "medium"
+      },
+      {
+        "name": "倦怠感",
+        "name_en": "Fatigue",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00634",
+    "name": "Bisoprolol",
+    "adverse_effects": [
+      {
+        "name": "徐脈",
+        "name_en": "Bradycardia",
+        "frequency": "high"
+      },
+      {
+        "name": "低血圧",
+        "name_en": "Hypotension",
+        "frequency": "medium"
+      },
+      {
+        "name": "気管支痙攣",
+        "name_en": "Bronchospasm",
+        "frequency": "medium"
+      },
+      {
+        "name": "倦怠感",
+        "name_en": "Fatigue",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00255",
+    "name": "Carvedilol",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00608",
+    "name": "Doxazosin",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00616",
+    "name": "Diltiazem",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00887",
+    "name": "Atorvastatin",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01915",
+    "name": "Rosuvastatin",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00893",
+    "name": "Pravastatin",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01862",
+    "name": "Pitavastatin",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00434",
+    "name": "Simvastatin",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01966",
+    "name": "Ezetimibe",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01366",
+    "name": "Bezafibrate",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00565",
+    "name": "Fenofibrate",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00944",
+    "name": "Metformin",
+    "adverse_effects": [
+      {
+        "name": "乳酸アシドーシス",
+        "name_en": "Lactic acidosis",
+        "frequency": "rare"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "high"
+      },
+      {
+        "name": "ビタミンB12低下",
+        "name_en": "Vitamin B12 deficiency",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00593",
+    "name": "Glimepiride",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00336",
+    "name": "Glibenclamide",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00945",
+    "name": "Pioglitazone",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D06645",
+    "name": "Sitagliptin",
+    "adverse_effects": [
+      {
+        "name": "低血糖",
+        "name_en": "Hypoglycemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "腸閉塞",
+        "name_en": "Ileus",
+        "frequency": "rare"
+      },
+      {
+        "name": "膵炎",
+        "name_en": "Pancreatitis",
+        "frequency": "rare"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D07080",
+    "name": "Vildagliptin",
+    "adverse_effects": [
+      {
+        "name": "低血糖",
+        "name_en": "Hypoglycemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "腸閉塞",
+        "name_en": "Ileus",
+        "frequency": "rare"
+      },
+      {
+        "name": "膵炎",
+        "name_en": "Pancreatitis",
+        "frequency": "rare"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D06553",
+    "name": "Alogliptin",
+    "adverse_effects": [
+      {
+        "name": "低血糖",
+        "name_en": "Hypoglycemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "腸閉塞",
+        "name_en": "Ileus",
+        "frequency": "rare"
+      },
+      {
+        "name": "膵炎",
+        "name_en": "Pancreatitis",
+        "frequency": "rare"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D09566",
+    "name": "Linagliptin",
+    "adverse_effects": [
+      {
+        "name": "低血糖",
+        "name_en": "Hypoglycemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "腸閉塞",
+        "name_en": "Ileus",
+        "frequency": "rare"
+      },
+      {
+        "name": "膵炎",
+        "name_en": "Pancreatitis",
+        "frequency": "rare"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D08616",
+    "name": "Teneligliptin",
+    "adverse_effects": [
+      {
+        "name": "低血糖",
+        "name_en": "Hypoglycemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "腸閉塞",
+        "name_en": "Ileus",
+        "frequency": "rare"
+      },
+      {
+        "name": "膵炎",
+        "name_en": "Pancreatitis",
+        "frequency": "rare"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D10459",
+    "name": "Empagliflozin",
+    "adverse_effects": [
+      {
+        "name": "尿路感染症",
+        "name_en": "Urinary tract infection",
+        "frequency": "high"
+      },
+      {
+        "name": "性器感染症",
+        "name_en": "Genital infection",
+        "frequency": "high"
+      },
+      {
+        "name": "ケトアシドーシス",
+        "name_en": "Ketoacidosis",
+        "frequency": "rare"
+      },
+      {
+        "name": "脱水",
+        "name_en": "Dehydration",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D08897",
+    "name": "Dapagliflozin",
+    "adverse_effects": [
+      {
+        "name": "尿路感染症",
+        "name_en": "Urinary tract infection",
+        "frequency": "high"
+      },
+      {
+        "name": "性器感染症",
+        "name_en": "Genital infection",
+        "frequency": "high"
+      },
+      {
+        "name": "ケトアシドーシス",
+        "name_en": "Ketoacidosis",
+        "frequency": "rare"
+      },
+      {
+        "name": "脱水",
+        "name_en": "Dehydration",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D09592",
+    "name": "Canagliflozin",
+    "adverse_effects": [
+      {
+        "name": "尿路感染症",
+        "name_en": "Urinary tract infection",
+        "frequency": "high"
+      },
+      {
+        "name": "性器感染症",
+        "name_en": "Genital infection",
+        "frequency": "high"
+      },
+      {
+        "name": "ケトアシドーシス",
+        "name_en": "Ketoacidosis",
+        "frequency": "rare"
+      },
+      {
+        "name": "脱水",
+        "name_en": "Dehydration",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D10195",
+    "name": "Luseogliflozin",
+    "adverse_effects": [
+      {
+        "name": "尿路感染症",
+        "name_en": "Urinary tract infection",
+        "frequency": "high"
+      },
+      {
+        "name": "性器感染症",
+        "name_en": "Genital infection",
+        "frequency": "high"
+      },
+      {
+        "name": "ケトアシドーシス",
+        "name_en": "Ketoacidosis",
+        "frequency": "rare"
+      },
+      {
+        "name": "脱水",
+        "name_en": "Dehydration",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D03250",
+    "name": "Insulin glargine",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D04475",
+    "name": "Insulin aspart",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D06404",
+    "name": "Liraglutide",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D09889",
+    "name": "Dulaglutide",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00455",
+    "name": "Omeprazole",
+    "adverse_effects": [
+      {
+        "name": "低マグネシウム血症",
+        "name_en": "Hypomagnesemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "骨折リスク増加",
+        "name_en": "Fracture risk",
+        "frequency": "low"
+      },
+      {
+        "name": "Clostridioides difficile感染",
+        "name_en": "C. difficile infection",
+        "frequency": "low"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00355",
+    "name": "Lansoprazole",
+    "adverse_effects": [
+      {
+        "name": "低マグネシウム血症",
+        "name_en": "Hypomagnesemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "骨折リスク増加",
+        "name_en": "Fracture risk",
+        "frequency": "low"
+      },
+      {
+        "name": "Clostridioides difficile感染",
+        "name_en": "C. difficile infection",
+        "frequency": "low"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00724",
+    "name": "Rabeprazole",
+    "adverse_effects": [
+      {
+        "name": "低マグネシウム血症",
+        "name_en": "Hypomagnesemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "骨折リスク増加",
+        "name_en": "Fracture risk",
+        "frequency": "low"
+      },
+      {
+        "name": "Clostridioides difficile感染",
+        "name_en": "C. difficile infection",
+        "frequency": "low"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D01984",
+    "name": "Esomeprazole",
+    "adverse_effects": [
+      {
+        "name": "低マグネシウム血症",
+        "name_en": "Hypomagnesemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "骨折リスク増加",
+        "name_en": "Fracture risk",
+        "frequency": "low"
+      },
+      {
+        "name": "Clostridioides difficile感染",
+        "name_en": "C. difficile infection",
+        "frequency": "low"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D10466",
+    "name": "Vonoprazan",
+    "adverse_effects": [
+      {
+        "name": "低マグネシウム血症",
+        "name_en": "Hypomagnesemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "骨折リスク増加",
+        "name_en": "Fracture risk",
+        "frequency": "low"
+      },
+      {
+        "name": "Clostridioides difficile感染",
+        "name_en": "C. difficile infection",
+        "frequency": "low"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00318",
+    "name": "Famotidine",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00422",
+    "name": "Ranitidine",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01827",
+    "name": "Teprenone",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01121",
+    "name": "Rebamipide",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01994",
+    "name": "Mosapride",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00726",
+    "name": "Metoclopramide",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01745",
+    "name": "Domperidone",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D02171",
+    "name": "Sennoside",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00564",
+    "name": "Warfarin",
+    "adverse_effects": [
+      {
+        "name": "出血",
+        "name_en": "Hemorrhage",
+        "frequency": "high"
+      },
+      {
+        "name": "貧血",
+        "name_en": "Anemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00769",
+    "name": "Clopidogrel",
+    "adverse_effects": [
+      {
+        "name": "出血",
+        "name_en": "Hemorrhage",
+        "frequency": "high"
+      },
+      {
+        "name": "貧血",
+        "name_en": "Anemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D05597",
+    "name": "Prasugrel",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D03213",
+    "name": "Apixaban",
+    "adverse_effects": [
+      {
+        "name": "出血",
+        "name_en": "Hemorrhage",
+        "frequency": "high"
+      },
+      {
+        "name": "貧血",
+        "name_en": "Anemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D07086",
+    "name": "Rivaroxaban",
+    "adverse_effects": [
+      {
+        "name": "出血",
+        "name_en": "Hemorrhage",
+        "frequency": "high"
+      },
+      {
+        "name": "貧血",
+        "name_en": "Anemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D09546",
+    "name": "Edoxaban",
+    "adverse_effects": [
+      {
+        "name": "出血",
+        "name_en": "Hemorrhage",
+        "frequency": "high"
+      },
+      {
+        "name": "貧血",
+        "name_en": "Anemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D07082",
+    "name": "Dabigatran",
+    "adverse_effects": [
+      {
+        "name": "出血",
+        "name_en": "Hemorrhage",
+        "frequency": "high"
+      },
+      {
+        "name": "貧血",
+        "name_en": "Anemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D01896",
+    "name": "Cilostazol",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01028",
+    "name": "Ticlopidine",
+    "adverse_effects": [
+      {
+        "name": "出血",
+        "name_en": "Hemorrhage",
+        "frequency": "high"
+      },
+      {
+        "name": "貧血",
+        "name_en": "Anemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00229",
+    "name": "Amoxicillin",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00204",
+    "name": "Ampicillin",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01680",
+    "name": "Cefcapene pivoxil",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01628",
+    "name": "Cefditoren pivoxil",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00906",
+    "name": "Cephalexin",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D02134",
+    "name": "Azithromycin",
+    "adverse_effects": [
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "high"
+      },
+      {
+        "name": "QT延長",
+        "name_en": "QT prolongation",
+        "frequency": "low"
+      },
+      {
+        "name": "肝機能障害",
+        "name_en": "Hepatic impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00276",
+    "name": "Clarithromycin",
+    "adverse_effects": [
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "high"
+      },
+      {
+        "name": "QT延長",
+        "name_en": "QT prolongation",
+        "frequency": "low"
+      },
+      {
+        "name": "肝機能障害",
+        "name_en": "Hepatic impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00140",
+    "name": "Erythromycin",
+    "adverse_effects": [
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "high"
+      },
+      {
+        "name": "QT延長",
+        "name_en": "QT prolongation",
+        "frequency": "low"
+      },
+      {
+        "name": "肝機能障害",
+        "name_en": "Hepatic impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00588",
+    "name": "Levofloxacin",
+    "adverse_effects": [
+      {
+        "name": "腱障害",
+        "name_en": "Tendon disorder",
+        "frequency": "low"
+      },
+      {
+        "name": "QT延長",
+        "name_en": "QT prolongation",
+        "frequency": "low"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      },
+      {
+        "name": "光線過敏症",
+        "name_en": "Photosensitivity",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00186",
+    "name": "Ciprofloxacin",
+    "adverse_effects": [
+      {
+        "name": "腱障害",
+        "name_en": "Tendon disorder",
+        "frequency": "low"
+      },
+      {
+        "name": "QT延長",
+        "name_en": "QT prolongation",
+        "frequency": "low"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      },
+      {
+        "name": "光線過敏症",
+        "name_en": "Photosensitivity",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00874",
+    "name": "Moxifloxacin",
+    "adverse_effects": [
+      {
+        "name": "腱障害",
+        "name_en": "Tendon disorder",
+        "frequency": "low"
+      },
+      {
+        "name": "QT延長",
+        "name_en": "QT prolongation",
+        "frequency": "low"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      },
+      {
+        "name": "光線過敏症",
+        "name_en": "Photosensitivity",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00850",
+    "name": "Minocycline",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00307",
+    "name": "Doxycycline",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00447",
+    "name": "Sulfamethoxazole",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00212",
+    "name": "Vancomycin",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D02222",
+    "name": "Meropenem",
+    "adverse_effects": [
+      {
+        "name": "高カリウム血症",
+        "name_en": "Hyperkalemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "めまい",
+        "name_en": "Dizziness",
+        "frequency": "medium"
+      },
+      {
+        "name": "腎機能障害",
+        "name_en": "Renal impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00409",
+    "name": "Metronidazole",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00293",
+    "name": "Diazepam",
+    "adverse_effects": [
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      },
+      {
+        "name": "ふらつき",
+        "name_en": "Unsteadiness",
+        "frequency": "high"
+      },
+      {
+        "name": "記憶障害",
+        "name_en": "Memory impairment",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D01514",
+    "name": "Etizolam",
+    "adverse_effects": [
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      },
+      {
+        "name": "ふらつき",
+        "name_en": "Unsteadiness",
+        "frequency": "high"
+      },
+      {
+        "name": "記憶障害",
+        "name_en": "Memory impairment",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00225",
+    "name": "Alprazolam",
+    "adverse_effects": [
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      },
+      {
+        "name": "ふらつき",
+        "name_en": "Unsteadiness",
+        "frequency": "high"
+      },
+      {
+        "name": "記憶障害",
+        "name_en": "Memory impairment",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00365",
+    "name": "Lorazepam",
+    "adverse_effects": [
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      },
+      {
+        "name": "ふらつき",
+        "name_en": "Unsteadiness",
+        "frequency": "high"
+      },
+      {
+        "name": "記憶障害",
+        "name_en": "Memory impairment",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00280",
+    "name": "Clonazepam",
+    "adverse_effects": [
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      },
+      {
+        "name": "ふらつき",
+        "name_en": "Unsteadiness",
+        "frequency": "high"
+      },
+      {
+        "name": "記憶障害",
+        "name_en": "Memory impairment",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00706",
+    "name": "Zolpidem",
+    "adverse_effects": [
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      },
+      {
+        "name": "ふらつき",
+        "name_en": "Unsteadiness",
+        "frequency": "high"
+      },
+      {
+        "name": "記憶障害",
+        "name_en": "Memory impairment",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D01372",
+    "name": "Zopiclone",
+    "adverse_effects": [
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      },
+      {
+        "name": "ふらつき",
+        "name_en": "Unsteadiness",
+        "frequency": "high"
+      },
+      {
+        "name": "記憶障害",
+        "name_en": "Memory impairment",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D02624",
+    "name": "Eszopiclone",
+    "adverse_effects": [
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      },
+      {
+        "name": "ふらつき",
+        "name_en": "Unsteadiness",
+        "frequency": "high"
+      },
+      {
+        "name": "記憶障害",
+        "name_en": "Memory impairment",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D10082",
+    "name": "Suvorexant",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D11022",
+    "name": "Lemborexant",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D02689",
+    "name": "Ramelteon",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00825",
+    "name": "Sertraline",
+    "adverse_effects": [
+      {
+        "name": "悪心",
+        "name_en": "Nausea",
+        "frequency": "high"
+      },
+      {
+        "name": "性機能障害",
+        "name_en": "Sexual dysfunction",
+        "frequency": "high"
+      },
+      {
+        "name": "不眠",
+        "name_en": "Insomnia",
+        "frequency": "medium"
+      },
+      {
+        "name": "セロトニン症候群",
+        "name_en": "Serotonin syndrome",
+        "frequency": "rare"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D02260",
+    "name": "Paroxetine",
+    "adverse_effects": [
+      {
+        "name": "悪心",
+        "name_en": "Nausea",
+        "frequency": "high"
+      },
+      {
+        "name": "性機能障害",
+        "name_en": "Sexual dysfunction",
+        "frequency": "high"
+      },
+      {
+        "name": "不眠",
+        "name_en": "Insomnia",
+        "frequency": "medium"
+      },
+      {
+        "name": "セロトニン症候群",
+        "name_en": "Serotonin syndrome",
+        "frequency": "rare"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D02567",
+    "name": "Escitalopram",
+    "adverse_effects": [
+      {
+        "name": "悪心",
+        "name_en": "Nausea",
+        "frequency": "high"
+      },
+      {
+        "name": "性機能障害",
+        "name_en": "Sexual dysfunction",
+        "frequency": "high"
+      },
+      {
+        "name": "不眠",
+        "name_en": "Insomnia",
+        "frequency": "medium"
+      },
+      {
+        "name": "セロトニン症候群",
+        "name_en": "Serotonin syndrome",
+        "frequency": "rare"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00824",
+    "name": "Fluvoxamine",
+    "adverse_effects": [
+      {
+        "name": "悪心",
+        "name_en": "Nausea",
+        "frequency": "high"
+      },
+      {
+        "name": "性機能障害",
+        "name_en": "Sexual dysfunction",
+        "frequency": "high"
+      },
+      {
+        "name": "不眠",
+        "name_en": "Insomnia",
+        "frequency": "medium"
+      },
+      {
+        "name": "セロトニン症候群",
+        "name_en": "Serotonin syndrome",
+        "frequency": "rare"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D01179",
+    "name": "Duloxetine",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00821",
+    "name": "Venlafaxine",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00563",
+    "name": "Mirtazapine",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00809",
+    "name": "Amitriptyline",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01164",
+    "name": "Aripiprazole",
+    "adverse_effects": [
+      {
+        "name": "体重増加",
+        "name_en": "Weight gain",
+        "frequency": "high"
+      },
+      {
+        "name": "代謝異常",
+        "name_en": "Metabolic disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "錐体外路症状",
+        "name_en": "Extrapyramidal symptoms",
+        "frequency": "medium"
+      },
+      {
+        "name": "QT延長",
+        "name_en": "QT prolongation",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00454",
+    "name": "Olanzapine",
+    "adverse_effects": [
+      {
+        "name": "体重増加",
+        "name_en": "Weight gain",
+        "frequency": "high"
+      },
+      {
+        "name": "代謝異常",
+        "name_en": "Metabolic disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "錐体外路症状",
+        "name_en": "Extrapyramidal symptoms",
+        "frequency": "medium"
+      },
+      {
+        "name": "QT延長",
+        "name_en": "QT prolongation",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00458",
+    "name": "Quetiapine",
+    "adverse_effects": [
+      {
+        "name": "体重増加",
+        "name_en": "Weight gain",
+        "frequency": "high"
+      },
+      {
+        "name": "代謝異常",
+        "name_en": "Metabolic disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "錐体外路症状",
+        "name_en": "Extrapyramidal symptoms",
+        "frequency": "medium"
+      },
+      {
+        "name": "QT延長",
+        "name_en": "QT prolongation",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00426",
+    "name": "Risperidone",
+    "adverse_effects": [
+      {
+        "name": "体重増加",
+        "name_en": "Weight gain",
+        "frequency": "high"
+      },
+      {
+        "name": "代謝異常",
+        "name_en": "Metabolic disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "錐体外路症状",
+        "name_en": "Extrapyramidal symptoms",
+        "frequency": "medium"
+      },
+      {
+        "name": "QT延長",
+        "name_en": "QT prolongation",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00136",
+    "name": "Haloperidol",
+    "adverse_effects": [
+      {
+        "name": "体重増加",
+        "name_en": "Weight gain",
+        "frequency": "high"
+      },
+      {
+        "name": "代謝異常",
+        "name_en": "Metabolic disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "錐体外路症状",
+        "name_en": "Extrapyramidal symptoms",
+        "frequency": "medium"
+      },
+      {
+        "name": "QT延長",
+        "name_en": "QT prolongation",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00801",
+    "name": "Lithium carbonate",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00399",
+    "name": "Valproic acid",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00252",
+    "name": "Carbamazepine",
+    "adverse_effects": [
+      {
+        "name": "高カリウム血症",
+        "name_en": "Hyperkalemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "めまい",
+        "name_en": "Dizziness",
+        "frequency": "medium"
+      },
+      {
+        "name": "腎機能障害",
+        "name_en": "Renal impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00354",
+    "name": "Lamotrigine",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00059",
+    "name": "Levodopa",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00559",
+    "name": "Pramipexole",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00784",
+    "name": "Ropinirole",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00670",
+    "name": "Donepezil",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00529",
+    "name": "Montelukast",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D02732",
+    "name": "Pranlukast",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00371",
+    "name": "Theophylline",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00246",
+    "name": "Budesonide",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01708",
+    "name": "Fluticasone",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00689",
+    "name": "Beclomethasone",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01929",
+    "name": "Tiotropium",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00687",
+    "name": "Salmeterol",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01373",
+    "name": "Formoterol",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00195",
+    "name": "Codeine",
+    "adverse_effects": [
+      {
+        "name": "便秘",
+        "name_en": "Constipation",
+        "frequency": "high"
+      },
+      {
+        "name": "悪心・嘔吐",
+        "name_en": "Nausea/vomiting",
+        "frequency": "high"
+      },
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "呼吸抑制",
+        "name_en": "Respiratory depression",
+        "frequency": "medium"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00848",
+    "name": "Dextromethorphan",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00671",
+    "name": "Fexofenadine",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00664",
+    "name": "Cetirizine",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00364",
+    "name": "Loratadine",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D03693",
+    "name": "Desloratadine",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01192",
+    "name": "Olopatadine",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01654",
+    "name": "Bepotastine",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D09570",
+    "name": "Bilastine",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01713",
+    "name": "Epinastine",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00407",
+    "name": "Prednisolone",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00292",
+    "name": "Dexamethasone",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00244",
+    "name": "Betamethasone",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01024",
+    "name": "Tamsulosin",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01965",
+    "name": "Silodosin",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01674",
+    "name": "Naftopidil",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D03820",
+    "name": "Dutasteride",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00321",
+    "name": "Finasteride",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D09535",
+    "name": "Mirabegron",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01269",
+    "name": "Solifenacin",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D02008",
+    "name": "Tadalafil",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00939",
+    "name": "Alendronate",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00942",
+    "name": "Risedronate",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D03684",
+    "name": "Denosumab",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D07578",
+    "name": "Eldecalcitol",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01518",
+    "name": "Alfacalcidol",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01010",
+    "name": "Levothyroxine",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00401",
+    "name": "Thiamazole",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00224",
+    "name": "Allopurinol",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01206",
+    "name": "Febuxostat",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00570",
+    "name": "Colchicine",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01056",
+    "name": "Benzbromarone",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00222",
+    "name": "Acyclovir",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00398",
+    "name": "Valacyclovir",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00900",
+    "name": "Oseltamivir",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D11021",
+    "name": "Baloxavir marboxil",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00322",
+    "name": "Fluconazole",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00350",
+    "name": "Itraconazole",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D02219",
+    "name": "Terbinafine",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00107",
+    "name": "Tacrolimus",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00184",
+    "name": "Cyclosporine",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00752",
+    "name": "Mycophenolate mofetil",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00300",
+    "name": "Diphenhydramine",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00665",
+    "name": "Chlorpheniramine",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00528",
+    "name": "Caffeine",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00729",
+    "name": "Loperamide",
+    "adverse_effects": [
+      {
+        "name": "便秘",
+        "name_en": "Constipation",
+        "frequency": "high"
+      },
+      {
+        "name": "悪心・嘔吐",
+        "name_en": "Nausea/vomiting",
+        "frequency": "high"
+      },
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "呼吸抑制",
+        "name_en": "Respiratory depression",
+        "frequency": "medium"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00728",
+    "name": "Bismuth",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01167",
+    "name": "Magnesium oxide",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D02060",
+    "name": "Potassium chloride",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00331",
+    "name": "Furosemide",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00340",
+    "name": "Hydrochlorothiazide",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00443",
+    "name": "Spironolactone",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01115",
+    "name": "Eplerenone",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00298",
+    "name": "Digoxin",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00636",
+    "name": "Amiodarone",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01810",
+    "name": "Nicorandil",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D00332",
+    "name": "Gabapentin",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D02716",
+    "name": "Pregabalin",
+    "adverse_effects": []
+  },
+  {
+    "kegg_id": "D01355",
+    "name": "Tramadol",
+    "adverse_effects": [
+      {
+        "name": "便秘",
+        "name_en": "Constipation",
+        "frequency": "high"
+      },
+      {
+        "name": "悪心・嘔吐",
+        "name_en": "Nausea/vomiting",
+        "frequency": "high"
+      },
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "呼吸抑制",
+        "name_en": "Respiratory depression",
+        "frequency": "medium"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00842",
+    "name": "Morphine",
+    "adverse_effects": [
+      {
+        "name": "便秘",
+        "name_en": "Constipation",
+        "frequency": "high"
+      },
+      {
+        "name": "悪心・嘔吐",
+        "name_en": "Nausea/vomiting",
+        "frequency": "high"
+      },
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "呼吸抑制",
+        "name_en": "Respiratory depression",
+        "frequency": "medium"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00320",
+    "name": "Fentanyl",
+    "adverse_effects": [
+      {
+        "name": "便秘",
+        "name_en": "Constipation",
+        "frequency": "high"
+      },
+      {
+        "name": "悪心・嘔吐",
+        "name_en": "Nausea/vomiting",
+        "frequency": "high"
+      },
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "呼吸抑制",
+        "name_en": "Respiratory depression",
+        "frequency": "medium"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      }
+    ]
+  },
+  {
+    "kegg_id": "D00847",
+    "name": "Oxycodone",
+    "adverse_effects": [
+      {
+        "name": "便秘",
+        "name_en": "Constipation",
+        "frequency": "high"
+      },
+      {
+        "name": "悪心・嘔吐",
+        "name_en": "Nausea/vomiting",
+        "frequency": "high"
+      },
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "呼吸抑制",
+        "name_en": "Respiratory depression",
+        "frequency": "medium"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      }
+    ]
+  }
+]

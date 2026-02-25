@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>kusuri Light — 医薬品関連図データベース</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💊</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.31.0/cytoscape.min.js"></script>
+<script>
+// Override data file path before app.js loads
+window.__KUSURI_DATA = 'data/graph/graph-light.json';
+</script>
+</head>
+<body>
+
+<!-- ===== Access Gate ===== -->
+<div id="gate" class="gate">
+  <div class="gate-card">
+    <div class="gate-icon">💊</div>
+    <h1>kusuri <span style="font-size:14px;color:var(--accent)">Light</span></h1>
+    <p class="gate-subtitle">医薬品関連図データベース</p>
+    <div class="gate-description">
+      <p>本サービスは医薬品の相互作用・副作用・薬効分類をグラフ（関連図）で可視化するツールです。</p>
+      <p>医療従事者および学術研究者を対象としています。</p>
+    </div>
+    <div class="gate-disclaimer">
+      <h3>免責事項</h3>
+      <ul>
+        <li>本ツールは情報提供を目的としており、医療行為の代替ではありません</li>
+        <li>臨床判断は必ず添付文書・最新のガイドライン等を確認のうえ行ってください</li>
+        <li>データソース: KEGG DRUG / PMDA（出典を明記した学術利用）</li>
+      </ul>
+    </div>
+    <div class="gate-question">
+      <p>あなたは以下のいずれかに該当しますか？</p>
+      <label class="gate-option">
+        <input type="radio" name="gate-role" value="healthcare">
+        <span>医療従事者（医師・薬剤師・看護師等）</span>
+      </label>
+      <label class="gate-option">
+        <input type="radio" name="gate-role" value="academic">
+        <span>学術研究者・学生</span>
+      </label>
+      <label class="gate-option">
+        <input type="radio" name="gate-role" value="other">
+        <span>上記に該当しない</span>
+      </label>
+    </div>
+    <button id="gate-enter" class="gate-btn" disabled>利用を開始する</button>
+    <p id="gate-warning" class="gate-warning" hidden>
+      申し訳ありませんが、本サービスは医療従事者・学術研究者向けです。
+    </p>
+  </div>
+</div>
+
+<!-- ===== Main App ===== -->
+<div id="app" class="app" hidden>
+
+  <!-- Header -->
+  <header id="header">
+    <button id="menu-btn" class="menu-btn" aria-label="メニュー">☰</button>
+    <div class="header-brand">
+      <span class="header-logo">💊</span>
+      <h1>kusuri <span style="font-size:12px;color:var(--accent)">Light</span></h1>
+    </div>
+    <div class="header-search">
+      <input type="text" id="search-input" placeholder="薬名で検索（日本語 / English）..." autocomplete="off">
+      <div id="search-results" class="search-results" hidden></div>
+    </div>
+    <div id="stats" class="header-stats">
+      <span id="stat-nodes">--</span> ノード &nbsp;
+      <span id="stat-edges">--</span> エッジ
+    </div>
+  </header>
+
+  <!-- Main -->
+  <div id="main">
+
+    <!-- Sidebar -->
+    <aside id="sidebar">
+      <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+      <!-- Node type filter -->
+      <section class="filter-section">
+        <h3>ノードタイプ</h3>
+        <label class="filter-item">
+          <input type="checkbox" data-filter="node" data-type="drug" checked>
+          <span class="node-badge drug">薬</span>
+        </label>
+        <label class="filter-item">
+          <input type="checkbox" data-filter="node" data-type="category" checked>
+          <span class="node-badge category">薬効分類</span>
+        </label>
+        <label class="filter-item">
+          <input type="checkbox" data-filter="node" data-type="adverse_effect" checked>
+          <span class="node-badge adverse_effect">副作用</span>
+        </label>
+        <label class="filter-item">
+          <input type="checkbox" data-filter="node" data-type="cyp" checked>
+          <span class="node-badge cyp">CYP酵素</span>
+        </label>
+      </section>
+
+      <!-- Edge type filter -->
+      <section class="filter-section">
+        <h3>エッジタイプ</h3>
+        <label class="filter-item">
+          <input type="checkbox" data-filter="edge" data-type="contraindication" checked>
+          <span class="edge-badge contraindication">併用禁忌</span>
+        </label>
+        <label class="filter-item">
+          <input type="checkbox" data-filter="edge" data-type="precaution" checked>
+          <span class="edge-badge precaution">併用注意</span>
+        </label>
+        <label class="filter-item">
+          <input type="checkbox" data-filter="edge" data-type="causes_adverse_effect" checked>
+          <span class="edge-badge causes_adverse_effect">副作用</span>
+        </label>
+        <label class="filter-item">
+          <input type="checkbox" data-filter="edge" data-type="belongs_to_category" checked>
+          <span class="edge-badge belongs_to_category">分類</span>
+        </label>
+        <label class="filter-item">
+          <input type="checkbox" data-filter="edge" data-type="metabolized_by" checked>
+          <span class="edge-badge metabolized_by">CYP代謝</span>
+        </label>
+      </section>
+
+      <!-- Layout -->
+      <section class="filter-section">
+        <h3>レイアウト</h3>
+        <label class="filter-item">
+          <input type="radio" name="layout" value="concentric" checked>
+          <span>同心円</span>
+        </label>
+        <label class="filter-item">
+          <input type="radio" name="layout" value="cluster">
+          <span>クラスター（薬効分類別）</span>
+        </label>
+      </section>
+
+      <!-- Reverse Lookup -->
+      <section class="filter-section">
+        <h3>逆引き検索</h3>
+        <button class="quick-btn" data-lookup="adverse_effect">副作用 → 薬を探す</button>
+        <button class="quick-btn" data-lookup="cyp">CYP酵素 → 薬を探す</button>
+        <button class="quick-btn" data-lookup="category">薬効分類 → 薬を探す</button>
+      </section>
+
+      <!-- Ranking -->
+      <section class="filter-section">
+        <h3>ランキング</h3>
+        <button class="quick-btn" id="ranking-btn">データランキングを見る</button>
+      </section>
+
+      <!-- Quick links -->
+      <section class="filter-section">
+        <h3>クイック表示</h3>
+        <button class="quick-btn" data-quick="ci-only">併用禁忌のみ</button>
+        <button class="quick-btn" data-quick="drug-only">薬のみ</button>
+        <button class="quick-btn" data-quick="reset">全表示リセット</button>
+      </section>
+
+    </aside>
+
+    <!-- Reverse Lookup Modal -->
+    <div id="lookup-modal" class="modal" hidden>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="lookup-title">逆引き検索</h2>
+          <button id="lookup-close" class="modal-close">✕</button>
+        </div>
+        <div class="modal-body">
+          <div class="lookup-search">
+            <input type="text" id="lookup-filter" placeholder="絞り込み...">
+          </div>
+          <div id="lookup-tags" class="lookup-tags"></div>
+          <div id="lookup-results" class="lookup-results"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ranking Modal -->
+    <div id="ranking-modal" class="modal" hidden>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>データランキング</h2>
+          <button id="ranking-close" class="modal-close">✕</button>
+        </div>
+        <div class="modal-body">
+          <div id="ranking-tabs" class="ranking-tabs"></div>
+          <div id="ranking-content"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Graph -->
+    <div id="graph-container">
+      <div id="cy"></div>
+      <div id="graph-controls">
+        <button id="zoom-in" title="ズームイン">+</button>
+        <button id="zoom-out" title="ズームアウト">−</button>
+        <button id="zoom-fit" title="全体表示">⊡</button>
+      </div>
+      <div id="loading" class="loading">
+        <div class="loading-spinner"></div>
+        <p id="loading-text">データを読み込み中...</p>
+        <div class="loading-progress"><div id="loading-bar" class="loading-progress-bar"></div></div>
+      </div>
+    </div>
+
+    <!-- Detail Panel -->
+    <aside id="detail-panel" class="detail-panel" hidden>
+      <button id="detail-close" class="detail-close">✕</button>
+      <div id="detail-content"></div>
+    </aside>
+
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/graph.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

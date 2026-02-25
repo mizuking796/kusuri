@@ -1,0 +1,7243 @@
+[
+  {
+    "id": "D01709",
+    "type": "drug",
+    "name_en": "Loxoprofen sodium hydrate (JP18)",
+    "name_ja": "ロキソプロフェン",
+    "names_alt": [
+      "Lorfenamin (TN)",
+      "Loxonin (TN)"
+    ],
+    "search_name": "Loxoprofen",
+    "formula": "C15H17O3. 2H2O. Na",
+    "efficacy": "Analgesic, Anti-inflammatory, Antipyretic, COX inhibitor",
+    "therapeutic_category": "1149",
+    "atc_code": "M01AE19",
+    "drug_class": [
+      "Anti-inflammatory",
+      "Nonsteroidal anti-inflammatory drug (NSAID)",
+      "Anti-inflammatory drug, propionic acid derivative"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": [
+      {
+        "name": "胃腸障害",
+        "name_en": "Gastrointestinal disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "腎機能障害",
+        "name_en": "Renal impairment",
+        "frequency": "medium"
+      },
+      {
+        "name": "出血傾向",
+        "name_en": "Bleeding tendency",
+        "frequency": "medium"
+      },
+      {
+        "name": "肝機能障害",
+        "name_en": "Hepatic impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "id": "cat_1149",
+    "type": "category",
+    "name_ja": "分類1149",
+    "name_en": "",
+    "code": "1149"
+  },
+  {
+    "id": "ae_0",
+    "type": "adverse_effect",
+    "name_ja": "胃腸障害",
+    "name_en": "Gastrointestinal disorder"
+  },
+  {
+    "id": "ae_1",
+    "type": "adverse_effect",
+    "name_ja": "腎機能障害",
+    "name_en": "Renal impairment"
+  },
+  {
+    "id": "ae_2",
+    "type": "adverse_effect",
+    "name_ja": "出血傾向",
+    "name_en": "Bleeding tendency"
+  },
+  {
+    "id": "ae_3",
+    "type": "adverse_effect",
+    "name_ja": "肝機能障害",
+    "name_en": "Hepatic impairment"
+  },
+  {
+    "id": "D00217",
+    "type": "drug",
+    "name_en": "Acetaminophen (JP18/USP)",
+    "name_ja": "アセトアミノフェン",
+    "names_alt": [
+      "Paracetamol (INN)",
+      "Tylenol (TN)"
+    ],
+    "search_name": "Acetaminophen",
+    "formula": "C8H9NO2",
+    "efficacy": "Analgesic, Antipyretic",
+    "therapeutic_category": "1141",
+    "atc_code": "N02BE01",
+    "drug_class": [
+      "Anti-inflammatory",
+      "Anilide derivative, anti-inflammatory"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_1141",
+    "type": "category",
+    "name_ja": "分類1141",
+    "name_en": "",
+    "code": "1141"
+  },
+  {
+    "id": "D00126",
+    "type": "drug",
+    "name_en": "Ibuprofen (JP18/USP/INN)",
+    "name_ja": "イブプロフェン",
+    "names_alt": [
+      "Advil (TN)",
+      "Motrin (TN)"
+    ],
+    "search_name": "Ibuprofen",
+    "formula": "C13H18O2",
+    "efficacy": "Analgesic, Anti-inflammatory, Antipyretic, COX inhibitor",
+    "therapeutic_category": "1149",
+    "atc_code": "C01EB16",
+    "drug_class": [
+      "Anti-inflammatory",
+      "Nonsteroidal anti-inflammatory drug (NSAID)",
+      "Anti-inflammatory drug, propionic acid derivative",
+      "Metabolizing enzyme substrate",
+      "CYP2C9 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2C9"
+    ],
+    "adverse_effects": [
+      {
+        "name": "胃腸障害",
+        "name_en": "Gastrointestinal disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "腎機能障害",
+        "name_en": "Renal impairment",
+        "frequency": "medium"
+      },
+      {
+        "name": "出血傾向",
+        "name_en": "Bleeding tendency",
+        "frequency": "medium"
+      },
+      {
+        "name": "肝機能障害",
+        "name_en": "Hepatic impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "id": "cyp_CYP2C9",
+    "type": "cyp",
+    "name_en": "CYP2C9",
+    "name_ja": "CYP2C9"
+  },
+  {
+    "id": "D00903",
+    "type": "drug",
+    "name_en": "Diclofenac potassium (USP)",
+    "name_ja": "ジクロフェナク",
+    "names_alt": [
+      "Cambia (TN)",
+      "Cataflam (TN)",
+      "Zipsor (TN)"
+    ],
+    "search_name": "Diclofenac",
+    "formula": "C14H10Cl2NO2. K",
+    "efficacy": "Anti-inflammatory, COX inhibitor",
+    "therapeutic_category": "",
+    "atc_code": "D11AX18",
+    "drug_class": [
+      "Anti-inflammatory",
+      "Nonsteroidal anti-inflammatory drug (NSAID)",
+      "Anti-inflammatory drug, acetic acid derivatives",
+      "Anti-inflammatory drug, phenylacetic acid derivative",
+      "Metabolizing enzyme substrate",
+      "CYP2C9 substrate",
+      "Transporter inhibitor",
+      "SLC22A8 inhibitor"
+    ],
+    "cyp_enzymes": [
+      "CYP2C9"
+    ],
+    "adverse_effects": [
+      {
+        "name": "胃腸障害",
+        "name_en": "Gastrointestinal disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "腎機能障害",
+        "name_en": "Renal impairment",
+        "frequency": "medium"
+      },
+      {
+        "name": "出血傾向",
+        "name_en": "Bleeding tendency",
+        "frequency": "medium"
+      },
+      {
+        "name": "肝機能障害",
+        "name_en": "Hepatic impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "id": "D00567",
+    "type": "drug",
+    "name_en": "Celecoxib (JP18/USP/INN)",
+    "name_ja": "セレコキシブ",
+    "names_alt": [
+      "Celebrex (TN)",
+      "Onsenal (TN)"
+    ],
+    "search_name": "Celecoxib",
+    "formula": "C17H14F3N3O2S",
+    "efficacy": "Analgesic, Anti-inflammatory, COX-2 inhibitor\nDISEASE   Rheumatoid arthritis [DS:H00630]\nJuvenile rheumatoid arthritis [DS:H01672]\nAnkylosing spondylitis [DS:H01674]",
+    "therapeutic_category": "1149",
+    "atc_code": "L01XX33",
+    "drug_class": [
+      "Anti-inflammatory",
+      "Nonsteroidal anti-inflammatory drug (NSAID)",
+      "Selective COX2 inhibitor",
+      "Anti-inflammatory drug, coxibs",
+      "Metabolizing enzyme substrate",
+      "CYP2C9 substrate",
+      "Metabolizing enzyme inhibitor",
+      "CYP2D6 inhibitor"
+    ],
+    "cyp_enzymes": [
+      "CYP2C9"
+    ],
+    "adverse_effects": [
+      {
+        "name": "胃腸障害",
+        "name_en": "Gastrointestinal disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "腎機能障害",
+        "name_en": "Renal impairment",
+        "frequency": "medium"
+      },
+      {
+        "name": "出血傾向",
+        "name_en": "Bleeding tendency",
+        "frequency": "medium"
+      },
+      {
+        "name": "肝機能障害",
+        "name_en": "Hepatic impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "id": "D00109",
+    "type": "drug",
+    "name_en": "Aspirin (JP18/USP)",
+    "name_ja": "アスピリン",
+    "names_alt": [
+      "Aspalon (JAN)",
+      "Acetylsalicylic acid",
+      "Easprin (TN)",
+      "Durlaza (TN)"
+    ],
+    "search_name": "Aspirin",
+    "formula": "C9H8O4",
+    "efficacy": "Analgesic, Anti-inflammatory, Antipyretic, Antirheumatic, Antiplatelet, COX inhibitor\nDISEASE   Myocardial infarction [DS:H01730]\nUnstable angina pectoris [DS:H01632]\nChronic stable angina [DS:H01632]",
+    "therapeutic_category": "1143",
+    "atc_code": "A01AD05",
+    "drug_class": [
+      "Blood modifier agent",
+      "Antithrombotic agent",
+      "Antiplatelet agent",
+      "Anti-inflammatory",
+      "Nonsteroidal anti-inflammatory drug (NSAID)",
+      "Anti-inflammatory drug, salicylic acid derivatives"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": [
+      {
+        "name": "胃腸障害",
+        "name_en": "Gastrointestinal disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "腎機能障害",
+        "name_en": "Renal impairment",
+        "frequency": "medium"
+      },
+      {
+        "name": "出血傾向",
+        "name_en": "Bleeding tendency",
+        "frequency": "medium"
+      },
+      {
+        "name": "肝機能障害",
+        "name_en": "Hepatic impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "id": "cat_1143",
+    "type": "category",
+    "name_ja": "分類1143",
+    "name_en": "",
+    "code": "1143"
+  },
+  {
+    "id": "D00141",
+    "type": "drug",
+    "name_en": "Indomethacin (USP)",
+    "name_ja": "インドメタシン",
+    "names_alt": [
+      "Indometacin (JP18/INN)",
+      "Aconip (TN)",
+      "Indocin (TN)"
+    ],
+    "search_name": "Indomethacin",
+    "formula": "C19H16ClNO4",
+    "efficacy": "Analgesic, Anti-inflammatory, Antipyretic, COX inhibitor\nDISEASE   Rheumatoid arthritis [DS:H00630]\nAnkylosing spondylitis [DS:H01674]\nAcute gouty arthritis [DS:H01532]",
+    "therapeutic_category": "1145",
+    "atc_code": "C01EB03",
+    "drug_class": [
+      "Anti-inflammatory",
+      "Nonsteroidal anti-inflammatory drug (NSAID)",
+      "Anti-inflammatory drug, acetic acid derivatives",
+      "Anti-inflammatory drug, indoleacetic acid derivative"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": [
+      {
+        "name": "胃腸障害",
+        "name_en": "Gastrointestinal disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "腎機能障害",
+        "name_en": "Renal impairment",
+        "frequency": "medium"
+      },
+      {
+        "name": "出血傾向",
+        "name_en": "Bleeding tendency",
+        "frequency": "medium"
+      },
+      {
+        "name": "肝機能障害",
+        "name_en": "Hepatic impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "id": "cat_1145",
+    "type": "category",
+    "name_ja": "分類1145",
+    "name_en": "",
+    "code": "1145"
+  },
+  {
+    "id": "D00118",
+    "type": "drug",
+    "name_en": "Naproxen (JP18/USP/INN)",
+    "name_ja": "ナプロキセン",
+    "names_alt": [
+      "Naprosyn (TN)"
+    ],
+    "search_name": "Naproxen",
+    "formula": "C14H14O3",
+    "efficacy": "Analgesic, Anti-inflammatory, Antipyretic, COX inhibitor\nDISEASE   Rheumatoid arthritis [DS:H00630]\nAnkylosing spondylitis [DS:H01674]\nPolyarticular juvenile idiopathic arthritis [DS:H01672]\nAcute gout [DS:H01532]",
+    "therapeutic_category": "1149",
+    "atc_code": "G02CC02",
+    "drug_class": [
+      "Anti-inflammatory",
+      "Nonsteroidal anti-inflammatory drug (NSAID)",
+      "Anti-inflammatory drug, propionic acid derivative"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": [
+      {
+        "name": "胃腸障害",
+        "name_en": "Gastrointestinal disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "腎機能障害",
+        "name_en": "Renal impairment",
+        "frequency": "medium"
+      },
+      {
+        "name": "出血傾向",
+        "name_en": "Bleeding tendency",
+        "frequency": "medium"
+      },
+      {
+        "name": "肝機能障害",
+        "name_en": "Hepatic impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "id": "D00315",
+    "type": "drug",
+    "name_en": "Etodolac (JP18/USP/INN)",
+    "name_ja": "エトドラク",
+    "names_alt": [
+      "Lodine (TN)"
+    ],
+    "search_name": "Etodolac",
+    "formula": "C17H21NO3",
+    "efficacy": "Analgesic, Anti-inflammatory, COX-2 inhibitor",
+    "therapeutic_category": "1149",
+    "atc_code": "M01AB08",
+    "drug_class": [
+      "Anti-inflammatory",
+      "Nonsteroidal anti-inflammatory drug (NSAID)",
+      "Anti-inflammatory drug, acetic acid derivatives",
+      "Selective COX2 inhibitor"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": [
+      {
+        "name": "胃腸障害",
+        "name_en": "Gastrointestinal disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "腎機能障害",
+        "name_en": "Renal impairment",
+        "frequency": "medium"
+      },
+      {
+        "name": "出血傾向",
+        "name_en": "Bleeding tendency",
+        "frequency": "medium"
+      },
+      {
+        "name": "肝機能障害",
+        "name_en": "Hepatic impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "id": "D00969",
+    "type": "drug",
+    "name_en": "Meloxicam (JAN/USP/INN)",
+    "name_ja": "メロキシカム",
+    "names_alt": [
+      "Mobic (TN)"
+    ],
+    "search_name": "Meloxicam",
+    "formula": "C14H13N3O4S2",
+    "efficacy": "Analgesic, Anti-inflammatory, COX-2 inhibitor",
+    "therapeutic_category": "1149",
+    "atc_code": "M01AC06",
+    "drug_class": [
+      "Anti-inflammatory",
+      "Nonsteroidal anti-inflammatory drug (NSAID)",
+      "Anti-inflammatory drug, oxicams",
+      "Selective COX2 inhibitor",
+      "Metabolizing enzyme substrate",
+      "CYP2C9 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2C9",
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "胃腸障害",
+        "name_en": "Gastrointestinal disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "腎機能障害",
+        "name_en": "Renal impairment",
+        "frequency": "medium"
+      },
+      {
+        "name": "出血傾向",
+        "name_en": "Bleeding tendency",
+        "frequency": "medium"
+      },
+      {
+        "name": "肝機能障害",
+        "name_en": "Hepatic impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "id": "cyp_CYP3A4",
+    "type": "cyp",
+    "name_en": "CYP3A4",
+    "name_ja": "CYP3A4"
+  },
+  {
+    "id": "D00615",
+    "type": "drug",
+    "name_en": "Amlodipine besylate (USP)",
+    "name_ja": "アムロジピン",
+    "names_alt": [
+      "Amlodipine besilate (JP18)",
+      "Norvasc (TN)"
+    ],
+    "search_name": "Amlodipine",
+    "formula": "C20H25ClN2O5. C6H6O3S",
+    "efficacy": "Antihypertensive, Vasodilator, Calcium channel blocker\nDISEASE   Hypertension [DS:H01633]\nChronic stable angina [DS:H01632]\nVasospastic angina [DS:H01632]",
+    "therapeutic_category": "2171",
+    "atc_code": "C08CA01",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Calcium channel blocker",
+      "Calcium channel L type blocker",
+      "Antihypertensive",
+      "Dihydropyridine calcium channel blocker",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2171",
+    "type": "category",
+    "name_ja": "分類2171",
+    "name_en": "",
+    "code": "2171"
+  },
+  {
+    "id": "D00437",
+    "type": "drug",
+    "name_en": "Nifedipine (JP18/USP/INN)",
+    "name_ja": "ニフェジピン",
+    "names_alt": [
+      "Adalat (TN)",
+      "Afeditab CR (TN)",
+      "Procardia (TN)"
+    ],
+    "search_name": "Nifedipine",
+    "formula": "C17H18N2O6",
+    "efficacy": "Antihypertensive, Vasodilator, Calcium channel blocker\nDISEASE   Hypertension [DS:H01633]\nVasospastic angina [DS:H01632]\nChronic stable angina [DS:H01632]",
+    "therapeutic_category": "2171",
+    "atc_code": "C08CA05",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Calcium channel blocker",
+      "Calcium channel L type blocker",
+      "Antihypertensive",
+      "Dihydropyridine calcium channel blocker",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00400",
+    "type": "drug",
+    "name_en": "Valsartan (JP18/USP/INN)",
+    "name_ja": "バルサルタン",
+    "names_alt": [
+      "Diovan (TN)"
+    ],
+    "search_name": "Valsartan",
+    "formula": "C24H29N5O3",
+    "efficacy": "Antihypertensive, Angiotensin II receptor antagonist\nDISEASE   Hypertension [DS:H01633]",
+    "therapeutic_category": "2149",
+    "atc_code": "C09CA03",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Renin-angiotensin system inhibitor",
+      "Angiotensin II receptor antagonist",
+      "Antihypertensive",
+      "Angiotensin II receptor antagonist",
+      "Metabolizing enzyme substrate",
+      "CYP2C9 substrate",
+      "Transporter substrate",
+      "ABCC2 substrate",
+      "SLCO1B1 substrate",
+      "SLCO1B3 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2C9"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2149",
+    "type": "category",
+    "name_ja": "分類2149",
+    "name_en": "",
+    "code": "2149"
+  },
+  {
+    "id": "D00522",
+    "type": "drug",
+    "name_en": "Candesartan (USAN/INN)",
+    "name_ja": "カンデサルタン",
+    "names_alt": [],
+    "search_name": "Candesartan",
+    "formula": "C24H20N6O3",
+    "efficacy": "Antihypertensive, Angiotensin II receptor antagonist",
+    "therapeutic_category": "",
+    "atc_code": "C09CA06",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Renin-angiotensin system inhibitor",
+      "Angiotensin II receptor antagonist",
+      "Antihypertensive",
+      "Angiotensin II receptor antagonist",
+      "Metabolizing enzyme substrate",
+      "CYP2C9 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2C9"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D01204",
+    "type": "drug",
+    "name_en": "Olmesartan medoxomil (JP18/USP)",
+    "name_ja": "オルメサルタン",
+    "names_alt": [
+      "Benicar (TN)",
+      "Olmetec (TN)"
+    ],
+    "search_name": "Olmesartan",
+    "formula": "C29H30N6O6",
+    "efficacy": "Antihypertensive, Angiotensin II receptor antagonist\nDISEASE   Hypertension [DS:H01633]",
+    "therapeutic_category": "2149",
+    "atc_code": "C09CA08",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Renin-angiotensin system inhibitor",
+      "Angiotensin II receptor antagonist",
+      "Antihypertensive",
+      "Angiotensin II receptor antagonist",
+      "Transporter substrate",
+      "ABCB1 substrate",
+      "ABCC2 substrate",
+      "ABCG2 substrate"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00627",
+    "type": "drug",
+    "name_en": "Telmisartan (JP18/USP/INN)",
+    "name_ja": "テルミサルタン",
+    "names_alt": [
+      "Micardis (TN)"
+    ],
+    "search_name": "Telmisartan",
+    "formula": "C33H30N4O2",
+    "efficacy": "Antihypertensive, Angiotensin II receptor antagonist\nDISEASE   Hypertension [DS:H01633]",
+    "therapeutic_category": "2149",
+    "atc_code": "C09CA07",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Renin-angiotensin system inhibitor",
+      "Angiotensin II receptor antagonist",
+      "Antihypertensive",
+      "Angiotensin II receptor antagonist",
+      "Metabolizing enzyme substrate",
+      "UGT substrate"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00357",
+    "type": "drug",
+    "name_en": "Losartan potassium (JP18/USP)",
+    "name_ja": "ロサルタン",
+    "names_alt": [
+      "Cozaar (TN)"
+    ],
+    "search_name": "Losartan",
+    "formula": "C22H22ClN6O. K",
+    "efficacy": "Antihypertensive, Angiotensin II receptor antagonist\nDISEASE   Hypertension [DS:H01633]\nNephropathy in type 2 diabetic [DS:H01456]",
+    "therapeutic_category": "2149",
+    "atc_code": "C09CA01",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Renin-angiotensin system inhibitor",
+      "Angiotensin II receptor antagonist",
+      "Antihypertensive",
+      "Angiotensin II receptor antagonist",
+      "Metabolizing enzyme substrate",
+      "CYP2C9 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2C9"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D08067",
+    "type": "drug",
+    "name_en": "Azilsartan medoxomil (USAN)",
+    "name_ja": "アジルサルタン",
+    "names_alt": [],
+    "search_name": "Azilsartan",
+    "formula": "C30H24N4O8",
+    "efficacy": "Antihypertensive, Angiotensin II receptor antagonist\nDISEASE   Hypertension [DS:H01633]",
+    "therapeutic_category": "",
+    "atc_code": "C09CA09",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Renin-angiotensin system inhibitor",
+      "Angiotensin II receptor antagonist",
+      "Antihypertensive",
+      "Angiotensin II receptor antagonist"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00621",
+    "type": "drug",
+    "name_en": "Enalapril maleate (JP18/USP)",
+    "name_ja": "エナラプリル",
+    "names_alt": [
+      "Renivace (TN)",
+      "Vasotec (TN)"
+    ],
+    "search_name": "Enalapril",
+    "formula": "C20H28N2O5. C4H4O4",
+    "efficacy": "Antihypertensive, Vasodilator, Angiotensin-converting enzyme inhibitor\nDISEASE   Hypertension [DS:H01633]",
+    "therapeutic_category": "2144",
+    "atc_code": "C09AA02",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Renin-angiotensin system inhibitor",
+      "Angiotensin-converting enzyme inhibitor",
+      "Antihypertensive",
+      "Angiotensin-converting enzyme inhibitor"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2144",
+    "type": "category",
+    "name_ja": "分類2144",
+    "name_en": "",
+    "code": "2144"
+  },
+  {
+    "id": "D00362",
+    "type": "drug",
+    "name_en": "Lisinopril (USP)",
+    "name_ja": "リシノプリル",
+    "names_alt": [
+      "Lisinopril hydrate (JP18)",
+      "Lisinopril dihydrate",
+      "Prinivil (TN)",
+      "Zestril (TN)"
+    ],
+    "search_name": "Lisinopril",
+    "formula": "C21H31N3O5. 2H2O",
+    "efficacy": "Antihypertensive, Angiotensin-converting enzyme inhibitor\nDISEASE   Hypertension [DS:H01633]",
+    "therapeutic_category": "2144",
+    "atc_code": "C09AA03",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Renin-angiotensin system inhibitor",
+      "Angiotensin-converting enzyme inhibitor",
+      "Antihypertensive",
+      "Angiotensin-converting enzyme inhibitor"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00235",
+    "type": "drug",
+    "name_en": "Atenolol (JP18/USP/INN)",
+    "name_ja": "アテノロール",
+    "names_alt": [
+      "Tenormin (TN)"
+    ],
+    "search_name": "Atenolol",
+    "formula": "C14H22N2O3",
+    "efficacy": "Antiarrhythmic, Antihypertensive, Vasodilator, beta1-Adrenergic receptor antagonist\nDISEASE   Hypertension [DS:H01633]\nAngina pectoris due to coronary atherosclerosis [DS:H01632]\nAcute Myocardial Infarction [DS:H01730]",
+    "therapeutic_category": "2123",
+    "atc_code": "C07AB03",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Adrenergic receptor antagonist",
+      "beta-Adrenergic receptor antagonist (Beta blocker)",
+      "beta1-Adrenergic receptor antagonist",
+      "Antiarrhythmics",
+      "Class II antiarrhythmic agent",
+      "Antihypertensive",
+      "Metabolizing enzyme substrate",
+      "CYP2D6 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2D6"
+    ],
+    "adverse_effects": [
+      {
+        "name": "徐脈",
+        "name_en": "Bradycardia",
+        "frequency": "high"
+      },
+      {
+        "name": "低血圧",
+        "name_en": "Hypotension",
+        "frequency": "medium"
+      },
+      {
+        "name": "気管支痙攣",
+        "name_en": "Bronchospasm",
+        "frequency": "medium"
+      },
+      {
+        "name": "倦怠感",
+        "name_en": "Fatigue",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "cat_2123",
+    "type": "category",
+    "name_ja": "分類2123",
+    "name_en": "",
+    "code": "2123"
+  },
+  {
+    "id": "cyp_CYP2D6",
+    "type": "cyp",
+    "name_en": "CYP2D6",
+    "name_ja": "CYP2D6"
+  },
+  {
+    "id": "ae_4",
+    "type": "adverse_effect",
+    "name_ja": "徐脈",
+    "name_en": "Bradycardia"
+  },
+  {
+    "id": "ae_5",
+    "type": "adverse_effect",
+    "name_ja": "低血圧",
+    "name_en": "Hypotension"
+  },
+  {
+    "id": "ae_6",
+    "type": "adverse_effect",
+    "name_ja": "気管支痙攣",
+    "name_en": "Bronchospasm"
+  },
+  {
+    "id": "ae_7",
+    "type": "adverse_effect",
+    "name_ja": "倦怠感",
+    "name_en": "Fatigue"
+  },
+  {
+    "id": "D00634",
+    "type": "drug",
+    "name_en": "Bisoprolol fumarate (JP18/USP)",
+    "name_ja": "ビソプロロール",
+    "names_alt": [
+      "Zebeta (TN)"
+    ],
+    "search_name": "Bisoprolol",
+    "formula": "(C18H31NO4)2. C4H4O4",
+    "efficacy": "Antihypertensive, Vasodilator, beta1-Adrenergic receptor antagonist\nDISEASE   Hypertension [DS:H01633]",
+    "therapeutic_category": "2123",
+    "atc_code": "C07AB07",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Adrenergic receptor antagonist",
+      "beta-Adrenergic receptor antagonist (Beta blocker)",
+      "beta1-Adrenergic receptor antagonist",
+      "Antiarrhythmics",
+      "Class II antiarrhythmic agent",
+      "Antihypertensive"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": [
+      {
+        "name": "徐脈",
+        "name_en": "Bradycardia",
+        "frequency": "high"
+      },
+      {
+        "name": "低血圧",
+        "name_en": "Hypotension",
+        "frequency": "medium"
+      },
+      {
+        "name": "気管支痙攣",
+        "name_en": "Bronchospasm",
+        "frequency": "medium"
+      },
+      {
+        "name": "倦怠感",
+        "name_en": "Fatigue",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "D00255",
+    "type": "drug",
+    "name_en": "Carvedilol (JP18/USP/INN)",
+    "name_ja": "カルベジロール",
+    "names_alt": [
+      "Artist (TN)",
+      "Coreg (TN)"
+    ],
+    "search_name": "Carvedilol",
+    "formula": "C24H26N2O4",
+    "efficacy": "Antihypertensive, alpha1/beta-Adrenergic receptor antagonist\nDISEASE   Hypertension [DS:H01633]",
+    "therapeutic_category": "2149",
+    "atc_code": "C07AG02",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Adrenergic receptor antagonist",
+      "alpha1 and beta-Adrenergic receptor antagonist",
+      "Antihypertensive",
+      "alpha1 and beta-Adrenergic receptor antagonist",
+      "Metabolizing enzyme substrate",
+      "CYP1A2 substrate",
+      "CYP2C9 substrate",
+      "CYP2D6 substrate",
+      "CYP2E1 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate",
+      "Transporter inhibitor",
+      "ABCB1 inhibitor"
+    ],
+    "cyp_enzymes": [
+      "CYP1A2",
+      "CYP2C9",
+      "CYP2D6",
+      "CYP2E1",
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "cyp_CYP1A2",
+    "type": "cyp",
+    "name_en": "CYP1A2",
+    "name_ja": "CYP1A2"
+  },
+  {
+    "id": "cyp_CYP2E1",
+    "type": "cyp",
+    "name_en": "CYP2E1",
+    "name_ja": "CYP2E1"
+  },
+  {
+    "id": "D00608",
+    "type": "drug",
+    "name_en": "Doxazosin mesylate (USP)",
+    "name_ja": "ドキサゾシン",
+    "names_alt": [
+      "Doxazosin mesilate (JP18)",
+      "Cardura (TN)"
+    ],
+    "search_name": "Doxazosin",
+    "formula": "C23H25N5O5. CH4SO3",
+    "efficacy": "Antihypertensive, alpha1-Adrenergic receptor antagonist\nDISEASE   Hypertension [DS:H01633]",
+    "therapeutic_category": "2149",
+    "atc_code": "C02CA04",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Adrenergic receptor antagonist",
+      "alpha-Adrenergic receptor antagonist",
+      "alpha1-Adrenergic receptor antagonist",
+      "Peripherally-acting antiadrenergic",
+      "Antihypertensive"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00616",
+    "type": "drug",
+    "name_en": "Diltiazem hydrochloride (JP18/USP)",
+    "name_ja": "ジルチアゼム",
+    "names_alt": [
+      "Cardizem (TN)",
+      "Cartia XT (TN)",
+      "Dilacor XR (TN)",
+      "Dilt-CD (TN)"
+    ],
+    "search_name": "Diltiazem",
+    "formula": "C22H26N2O4S. HCl",
+    "efficacy": "Antiarrhythmic, Antihypertensive, Vasodilator (coronary), Calcium channel blocker\nDISEASE   Hypertension [DS:H01633]\nAngina [DS:H01632]",
+    "therapeutic_category": "2171",
+    "atc_code": "C05AE03",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Calcium channel blocker",
+      "Calcium channel L type blocker",
+      "Antiarrhythmics",
+      "Antihypertensive",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00887",
+    "type": "drug",
+    "name_en": "Atorvastatin calcium anhydorous",
+    "name_ja": "アトルバスタチン",
+    "names_alt": [
+      "Lipitor (TN)"
+    ],
+    "search_name": "Atorvastatin",
+    "formula": "(C33H34FN2O5)2. Ca",
+    "efficacy": "Antihyperlipidemic, HMG-CoA reductase inhibitor",
+    "therapeutic_category": "",
+    "atc_code": "C10AA05",
+    "drug_class": [
+      "Hypolipidemic agent",
+      "Hypolipidemic agent",
+      "HMG-CoA reductase inhibitor",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate",
+      "Transporter substrate",
+      "ABCB1 substrate",
+      "ABCG2 substrate",
+      "SLCO1B1 substrate",
+      "SLCO1B3 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D01915",
+    "type": "drug",
+    "name_en": "Rosuvastatin calcium (JP18/USP)",
+    "name_ja": "ロスバスタチン",
+    "names_alt": [
+      "ZD 4522",
+      "Crestor (TN)"
+    ],
+    "search_name": "Rosuvastatin",
+    "formula": "(C22H27FN3O6S)2. Ca",
+    "efficacy": "Antihyperlipidemic, HMG-CoA reductase inhibitor\nDISEASE   Hypertriglyceridemia [DS:H01637]\nPrimary dysbetalipoproteinemia; type III hyperlipoproteinemia [DS:H01637]\nHomozygous familial hypercholesterolemia [DS:H00155]",
+    "therapeutic_category": "2189",
+    "atc_code": "C10AA07",
+    "drug_class": [
+      "Hypolipidemic agent",
+      "Hypolipidemic agent",
+      "HMG-CoA reductase inhibitor",
+      "Transporter substrate",
+      "ABCG2 substrate",
+      "SLCO1B1 substrate"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2189",
+    "type": "category",
+    "name_ja": "分類2189",
+    "name_en": "",
+    "code": "2189"
+  },
+  {
+    "id": "D00893",
+    "type": "drug",
+    "name_en": "Pravastatin sodium (JP18/USP)",
+    "name_ja": "プラバスタチン",
+    "names_alt": [
+      "CS-514",
+      "Pravachol (TN)"
+    ],
+    "search_name": "Pravastatin",
+    "formula": "C23H35O7. Na",
+    "efficacy": "Antihyperlipidemic, HMG-CoA reductase inhibitor\nDISEASE   Hyperlipidemia [DS:H01635 H00155]",
+    "therapeutic_category": "2189",
+    "atc_code": "C10AA03",
+    "drug_class": [
+      "Hypolipidemic agent",
+      "Hypolipidemic agent",
+      "HMG-CoA reductase inhibitor",
+      "Transporter substrate",
+      "ABCC2 substrate",
+      "SLCO1B1 substrate",
+      "SLCO2B1 substrate"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D01862",
+    "type": "drug",
+    "name_en": "Pitavastatin calcium (JAN)",
+    "name_ja": "ピタバスタチン",
+    "names_alt": [
+      "NK 104",
+      "Livalo (TN)"
+    ],
+    "search_name": "Pitavastatin",
+    "formula": "(C25H23FNO4)2. Ca",
+    "efficacy": "Antihyperlipidemic, HMG-CoA reductase inhibitor\nDISEASE   Primary hyperlipidemia [DS:H01635]\nMixed dyslipidemia [DS:H01635]",
+    "therapeutic_category": "",
+    "atc_code": "C10AA08",
+    "drug_class": [
+      "Hypolipidemic agent",
+      "Hypolipidemic agent",
+      "HMG-CoA reductase inhibitor",
+      "Metabolizing enzyme substrate",
+      "CYP2C9 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2C9"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00434",
+    "type": "drug",
+    "name_en": "Simvastatin (JP18/USP/INN)",
+    "name_ja": "シンバスタチン",
+    "names_alt": [
+      "MK-733",
+      "Zocor (TN)"
+    ],
+    "search_name": "Simvastatin",
+    "formula": "C25H38O5",
+    "efficacy": "Antihyperlipidemic, HMG-CoA reductase inhibitor\nDISEASE   Hyperlipidemia [DS:H01635]\nHeterozygous familial hypercholesterolemia [DS:H00155]",
+    "therapeutic_category": "2189",
+    "atc_code": "C10AA01",
+    "drug_class": [
+      "Hypolipidemic agent",
+      "Hypolipidemic agent",
+      "HMG-CoA reductase inhibitor",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate",
+      "Transporter substrate",
+      "ABCG2 substrate",
+      "SLCO1B1 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D01966",
+    "type": "drug",
+    "name_en": "Ezetimibe (JAN/USP/INN)",
+    "name_ja": "エゼチミブ",
+    "names_alt": [
+      "Zetia (TN)"
+    ],
+    "search_name": "Ezetimibe",
+    "formula": "C24H21F2NO3",
+    "efficacy": "Antihyperlipidemic, Cholesterol absorption inhibitor\nDISEASE   Hyperlipidemia [DS:H01635]\nHomozygous familial hypercholesterolemia [DS:H00155]\nHomozygous sitosterolemia [DS:H00152]",
+    "therapeutic_category": "2189",
+    "atc_code": "C10AX09",
+    "drug_class": [
+      "Hypolipidemic agent",
+      "Hypolipidemic agent",
+      "Metabolizing enzyme substrate",
+      "UGT substrate",
+      "UGT1A1 substrate",
+      "UGT1A3 substrate",
+      "UGT2B15 substrate",
+      "Transporter substrate",
+      "ABCB1 substrate"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D01366",
+    "type": "drug",
+    "name_en": "Bezafibrate (JP18/USAN/INN)",
+    "name_ja": "ベザフィブラート",
+    "names_alt": [
+      "Bezatol SR (TN)"
+    ],
+    "search_name": "Bezafibrate",
+    "formula": "C19H20ClNO4",
+    "efficacy": "Antihyperlipidemic, Triglyceride synthesis inhibitor, Peroxisome proliferator-activated receptor (PPAR) alpha agonist",
+    "therapeutic_category": "2183",
+    "atc_code": "C10AB02",
+    "drug_class": [
+      "Hypolipidemic agent",
+      "Hypolipidemic agent",
+      "PPAR alpha agonist",
+      "Fibrate"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2183",
+    "type": "category",
+    "name_ja": "分類2183",
+    "name_en": "",
+    "code": "2183"
+  },
+  {
+    "id": "D00565",
+    "type": "drug",
+    "name_en": "Fenofibrate (JP18/USP/INN)",
+    "name_ja": "フェノフィブラート",
+    "names_alt": [
+      "Antara (TN)",
+      "Lipantil (TN)",
+      "Lipofen (TN)",
+      "Tricor (TN)",
+      "Triglide (TN)"
+    ],
+    "search_name": "Fenofibrate",
+    "formula": "C20H21ClO4",
+    "efficacy": "Antihyperlipidemic, Triglyceride synthesis inhibitor, Peroxisome proliferator-activated receptor (PPAR) alpha agonist\nDISEASE   Primary hypercholesterolemia or mixed dyslipidemia [DS:H01635]\nHypertriglyceridemia [DS:H01637]",
+    "therapeutic_category": "2183",
+    "atc_code": "C10AB05",
+    "drug_class": [
+      "Hypolipidemic agent",
+      "Hypolipidemic agent",
+      "PPAR alpha agonist",
+      "Fibrate",
+      "Metabolizing enzyme substrate",
+      "UGT substrate"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00944",
+    "type": "drug",
+    "name_en": "Metformin hydrochloride (JP18/USP)",
+    "name_ja": "メトホルミン",
+    "names_alt": [
+      "Glucophage (TN)"
+    ],
+    "search_name": "Metformin",
+    "formula": "C4H11N5. HCl",
+    "efficacy": "Antidiabetic, Hypoglycemic, AMP kinase activator\nDISEASE   Type 2 diabetes mellitus [DS:H00409]",
+    "therapeutic_category": "3962",
+    "atc_code": "A10BA02",
+    "drug_class": [
+      "Antidiabetic agent",
+      "Insulin sensitizer",
+      "Biguanide antidiabetic",
+      "Hypoglycemic agent",
+      "Biguanide antidiabetic"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": [
+      {
+        "name": "乳酸アシドーシス",
+        "name_en": "Lactic acidosis",
+        "frequency": "rare"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "high"
+      },
+      {
+        "name": "ビタミンB12低下",
+        "name_en": "Vitamin B12 deficiency",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "cat_3962",
+    "type": "category",
+    "name_ja": "分類3962",
+    "name_en": "",
+    "code": "3962"
+  },
+  {
+    "id": "ae_8",
+    "type": "adverse_effect",
+    "name_ja": "乳酸アシドーシス",
+    "name_en": "Lactic acidosis"
+  },
+  {
+    "id": "ae_9",
+    "type": "adverse_effect",
+    "name_ja": "消化器症状",
+    "name_en": "GI symptoms"
+  },
+  {
+    "id": "ae_10",
+    "type": "adverse_effect",
+    "name_ja": "ビタミンB12低下",
+    "name_en": "Vitamin B12 deficiency"
+  },
+  {
+    "id": "D00593",
+    "type": "drug",
+    "name_en": "Glimepiride (JP18/USP/INN)",
+    "name_ja": "グリメピリド",
+    "names_alt": [
+      "Amaryl (TN)"
+    ],
+    "search_name": "Glimepiride",
+    "formula": "C24H34N4O5S",
+    "efficacy": "Antidiabetic, Hypoglycemic, Sulfonylurea receptor agonist\nDISEASE   Type 2 diabetes mellitus [DS:H00409]",
+    "therapeutic_category": "3961",
+    "atc_code": "A10BB12",
+    "drug_class": [
+      "Antidiabetic agent",
+      "Sulfonylurea receptor agonist",
+      "Sulfonylurea",
+      "Hypoglycemic agent",
+      "Sulfonylurea",
+      "Metabolizing enzyme substrate",
+      "CYP2C9 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2C9"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_3961",
+    "type": "category",
+    "name_ja": "分類3961",
+    "name_en": "",
+    "code": "3961"
+  },
+  {
+    "id": "D00336",
+    "type": "drug",
+    "name_en": "Glyburide (USP)",
+    "name_ja": "グリベンクラミド",
+    "names_alt": [
+      "Glibenclamide (JP18/INN)",
+      "Diabeta (TN)",
+      "Glynase (TN)",
+      "Micronase (TN)"
+    ],
+    "search_name": "Glibenclamide",
+    "formula": "C23H28ClN3O5S",
+    "efficacy": "Antidiabetic, Hypoglycemic\nDISEASE   Type 2 diabetes mellitus [DS:H00409]",
+    "therapeutic_category": "3961",
+    "atc_code": "A10BB01",
+    "drug_class": [
+      "Antidiabetic agent",
+      "Sulfonylurea receptor agonist",
+      "Sulfonylurea",
+      "Hypoglycemic agent",
+      "Sulfonylurea",
+      "Metabolizing enzyme substrate",
+      "CYP2C9 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2C9",
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00945",
+    "type": "drug",
+    "name_en": "Pioglitazone hydrochloride (JP18/USP)",
+    "name_ja": "ピオグリタゾン",
+    "names_alt": [
+      "Actos (TN)"
+    ],
+    "search_name": "Pioglitazone",
+    "formula": "C19H20N2O3S. HCl",
+    "efficacy": "Antidiabetic, Peroxisome proliferator-activated receptor (PPAR) gamma agonist\nDISEASE   Type 2 diabetes mellitus [DS:H00409]",
+    "therapeutic_category": "3969",
+    "atc_code": "A10BG03",
+    "drug_class": [
+      "Antidiabetic agent",
+      "Insulin sensitizer",
+      "PPAR gamma agonist",
+      "Thiazolidinedione type PPAR agonist",
+      "Hypoglycemic agent",
+      "Thiazolidinedione type PPAR agonist",
+      "Metabolizing enzyme substrate",
+      "CYP2C8 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2C8"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_3969",
+    "type": "category",
+    "name_ja": "分類3969",
+    "name_en": "",
+    "code": "3969"
+  },
+  {
+    "id": "cyp_CYP2C8",
+    "type": "cyp",
+    "name_en": "CYP2C8",
+    "name_ja": "CYP2C8"
+  },
+  {
+    "id": "D06645",
+    "type": "drug",
+    "name_en": "Sitagliptin phosphate (USAN)",
+    "name_ja": "シタグリプチン",
+    "names_alt": [
+      "Sitagliptin phosphate hydrate (JP18)",
+      "Sitagliptin phosphate monohydrate",
+      "Januvia (TN)"
+    ],
+    "search_name": "Sitagliptin",
+    "formula": "C16H15F6N5O. H3PO4. H2O",
+    "efficacy": "Antidiabetic, Dipeptidyl peptidase-4 (DPP-4) inhibitor\nDISEASE   Type 2 diabetes mellitus [DS:H00409]",
+    "therapeutic_category": "3969",
+    "atc_code": "A10BH01",
+    "drug_class": [
+      "Antidiabetic agent",
+      "Hypoglycemic agent",
+      "DPP-4 inhibitor"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": [
+      {
+        "name": "低血糖",
+        "name_en": "Hypoglycemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "腸閉塞",
+        "name_en": "Ileus",
+        "frequency": "rare"
+      },
+      {
+        "name": "膵炎",
+        "name_en": "Pancreatitis",
+        "frequency": "rare"
+      }
+    ]
+  },
+  {
+    "id": "ae_11",
+    "type": "adverse_effect",
+    "name_ja": "低血糖",
+    "name_en": "Hypoglycemia"
+  },
+  {
+    "id": "ae_12",
+    "type": "adverse_effect",
+    "name_ja": "腸閉塞",
+    "name_en": "Ileus"
+  },
+  {
+    "id": "ae_13",
+    "type": "adverse_effect",
+    "name_ja": "膵炎",
+    "name_en": "Pancreatitis"
+  },
+  {
+    "id": "D07080",
+    "type": "drug",
+    "name_en": "Vildagliptin (JAN/USAN/INN)",
+    "name_ja": "ビルダグリプチン",
+    "names_alt": [
+      "Equa (TN)",
+      "Galvus (TN)"
+    ],
+    "search_name": "Vildagliptin",
+    "formula": "C17H25N3O2",
+    "efficacy": "Antidiabetic, Dipeptidyl peptidase-4 (DPP-4) inhibitor",
+    "therapeutic_category": "3969",
+    "atc_code": "A10BH02",
+    "drug_class": [
+      "Antidiabetic agent",
+      "Hypoglycemic agent",
+      "DPP-4 inhibitor"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": [
+      {
+        "name": "低血糖",
+        "name_en": "Hypoglycemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "腸閉塞",
+        "name_en": "Ileus",
+        "frequency": "rare"
+      },
+      {
+        "name": "膵炎",
+        "name_en": "Pancreatitis",
+        "frequency": "rare"
+      }
+    ]
+  },
+  {
+    "id": "D06553",
+    "type": "drug",
+    "name_en": "Alogliptin benzoate (JAN/USAN)",
+    "name_ja": "アログリプチン",
+    "names_alt": [
+      "Vipidia (TN)",
+      "Nesina (TN)"
+    ],
+    "search_name": "Alogliptin",
+    "formula": "C18H21N5O2. C7H6O2",
+    "efficacy": "Antidiabetic, Dipeptidyl peptidase-4 (DPP-4) inhibitor\nDISEASE   Type 2 diabetes mellitus [DS:H00409]",
+    "therapeutic_category": "3969",
+    "atc_code": "A10BH04",
+    "drug_class": [
+      "Antidiabetic agent",
+      "Hypoglycemic agent",
+      "DPP-4 inhibitor"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": [
+      {
+        "name": "低血糖",
+        "name_en": "Hypoglycemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "腸閉塞",
+        "name_en": "Ileus",
+        "frequency": "rare"
+      },
+      {
+        "name": "膵炎",
+        "name_en": "Pancreatitis",
+        "frequency": "rare"
+      }
+    ]
+  },
+  {
+    "id": "D09566",
+    "type": "drug",
+    "name_en": "Linagliptin (JAN/USAN/INN)",
+    "name_ja": "リナグリプチン",
+    "names_alt": [
+      "Tradjenta (TN)"
+    ],
+    "search_name": "Linagliptin",
+    "formula": "C25H28N8O2",
+    "efficacy": "Antidiabetic, Dipeptidyl peptidase-4 (DPP-4) inhibitor\nDISEASE   Type 2 diabetes mellitus [DS:H00409]",
+    "therapeutic_category": "3969",
+    "atc_code": "A10BH05",
+    "drug_class": [
+      "Antidiabetic agent",
+      "Hypoglycemic agent",
+      "DPP-4 inhibitor"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": [
+      {
+        "name": "低血糖",
+        "name_en": "Hypoglycemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "腸閉塞",
+        "name_en": "Ileus",
+        "frequency": "rare"
+      },
+      {
+        "name": "膵炎",
+        "name_en": "Pancreatitis",
+        "frequency": "rare"
+      }
+    ]
+  },
+  {
+    "id": "D08616",
+    "type": "drug",
+    "name_en": "Teneligliptin (INN)",
+    "name_ja": "テネリグリプチン",
+    "names_alt": [],
+    "search_name": "Teneligliptin",
+    "formula": "C22H30N6OS",
+    "efficacy": "Antidiabetic, Dipeptidyl peptidase-4 (DPP-4) inhibitor",
+    "therapeutic_category": "",
+    "atc_code": "A10BH08",
+    "drug_class": [
+      "Antidiabetic agent",
+      "Hypoglycemic agent",
+      "DPP-4 inhibitor",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate",
+      "FMO substrate",
+      "FMO1 substrate",
+      "FMO3 substrate",
+      "Metabolizing enzyme inhibitor",
+      "CYP2D6 inhibitor",
+      "CYP3A/CYP3A4 inhibitor",
+      "CYP3A4 inhibitor",
+      "FMO inhibitor"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "低血糖",
+        "name_en": "Hypoglycemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "腸閉塞",
+        "name_en": "Ileus",
+        "frequency": "rare"
+      },
+      {
+        "name": "膵炎",
+        "name_en": "Pancreatitis",
+        "frequency": "rare"
+      }
+    ]
+  },
+  {
+    "id": "D10459",
+    "type": "drug",
+    "name_en": "Empagliflozin (JAN/USAN/INN)",
+    "name_ja": "エンパグリフロジン",
+    "names_alt": [
+      "Jardiance (TN)"
+    ],
+    "search_name": "Empagliflozin",
+    "formula": "C23H27ClO7",
+    "efficacy": "Antidiabetic, SGLT-2 inhibitor\nDISEASE   Type 2 diabetes mellitus [DS:H00409]",
+    "therapeutic_category": "2190",
+    "atc_code": "A10BK03",
+    "drug_class": [
+      "Antidiabetic agent",
+      "Hypoglycemic agent",
+      "SGLT2 inhibitor",
+      "Metabolizing enzyme substrate",
+      "UGT substrate",
+      "UGT1A3 substrate",
+      "UGT1A8 substrate",
+      "UGT1A9 substrate",
+      "UGT2B7 substrate",
+      "Transporter substrate",
+      "ABCB1 substrate",
+      "ABCG2 substrate"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": [
+      {
+        "name": "尿路感染症",
+        "name_en": "Urinary tract infection",
+        "frequency": "high"
+      },
+      {
+        "name": "性器感染症",
+        "name_en": "Genital infection",
+        "frequency": "high"
+      },
+      {
+        "name": "ケトアシドーシス",
+        "name_en": "Ketoacidosis",
+        "frequency": "rare"
+      },
+      {
+        "name": "脱水",
+        "name_en": "Dehydration",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "cat_2190",
+    "type": "category",
+    "name_ja": "分類2190",
+    "name_en": "",
+    "code": "2190"
+  },
+  {
+    "id": "ae_14",
+    "type": "adverse_effect",
+    "name_ja": "尿路感染症",
+    "name_en": "Urinary tract infection"
+  },
+  {
+    "id": "ae_15",
+    "type": "adverse_effect",
+    "name_ja": "性器感染症",
+    "name_en": "Genital infection"
+  },
+  {
+    "id": "ae_16",
+    "type": "adverse_effect",
+    "name_ja": "ケトアシドーシス",
+    "name_en": "Ketoacidosis"
+  },
+  {
+    "id": "ae_17",
+    "type": "adverse_effect",
+    "name_ja": "脱水",
+    "name_en": "Dehydration"
+  },
+  {
+    "id": "D08897",
+    "type": "drug",
+    "name_en": "Dapagliflozin (JAN/USAN/INN)",
+    "name_ja": "ダパグリフロジン",
+    "names_alt": [
+      "Forxiga (TN)"
+    ],
+    "search_name": "Dapagliflozin",
+    "formula": "C21H25ClO6",
+    "efficacy": "Antidiabetic, SGLT-2 inhibitor",
+    "therapeutic_category": "3969",
+    "atc_code": "A10BK01",
+    "drug_class": [
+      "Antidiabetic agent",
+      "Hypoglycemic agent",
+      "SGLT2 inhibitor",
+      "Metabolizing enzyme substrate",
+      "UGT substrate",
+      "UGT1A9 substrate"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": [
+      {
+        "name": "尿路感染症",
+        "name_en": "Urinary tract infection",
+        "frequency": "high"
+      },
+      {
+        "name": "性器感染症",
+        "name_en": "Genital infection",
+        "frequency": "high"
+      },
+      {
+        "name": "ケトアシドーシス",
+        "name_en": "Ketoacidosis",
+        "frequency": "rare"
+      },
+      {
+        "name": "脱水",
+        "name_en": "Dehydration",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "D09592",
+    "type": "drug",
+    "name_en": "Canagliflozin (USAN/INN)",
+    "name_ja": "カナグリフロジン",
+    "names_alt": [
+      "Canagliflozin hydrate (JAN)",
+      "Invokana (TN)"
+    ],
+    "search_name": "Canagliflozin",
+    "formula": "(C24H25FO5S)2. H2O",
+    "efficacy": "Antidiabetic, SGLT-2 inhibitor\nDISEASE   Type 2 diabetes mellitus [DS:H00409]",
+    "therapeutic_category": "3969",
+    "atc_code": "A10BK02",
+    "drug_class": [
+      "Antidiabetic agent",
+      "Hypoglycemic agent",
+      "SGLT2 inhibitor",
+      "Metabolizing enzyme substrate",
+      "UGT substrate",
+      "UGT1A9 substrate",
+      "UGT2B4 substrate",
+      "Transporter substrate",
+      "ABCB1 substrate",
+      "Transporter inhibitor",
+      "ABCB1 inhibitor"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": [
+      {
+        "name": "尿路感染症",
+        "name_en": "Urinary tract infection",
+        "frequency": "high"
+      },
+      {
+        "name": "性器感染症",
+        "name_en": "Genital infection",
+        "frequency": "high"
+      },
+      {
+        "name": "ケトアシドーシス",
+        "name_en": "Ketoacidosis",
+        "frequency": "rare"
+      },
+      {
+        "name": "脱水",
+        "name_en": "Dehydration",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "D10195",
+    "type": "drug",
+    "name_en": "Luseogliflozin hydrate (JAN)",
+    "name_ja": "ルセオグリフロジン",
+    "names_alt": [
+      "Lusefi (TN)"
+    ],
+    "search_name": "Luseogliflozin",
+    "formula": "C23H30O6S. xH2O",
+    "efficacy": "Antidiabetic, SGLT-2 inhibitor",
+    "therapeutic_category": "3969",
+    "atc_code": "A10BK07",
+    "drug_class": [
+      "Antidiabetic agent",
+      "Hypoglycemic agent",
+      "SGLT2 inhibitor"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": [
+      {
+        "name": "尿路感染症",
+        "name_en": "Urinary tract infection",
+        "frequency": "high"
+      },
+      {
+        "name": "性器感染症",
+        "name_en": "Genital infection",
+        "frequency": "high"
+      },
+      {
+        "name": "ケトアシドーシス",
+        "name_en": "Ketoacidosis",
+        "frequency": "rare"
+      },
+      {
+        "name": "脱水",
+        "name_en": "Dehydration",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "D03250",
+    "type": "drug",
+    "name_en": "Insulin glargine (USAN/INN)",
+    "name_ja": "インスリン グラルギン",
+    "names_alt": [
+      "Insulin glargine (genetical recombination) (JP18)",
+      "Insulin glargine (genetical recombination) [Insulin glargin biosimilar 1] (JAN)",
+      "Insulin glargine (genetical recombination) [Insulin glargin biosimilar 2] (JAN)",
+      "Insulin glargine-yfgn",
+      "Lantus (TN)"
+    ],
+    "search_name": "Insulin glargine",
+    "formula": "C267H404N72O78S6",
+    "efficacy": "Antidiabetic, Insulin receptor agonist\nDISEASE   Diabetes mellitus [DS:H00408 H00409]",
+    "therapeutic_category": "2492",
+    "atc_code": "A10AE04",
+    "drug_class": [
+      "Antidiabetic agent",
+      "Insulin preparation",
+      "Insulin analog, long-acting",
+      "Metabolizing enzyme inducer",
+      "CYP1A2 inducer"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2492",
+    "type": "category",
+    "name_ja": "分類2492",
+    "name_en": "",
+    "code": "2492"
+  },
+  {
+    "id": "D04475",
+    "type": "drug",
+    "name_en": "Insulin aspart (USP/INN)",
+    "name_ja": "インスリン アスパルト",
+    "names_alt": [
+      "Insulin aspart (genetical recombination) (JP18)",
+      "Insulin aspart (genetical recombination) [Insulin aspart biosimilar 1] (JAN)",
+      "Insulin X 14",
+      "Insulin aspart-szjj",
+      "nsulin aspart-xjhz",
+      "Merilog (TN)",
+      "NovoRapid (TN)",
+      "Novolog (TN)",
+      "Kirsty (TN)"
+    ],
+    "search_name": "Insulin aspart",
+    "formula": "C256H381N65O79S6",
+    "efficacy": "Antidiabetic, Insulin receptor agonist\nDISEASE   Diabetes mellitus [DS:H00408 H00409]",
+    "therapeutic_category": "2492",
+    "atc_code": "A10AB05",
+    "drug_class": [
+      "Antidiabetic agent",
+      "Insulin preparation",
+      "Insulin analog, fast-acting",
+      "Metabolizing enzyme inducer",
+      "CYP1A2 inducer"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D06404",
+    "type": "drug",
+    "name_en": "Liraglutide (USAN/INN)",
+    "name_ja": "リラグルチド",
+    "names_alt": [
+      "Liraglutide (genetical recombination) (JAN)",
+      "Victoza (TN)"
+    ],
+    "search_name": "Liraglutide",
+    "formula": "C172H265N43O51",
+    "efficacy": "Antidiabetic, Glucagon-like peptide 1 (GLP-1) receptor agonist\nDISEASE   Type 2 diabetes mellitus [DS:H00409]\nTYPE      Modified peptide",
+    "therapeutic_category": "2499",
+    "atc_code": "A10BJ02",
+    "drug_class": [
+      "Antidiabetic agent",
+      "Hypoglycemic agent",
+      "GLP-1 receptor agonist"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2499",
+    "type": "category",
+    "name_ja": "分類2499",
+    "name_en": "",
+    "code": "2499"
+  },
+  {
+    "id": "D09889",
+    "type": "drug",
+    "name_en": "Dulaglutide (USAN/INN)",
+    "name_ja": "デュラグルチド",
+    "names_alt": [
+      "Dulaglutide (genetical recombination) (JAN)",
+      "Trulicity (TN)"
+    ],
+    "search_name": "Dulaglutide",
+    "formula": "C2646H4044N704O836S18",
+    "efficacy": "Antidiabetic, Glucagon-like peptide 1 (GLP-1) receptor agonist\nDISEASE   Type 2 diabetes mellitus [DS:H00409]\nTYPE      Modified peptide",
+    "therapeutic_category": "2499",
+    "atc_code": "A10BJ05",
+    "drug_class": [
+      "Antidiabetic agent",
+      "Hypoglycemic agent",
+      "GLP-1 receptor agonist"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00455",
+    "type": "drug",
+    "name_en": "Omeprazole (JP18/USP/INN)",
+    "name_ja": "オメプラゾール",
+    "names_alt": [
+      "Prilosec (TN)"
+    ],
+    "search_name": "Omeprazole",
+    "formula": "C17H19N3O3S",
+    "efficacy": "Antisecretory (gastric acid), Anti-ulcerative, Proton pump inhibitor\nDISEASE   Duodenal ulcer [DS:H01634]\nGastric ulcer [DS:H01634]\nGastroesophageal reflux disease [DS:H01602]\nZollinger-Ellison syndrome [DS:H01522]\nMultiple endocrine adenomas [DS:H01102]",
+    "therapeutic_category": "2329",
+    "atc_code": "A02BC01",
+    "drug_class": [
+      "Gastrointestinal agent",
+      "Agents for peptic ulcer",
+      "Proton pump inhibitor (PPI)",
+      "Metabolizing enzyme substrate",
+      "CYP2C19 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2C19",
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "低マグネシウム血症",
+        "name_en": "Hypomagnesemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "骨折リスク増加",
+        "name_en": "Fracture risk",
+        "frequency": "low"
+      },
+      {
+        "name": "Clostridioides difficile感染",
+        "name_en": "C. difficile infection",
+        "frequency": "low"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "cat_2329",
+    "type": "category",
+    "name_ja": "分類2329",
+    "name_en": "",
+    "code": "2329"
+  },
+  {
+    "id": "cyp_CYP2C19",
+    "type": "cyp",
+    "name_en": "CYP2C19",
+    "name_ja": "CYP2C19"
+  },
+  {
+    "id": "ae_18",
+    "type": "adverse_effect",
+    "name_ja": "低マグネシウム血症",
+    "name_en": "Hypomagnesemia"
+  },
+  {
+    "id": "ae_19",
+    "type": "adverse_effect",
+    "name_ja": "骨折リスク増加",
+    "name_en": "Fracture risk"
+  },
+  {
+    "id": "ae_20",
+    "type": "adverse_effect",
+    "name_ja": "Clostridioides difficile感染",
+    "name_en": "C. difficile infection"
+  },
+  {
+    "id": "D00355",
+    "type": "drug",
+    "name_en": "Lansoprazole (JP18/USP/INN)",
+    "name_ja": "ランソプラゾール",
+    "names_alt": [
+      "Prevacid (TN)"
+    ],
+    "search_name": "Lansoprazole",
+    "formula": "C16H14F3N3O2S",
+    "efficacy": "Anti-ulcerative, Proton pump inhibitor\nDISEASE   Duodenal ulcer [DS:H01634]\nH. pylori eradication [DS:H00320]\nGastric ulcer [DS:H01634]\nGastroesophageal reflux disease [DS:H01602]\nZollinger-Ellison syndrome [DS:H01522]",
+    "therapeutic_category": "2329",
+    "atc_code": "A02BC03",
+    "drug_class": [
+      "Gastrointestinal agent",
+      "Agents for peptic ulcer",
+      "Proton pump inhibitor (PPI)",
+      "Metabolizing enzyme substrate",
+      "CYP2C19 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate",
+      "Metabolizing enzyme inhibitor",
+      "CYP2C19 inhibitor",
+      "Transporter inhibitor",
+      "ABCC2 inhibitor"
+    ],
+    "cyp_enzymes": [
+      "CYP2C19",
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "低マグネシウム血症",
+        "name_en": "Hypomagnesemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "骨折リスク増加",
+        "name_en": "Fracture risk",
+        "frequency": "low"
+      },
+      {
+        "name": "Clostridioides difficile感染",
+        "name_en": "C. difficile infection",
+        "frequency": "low"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "D00724",
+    "type": "drug",
+    "name_en": "Rabeprazole sodium (JP18/USP)",
+    "name_ja": "ラベプラゾール",
+    "names_alt": [
+      "Aciphex (TN)",
+      "Pariet (TN)"
+    ],
+    "search_name": "Rabeprazole",
+    "formula": "C18H20N3O3S. Na",
+    "efficacy": "Antisecretory (gastric acid), Anti-ulcerative, Proton pump inhibitor\nDISEASE   Erosive or ulcerative GERD [DS:H01602]\nDuodenal ulcer [DS:H01634]\nHelicobacter pylori eradication [DS:H00320]\nZollinger-Ellison syndrome [DS:H01522]",
+    "therapeutic_category": "2329",
+    "atc_code": "A02BC04",
+    "drug_class": [
+      "Gastrointestinal agent",
+      "Agents for peptic ulcer",
+      "Proton pump inhibitor (PPI)",
+      "Metabolizing enzyme substrate",
+      "CYP2C19 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2C19",
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "低マグネシウム血症",
+        "name_en": "Hypomagnesemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "骨折リスク増加",
+        "name_en": "Fracture risk",
+        "frequency": "low"
+      },
+      {
+        "name": "Clostridioides difficile感染",
+        "name_en": "C. difficile infection",
+        "frequency": "low"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "D01984",
+    "type": "drug",
+    "name_en": "Esomeprazole magnesium (USP)",
+    "name_ja": "エソメプラゾール",
+    "names_alt": [
+      "Esomeprazole magnesium hydrate (JAN)",
+      "Esomeprazole magnesium trihydrate",
+      "Nexium (TN)"
+    ],
+    "search_name": "Esomeprazole",
+    "formula": "(C17H18N3O3S)2. 3H2O. Mg",
+    "efficacy": "Antisecretory (gastric acid), Anti-ulcerative, Proton pump inhibitor\nDISEASE   Gastroesophageal reflux disease [DS:H01602]\nGastric ulcer [DS:H01634]\nH. pylori eradication [DS:H00320]\nZollinger-Ellison syndrome [DS:H01522]",
+    "therapeutic_category": "2329",
+    "atc_code": "A02BC05",
+    "drug_class": [
+      "Gastrointestinal agent",
+      "Agents for peptic ulcer",
+      "Proton pump inhibitor (PPI)",
+      "Metabolizing enzyme substrate",
+      "CYP2C19 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2C19",
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "低マグネシウム血症",
+        "name_en": "Hypomagnesemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "骨折リスク増加",
+        "name_en": "Fracture risk",
+        "frequency": "low"
+      },
+      {
+        "name": "Clostridioides difficile感染",
+        "name_en": "C. difficile infection",
+        "frequency": "low"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "D10466",
+    "type": "drug",
+    "name_en": "Vonoprazan fumarate (JAN/USAN)",
+    "name_ja": "ボノプラザン",
+    "names_alt": [
+      "Takecab (TN)",
+      "Voquezna (TN)"
+    ],
+    "search_name": "Vonoprazan",
+    "formula": "C17H16FN3O2S. C4H4O4",
+    "efficacy": "Anti-ulcerative, Proton pump inhibitor\nDISEASE   Erosive esophagitis [DS:H01602]\nHelicobacter pylori infection [DS:H00320]",
+    "therapeutic_category": "2329",
+    "atc_code": "A02BC08",
+    "drug_class": [
+      "Gastrointestinal agent",
+      "Agents for peptic ulcer",
+      "Proton pump inhibitor (PPI)",
+      "Metabolizing enzyme substrate",
+      "CYP2B6 substrate",
+      "CYP2C19 substrate",
+      "CYP2D6 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2B6",
+      "CYP2D6",
+      "CYP2C19",
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "低マグネシウム血症",
+        "name_en": "Hypomagnesemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "骨折リスク増加",
+        "name_en": "Fracture risk",
+        "frequency": "low"
+      },
+      {
+        "name": "Clostridioides difficile感染",
+        "name_en": "C. difficile infection",
+        "frequency": "low"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "cyp_CYP2B6",
+    "type": "cyp",
+    "name_en": "CYP2B6",
+    "name_ja": "CYP2B6"
+  },
+  {
+    "id": "D00318",
+    "type": "drug",
+    "name_en": "Famotidine (JP18/USP/INN)",
+    "name_ja": "ファモチジン",
+    "names_alt": [
+      "Fluxid (TN)",
+      "Pepcid (TN)"
+    ],
+    "search_name": "Famotidine",
+    "formula": "C8H15N7O2S3",
+    "efficacy": "Anti-ulcerative, H2 receptor antagonist\nDISEASE   Duodenal ulcer [DS:H01634]\nGastric ulcer [DS:H01634]\nGastroesophageal reflux disease [DS:H01602]\nZollinger-Ellison syndrome [DS:H01522]",
+    "therapeutic_category": "2325",
+    "atc_code": "A02BA03",
+    "drug_class": [
+      "Gastrointestinal agent",
+      "Agents for peptic ulcer",
+      "Histamine receptor H2 antagonist",
+      "Metabolizing enzyme inhibitor",
+      "CYP1A2 inhibitor",
+      "Transporter substrate",
+      "SLC22A2 substrate",
+      "SLC22A8 substrate",
+      "Transporter inhibitor",
+      "SLC22A2 inhibitor",
+      "SLC22A3 inhibitor"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2325",
+    "type": "category",
+    "name_ja": "分類2325",
+    "name_en": "",
+    "code": "2325"
+  },
+  {
+    "id": "D00422",
+    "type": "drug",
+    "name_en": "Ranitidine (USAN/INN)",
+    "name_ja": "ラニチジン",
+    "names_alt": [],
+    "search_name": "Ranitidine",
+    "formula": "C13H22N4O3S",
+    "efficacy": "Anti-ulcerative, H2 receptor antagonist",
+    "therapeutic_category": "",
+    "atc_code": "A02BA02",
+    "drug_class": [
+      "Gastrointestinal agent",
+      "Agents for peptic ulcer",
+      "Histamine receptor H2 antagonist",
+      "Metabolizing enzyme inhibitor",
+      "CYP2D6 inhibitor",
+      "CYP3A/CYP3A4 inhibitor",
+      "Transporter substrate",
+      "SLC22A2 substrate",
+      "Transporter inhibitor",
+      "SLC22A2 inhibitor"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D01827",
+    "type": "drug",
+    "name_en": "Teprenone (JP18/INN)",
+    "name_ja": "テプレノン",
+    "names_alt": [
+      "Selbex (TN)"
+    ],
+    "search_name": "Teprenone",
+    "formula": "C23H38O",
+    "efficacy": "Anti-ulcerative, Mucosal protectant",
+    "therapeutic_category": "2329",
+    "atc_code": "A02BX15",
+    "drug_class": [
+      "Gastrointestinal agent",
+      "Agents for peptic ulcer",
+      "Gastric mucosal protectant"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D01121",
+    "type": "drug",
+    "name_en": "Rebamipide (JP18/INN)",
+    "name_ja": "レバミピド",
+    "names_alt": [
+      "Mucosta (TN)"
+    ],
+    "search_name": "Rebamipide",
+    "formula": "C19H15ClN2O4",
+    "efficacy": "Anti-ulcerative, Mucin production accelerator",
+    "therapeutic_category": "1319",
+    "atc_code": "A02BX14",
+    "drug_class": [
+      "Gastrointestinal agent",
+      "Agents for peptic ulcer",
+      "Gastric mucosal protectant",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_1319",
+    "type": "category",
+    "name_ja": "分類1319",
+    "name_en": "",
+    "code": "1319"
+  },
+  {
+    "id": "D01994",
+    "type": "drug",
+    "name_en": "Mosapride citrate hydrate (JP18)",
+    "name_ja": "モサプリド",
+    "names_alt": [
+      "Mosapride citrate dihydrate",
+      "Gasmotin (TN)"
+    ],
+    "search_name": "Mosapride",
+    "formula": "C21H25ClFN3O3. C6H8O7. 2H2O",
+    "efficacy": "Prokinetic, Serotonin receptor agonist",
+    "therapeutic_category": "2399",
+    "atc_code": "A03FA09",
+    "drug_class": [
+      "Gastrointestinal agent",
+      "Propulsive",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2399",
+    "type": "category",
+    "name_ja": "分類2399",
+    "name_en": "",
+    "code": "2399"
+  },
+  {
+    "id": "D00726",
+    "type": "drug",
+    "name_en": "Metoclopramide (JP18/INN)",
+    "name_ja": "メトクロプラミド",
+    "names_alt": [
+      "Elieten (TN)",
+      "Terperan (TN)"
+    ],
+    "search_name": "Metoclopramide",
+    "formula": "C14H22ClN3O2",
+    "efficacy": "Anti-emetic, Prokinetic, Dopamine D2 receptor antagonist",
+    "therapeutic_category": "2399",
+    "atc_code": "A03FA01",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Dopamine antagonist",
+      "Dopamine D2-receptor antagonist",
+      "Gastrointestinal agent",
+      "Propulsive",
+      "5-HT3-receptor antagonist",
+      "Antiemetic",
+      "Benzamide type antiemetic",
+      "Metabolizing enzyme substrate",
+      "CYP2D6 substrate",
+      "Metabolizing enzyme inhibitor",
+      "CYP2D6 inhibitor"
+    ],
+    "cyp_enzymes": [
+      "CYP2D6"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D01745",
+    "type": "drug",
+    "name_en": "Domperidone (JP18/USAN/INN)",
+    "name_ja": "ドンペリドン",
+    "names_alt": [
+      "Motilium (TN)"
+    ],
+    "search_name": "Domperidone",
+    "formula": "C22H24ClN5O2",
+    "efficacy": "Anti-emetic, Prokinetic, Dopamine D2 receptor antagonist",
+    "therapeutic_category": "2399",
+    "atc_code": "A03FA03",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Dopamine antagonist",
+      "Dopamine D2-receptor antagonist",
+      "Gastrointestinal agent",
+      "Propulsive",
+      "Antiemetic",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D02171",
+    "type": "drug",
+    "name_en": "Sennosides (USP)",
+    "name_ja": "センノシド",
+    "names_alt": [
+      "Pursennid (TN)"
+    ],
+    "search_name": "Sennoside",
+    "formula": "C42H38O20",
+    "efficacy": "Laxative",
+    "therapeutic_category": "2354",
+    "atc_code": "A06AB06",
+    "drug_class": [
+      "Gastrointestinal agent",
+      "Laxative"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2354",
+    "type": "category",
+    "name_ja": "分類2354",
+    "name_en": "",
+    "code": "2354"
+  },
+  {
+    "id": "D00564",
+    "type": "drug",
+    "name_en": "Warfarin sodium (USP)",
+    "name_ja": "ワルファリン",
+    "names_alt": [
+      "Coumadin (TN)",
+      "Jantoven (TN)"
+    ],
+    "search_name": "Warfarin",
+    "formula": "C19H15O4. Na",
+    "efficacy": "Anticoagulant, Vitamin K antagonist",
+    "therapeutic_category": "",
+    "atc_code": "B01AA03",
+    "drug_class": [
+      "Blood modifier agent",
+      "Antithrombotic agent",
+      "Coumarin anticoagulant",
+      "Warfarin and analog",
+      "Metabolizing enzyme substrate",
+      "CYP2C9 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2C9"
+    ],
+    "adverse_effects": [
+      {
+        "name": "出血",
+        "name_en": "Hemorrhage",
+        "frequency": "high"
+      },
+      {
+        "name": "貧血",
+        "name_en": "Anemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "ae_21",
+    "type": "adverse_effect",
+    "name_ja": "出血",
+    "name_en": "Hemorrhage"
+  },
+  {
+    "id": "ae_22",
+    "type": "adverse_effect",
+    "name_ja": "貧血",
+    "name_en": "Anemia"
+  },
+  {
+    "id": "D00769",
+    "type": "drug",
+    "name_en": "Clopidogrel bisulfate (USP)",
+    "name_ja": "クロピドグレル",
+    "names_alt": [
+      "Clopidogrel sulfate (JP18)",
+      "Clopidogrel sulfate tablets (JP18)",
+      "Clopidogrel hydrogen sulphate",
+      "Isocover (TN)",
+      "Plavix (TN)"
+    ],
+    "search_name": "Clopidogrel",
+    "formula": "C16H16ClNO2S. H2SO4",
+    "efficacy": "Anticoagulant, Platelet aggregation inhibitor, Purinergic receptor P2Y12 antagonist\nDISEASE   Myocardial infarction [DS:H01730]",
+    "therapeutic_category": "3399",
+    "atc_code": "B01AC04",
+    "drug_class": [
+      "Blood modifier agent",
+      "Antithrombotic agent",
+      "Antiplatelet agent",
+      "Thienopyridine",
+      "P2Y12 receptor antagonist",
+      "Thienopyridine",
+      "Metabolizing enzyme substrate",
+      "CYP1A2 substrate",
+      "CYP2B6 substrate",
+      "CYP2C19 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate",
+      "Metabolizing enzyme inhibitor",
+      "CYP2C8 inhibitor"
+    ],
+    "cyp_enzymes": [
+      "CYP1A2",
+      "CYP2C19",
+      "CYP2B6",
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "出血",
+        "name_en": "Hemorrhage",
+        "frequency": "high"
+      },
+      {
+        "name": "貧血",
+        "name_en": "Anemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "cat_3399",
+    "type": "category",
+    "name_ja": "分類3399",
+    "name_en": "",
+    "code": "3399"
+  },
+  {
+    "id": "D05597",
+    "type": "drug",
+    "name_en": "Prasugrel hydrochloride (JAN/USAN)",
+    "name_ja": "プラスグレル",
+    "names_alt": [
+      "Effient (TN)"
+    ],
+    "search_name": "Prasugrel",
+    "formula": "C20H20FNO3S. HCl",
+    "efficacy": "Platelet aggregation inhibitor, Purinergic receptor P2Y12 antagonist\nDISEASE   Unstable angina [DS:H01632]\nMyocardial infarction [DS:H01730]",
+    "therapeutic_category": "3399",
+    "atc_code": "B01AC22",
+    "drug_class": [
+      "Blood modifier agent",
+      "Antithrombotic agent",
+      "Antiplatelet agent",
+      "Thienopyridine",
+      "P2Y12 receptor antagonist",
+      "Thienopyridine"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D03213",
+    "type": "drug",
+    "name_en": "Apixaban (JAN/USAN/INN)",
+    "name_ja": "アピキサバン",
+    "names_alt": [
+      "Eliquis (TN)"
+    ],
+    "search_name": "Apixaban",
+    "formula": "C25H25N5O4",
+    "efficacy": "Anticoagulant, Antithrombotic, Factor Xa inhibitor\nDISEASE   Deep vein thrombosis [DS:H01723]",
+    "therapeutic_category": "3339",
+    "atc_code": "B01AF02",
+    "drug_class": [
+      "Blood modifier agent",
+      "Antithrombotic agent",
+      "Factor Xa inhibitor",
+      "Direct oral anticoagulant (DOAC)",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate",
+      "CYP3A5 substrate",
+      "Transporter substrate",
+      "ABCB1 substrate",
+      "ABCG2 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A5",
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "出血",
+        "name_en": "Hemorrhage",
+        "frequency": "high"
+      },
+      {
+        "name": "貧血",
+        "name_en": "Anemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "cat_3339",
+    "type": "category",
+    "name_ja": "分類3339",
+    "name_en": "",
+    "code": "3339"
+  },
+  {
+    "id": "cyp_CYP3A5",
+    "type": "cyp",
+    "name_en": "CYP3A5",
+    "name_ja": "CYP3A5"
+  },
+  {
+    "id": "D07086",
+    "type": "drug",
+    "name_en": "Rivaroxaban (JAN/USAN/INN)",
+    "name_ja": "リバーロキサバン",
+    "names_alt": [
+      "Xarelto (TN)"
+    ],
+    "search_name": "Rivaroxaban",
+    "formula": "C19H18ClN3O5S",
+    "efficacy": "Antithrombotic, Factor Xa inhibitor",
+    "therapeutic_category": "3339",
+    "atc_code": "B01AF01",
+    "drug_class": [
+      "Blood modifier agent",
+      "Antithrombotic agent",
+      "Factor Xa inhibitor",
+      "Direct oral anticoagulant (DOAC)",
+      "Metabolizing enzyme substrate",
+      "CYP2J2 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate",
+      "Transporter substrate",
+      "ABCB1 substrate",
+      "ABCG2 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2J2",
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "出血",
+        "name_en": "Hemorrhage",
+        "frequency": "high"
+      },
+      {
+        "name": "貧血",
+        "name_en": "Anemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "cyp_CYP2J2",
+    "type": "cyp",
+    "name_en": "CYP2J2",
+    "name_ja": "CYP2J2"
+  },
+  {
+    "id": "D09546",
+    "type": "drug",
+    "name_en": "Edoxaban tosilate hydrate (JAN)",
+    "name_ja": "エドキサバン",
+    "names_alt": [
+      "Edoxaban tosylate monohydrate",
+      "Lixiana (TN)",
+      "Savaysa (TN)"
+    ],
+    "search_name": "Edoxaban",
+    "formula": "C24H30ClN7O4S. C7H8O3S. H2O",
+    "efficacy": "Antithrombotic, Factor Xa inhibitor",
+    "therapeutic_category": "3339",
+    "atc_code": "B01AF03",
+    "drug_class": [
+      "Blood modifier agent",
+      "Antithrombotic agent",
+      "Factor Xa inhibitor",
+      "Direct oral anticoagulant (DOAC)",
+      "Transporter substrate",
+      "ABCB1 substrate"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": [
+      {
+        "name": "出血",
+        "name_en": "Hemorrhage",
+        "frequency": "high"
+      },
+      {
+        "name": "貧血",
+        "name_en": "Anemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "D07082",
+    "type": "drug",
+    "name_en": "Dabigatran etexilate mesylate (USAN)",
+    "name_ja": "ダビガトラン",
+    "names_alt": [
+      "Dabigatran etexilate methanesulfonate (JAN)",
+      "Dabigatran etexilate mesilate",
+      "Pradaxa (TN)"
+    ],
+    "search_name": "Dabigatran",
+    "formula": "C34H41N7O5. CH4SO3",
+    "efficacy": "Anticoagulant, Thrombin inhibitor",
+    "therapeutic_category": "3339",
+    "atc_code": "B01AE07",
+    "drug_class": [
+      "Blood modifier agent",
+      "Antithrombotic agent",
+      "Thrombin inhibitor",
+      "Direct oral anticoagulant (DOAC)",
+      "Transporter substrate",
+      "ABCB1 substrate"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": [
+      {
+        "name": "出血",
+        "name_en": "Hemorrhage",
+        "frequency": "high"
+      },
+      {
+        "name": "貧血",
+        "name_en": "Anemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "D01896",
+    "type": "drug",
+    "name_en": "Cilostazol (JP18/USP/INN)",
+    "name_ja": "シロスタゾール",
+    "names_alt": [
+      "Pletal (TN)"
+    ],
+    "search_name": "Cilostazol",
+    "formula": "C20H27N5O2",
+    "efficacy": "Vasodilator, Platelet aggregation inhibitor, Phosphodiesterase inhibitor",
+    "therapeutic_category": "3399",
+    "atc_code": "B01AC23",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Phosphodiesterase III inhibitor",
+      "Blood modifier agent",
+      "Antithrombotic agent",
+      "Antiplatelet agent",
+      "Metabolizing enzyme substrate",
+      "CYP2C19 substrate",
+      "CYP2D6 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2D6",
+      "CYP2C19",
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D01028",
+    "type": "drug",
+    "name_en": "Ticlopidine hydrochloride (JP18/USP)",
+    "name_ja": "チクロピジン",
+    "names_alt": [
+      "Ticlid (TN)"
+    ],
+    "search_name": "Ticlopidine",
+    "formula": "C14H14ClNS. HCl",
+    "efficacy": "Anticoagulant, Platelet aggregation inhibitor, Purinergic receptor P2Y12 antagonist\nDISEASE   Thrombotic thrombocytopenic purpura [DS:H00225]\nAplastic anemia [DS:H01132]",
+    "therapeutic_category": "3399",
+    "atc_code": "B01AC05",
+    "drug_class": [
+      "Blood modifier agent",
+      "Antithrombotic agent",
+      "Antiplatelet agent",
+      "Thienopyridine",
+      "P2Y12 receptor antagonist",
+      "Thienopyridine",
+      "Metabolizing enzyme inhibitor",
+      "CYP1A2 inhibitor",
+      "CYP2B6 inhibitor",
+      "CYP2C19 inhibitor",
+      "CYP2D6 inhibitor"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": [
+      {
+        "name": "出血",
+        "name_en": "Hemorrhage",
+        "frequency": "high"
+      },
+      {
+        "name": "貧血",
+        "name_en": "Anemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "D00229",
+    "type": "drug",
+    "name_en": "Amoxicillin (USP)",
+    "name_ja": "アモキシシリン",
+    "names_alt": [
+      "Amoxicillin hydrate (JP18)",
+      "Amoxicilline (INN)",
+      "Amoxicillin trihydrate",
+      "Amoxil (TN)",
+      "Dispermox (TN)",
+      "Pasetocin (TN)"
+    ],
+    "search_name": "Amoxicillin",
+    "formula": "C16H19N3O5S. 3H2O",
+    "efficacy": "Antibacterial, Cell wall biosynthesis inhibitor\nDISEASE   Gonorrhea [DS:H00315]\nHelicobacter pylori infection [DS:H00320]",
+    "therapeutic_category": "6131",
+    "atc_code": "J01CA04",
+    "drug_class": [
+      "Antibacterial",
+      "beta-Lactam antibiotic",
+      "Penicillin skeleton group",
+      "Penicillin",
+      "Extended spectrum penicillin"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_6131",
+    "type": "category",
+    "name_ja": "分類6131",
+    "name_en": "",
+    "code": "6131"
+  },
+  {
+    "id": "D00204",
+    "type": "drug",
+    "name_en": "Ampicillin (USP/INN)",
+    "name_ja": "アンピシリン",
+    "names_alt": [
+      "Anhydrous ampicillin (JP18)",
+      "Omnipen (TN)"
+    ],
+    "search_name": "Ampicillin",
+    "formula": "C16H19N3O4S",
+    "efficacy": "Antibacterial, Cell wall biosynthesis inhibitor",
+    "therapeutic_category": "",
+    "atc_code": "J01CA01",
+    "drug_class": [
+      "Antibacterial",
+      "beta-Lactam antibiotic",
+      "Penicillin skeleton group",
+      "Penicillin",
+      "Extended spectrum penicillin"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D01680",
+    "type": "drug",
+    "name_en": "Cefcapene pivoxil hydrochloride hydrate (JP18)",
+    "name_ja": "セフカペン ピボキシル",
+    "names_alt": [
+      "S 1108",
+      "Flomox (TN)"
+    ],
+    "search_name": "Cefcapene pivoxil",
+    "formula": "C23H29N5O8S2. HCl. H2O",
+    "efficacy": "Antibacterial, Cell wall biosynthesis inhibitor",
+    "therapeutic_category": "6132",
+    "atc_code": "J01DD17",
+    "drug_class": [
+      "Antibacterial",
+      "beta-Lactam antibiotic",
+      "Cephalosporin skeleton group",
+      "Cephem",
+      "Third-generation cephalosporin"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_6132",
+    "type": "category",
+    "name_ja": "分類6132",
+    "name_en": "",
+    "code": "6132"
+  },
+  {
+    "id": "D01628",
+    "type": "drug",
+    "name_en": "Cefditoren pivoxil (JP18/USAN)",
+    "name_ja": "セフジトレン ピボキシル",
+    "names_alt": [
+      "Meiact (TN)",
+      "Spectracef (TN)"
+    ],
+    "search_name": "Cefditoren pivoxil",
+    "formula": "C25H28N6O7S3",
+    "efficacy": "Antibacterial, Cell wall biosynthesis inhibitor\nDISEASE   Pharyngitis/tonsillitis [DS:H01424]",
+    "therapeutic_category": "6132",
+    "atc_code": "J01DD16",
+    "drug_class": [
+      "Antibacterial",
+      "beta-Lactam antibiotic",
+      "Cephalosporin skeleton group",
+      "Cephem",
+      "Third-generation cephalosporin",
+      "Oxyimino beta-lactam"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00906",
+    "type": "drug",
+    "name_en": "Cephalexin (USP)",
+    "name_ja": "セファレキシン",
+    "names_alt": [
+      "Cephalexin monohydrate",
+      "Cefalexin",
+      "Keftab (TN)",
+      "Panixine disperdose (TN)"
+    ],
+    "search_name": "Cephalexin",
+    "formula": "C16H17N3O4S. H2O",
+    "efficacy": "Antibacterial, Cell wall biosynthesis inhibitor",
+    "therapeutic_category": "",
+    "atc_code": "J01DB01",
+    "drug_class": [
+      "Antibacterial",
+      "beta-Lactam antibiotic",
+      "Cephalosporin skeleton group",
+      "Cephem",
+      "First-generation cephalosporin"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D02134",
+    "type": "drug",
+    "name_en": "Azithromycin hydrate (JP18)",
+    "name_ja": "アジスロマイシン",
+    "names_alt": [
+      "Azithromycin dihydrate",
+      "Zithromac (TN)",
+      "Zmax (TN)",
+      "Azimycin (TN)"
+    ],
+    "search_name": "Azithromycin",
+    "formula": "C38H72N2O12. 2H2O",
+    "efficacy": "Antibacterial, Protein biosynthesis inhibitor\nDISEASE   Urethritis due to Chlamydia trachomatis [DS:H00347]\nDisseminated Mycobacterium avium complex (MAC) disease [DS:H01458]",
+    "therapeutic_category": "1317",
+    "atc_code": "J01FA10",
+    "drug_class": [
+      "Antibacterial",
+      "Macrolide antibiotic",
+      "15-Membered ring macrolide antibiotic",
+      "Transporter substrate",
+      "ABCB1 substrate",
+      "Transporter inhibitor",
+      "ABCB1 inhibitor"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": [
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "high"
+      },
+      {
+        "name": "QT延長",
+        "name_en": "QT prolongation",
+        "frequency": "low"
+      },
+      {
+        "name": "肝機能障害",
+        "name_en": "Hepatic impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "id": "cat_1317",
+    "type": "category",
+    "name_ja": "分類1317",
+    "name_en": "",
+    "code": "1317"
+  },
+  {
+    "id": "ae_23",
+    "type": "adverse_effect",
+    "name_ja": "QT延長",
+    "name_en": "QT prolongation"
+  },
+  {
+    "id": "D00276",
+    "type": "drug",
+    "name_en": "Clarithromycin (JP18/USP/INN)",
+    "name_ja": "クラリスロマイシン",
+    "names_alt": [
+      "Biaxin (TN)"
+    ],
+    "search_name": "Clarithromycin",
+    "formula": "C38H69NO13",
+    "efficacy": "Antibacterial, Protein biosynthesis inhibitor\nDISEASE   Pharyngitis/tonsillitis [DS:H01424]\nHelicobacter pylori infection [DS:H00320]",
+    "therapeutic_category": "6149",
+    "atc_code": "J01FA09",
+    "drug_class": [
+      "Antibacterial",
+      "Macrolide antibiotic",
+      "14-membered ring macrolide antibiotic",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate",
+      "Metabolizing enzyme inhibitor",
+      "CYP3A/CYP3A4 inhibitor",
+      "CYP3A4 inhibitor",
+      "Transporter inhibitor",
+      "ABCB1 inhibitor"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "high"
+      },
+      {
+        "name": "QT延長",
+        "name_en": "QT prolongation",
+        "frequency": "low"
+      },
+      {
+        "name": "肝機能障害",
+        "name_en": "Hepatic impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "id": "cat_6149",
+    "type": "category",
+    "name_ja": "分類6149",
+    "name_en": "",
+    "code": "6149"
+  },
+  {
+    "id": "D00140",
+    "type": "drug",
+    "name_en": "Erythromycin (JP18/USP/INN)",
+    "name_ja": "エリスロマイシン",
+    "names_alt": [
+      "Akne-mycin (TN)",
+      "Eryc (TN)",
+      "Erygel (TN)",
+      "Pce (TN)",
+      "Staticin (TN)",
+      "T-stat (TN)"
+    ],
+    "search_name": "Erythromycin",
+    "formula": "C37H67NO13",
+    "efficacy": "Antibacterial, Protein biosynthesis inhibitor\nDISEASE   Acne vulgaris [DS:H01445]\nListeriosis [DS:H00332]\nPertussis [DS:H00319]\nDiphtheria [DS:H00343]\nAmebiasis [DS:H00360]\nSyphilis [DS:H00354]\nLegionnaires' disease [DS:H00311]",
+    "therapeutic_category": "6141",
+    "atc_code": "D10AF02",
+    "drug_class": [
+      "Antibacterial",
+      "Macrolide antibiotic",
+      "14-membered ring macrolide antibiotic",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "Metabolizing enzyme inhibitor",
+      "CYP3A/CYP3A4 inhibitor",
+      "Transporter inhibitor",
+      "ABCB1 inhibitor"
+    ],
+    "cyp_enzymes": [
+      "CYP3A"
+    ],
+    "adverse_effects": [
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "high"
+      },
+      {
+        "name": "QT延長",
+        "name_en": "QT prolongation",
+        "frequency": "low"
+      },
+      {
+        "name": "肝機能障害",
+        "name_en": "Hepatic impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "id": "cat_6141",
+    "type": "category",
+    "name_ja": "分類6141",
+    "name_en": "",
+    "code": "6141"
+  },
+  {
+    "id": "cyp_CYP3A",
+    "type": "cyp",
+    "name_en": "CYP3A",
+    "name_ja": "CYP3A"
+  },
+  {
+    "id": "D00588",
+    "type": "drug",
+    "name_en": "Levofloxacin (USP)",
+    "name_ja": "レボフロキサシン",
+    "names_alt": [
+      "Levofloxacin hydrate (JP18)",
+      "Levofloxacin hemihydrate",
+      "Iquix (TN)",
+      "Levaquin (TN)",
+      "Quixin (TN)"
+    ],
+    "search_name": "Levofloxacin",
+    "formula": "(C18H20FN3O4)2. H2O",
+    "efficacy": "Antibacterial, Nucleic acid biosynthesis inhibitor\nDISEASE   Inhalational anthrax [DS:H00328]\nPlague [DS:H00297]\nUncomplicated urinary tract infections [DS:H01176]",
+    "therapeutic_category": "1319",
+    "atc_code": "J01MA12",
+    "drug_class": [
+      "Antibacterial",
+      "Quinolone",
+      "Fluoroquinolone",
+      "Antitubercular",
+      "Transporter substrate",
+      "SLCO1A2 substrate"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": [
+      {
+        "name": "腱障害",
+        "name_en": "Tendon disorder",
+        "frequency": "low"
+      },
+      {
+        "name": "QT延長",
+        "name_en": "QT prolongation",
+        "frequency": "low"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      },
+      {
+        "name": "光線過敏症",
+        "name_en": "Photosensitivity",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "ae_24",
+    "type": "adverse_effect",
+    "name_ja": "腱障害",
+    "name_en": "Tendon disorder"
+  },
+  {
+    "id": "ae_25",
+    "type": "adverse_effect",
+    "name_ja": "光線過敏症",
+    "name_en": "Photosensitivity"
+  },
+  {
+    "id": "D00186",
+    "type": "drug",
+    "name_en": "Ciprofloxacin (JP18/USP/INN)",
+    "name_ja": "シプロフロキサシン",
+    "names_alt": [
+      "Cipro (TN)",
+      "Otiprio (TN)"
+    ],
+    "search_name": "Ciprofloxacin",
+    "formula": "C17H18FN3O3",
+    "efficacy": "Antibacterial, Nucleic acid biosynthesis inhibitor\nDISEASE   Inhalational anthrax [DS:H00328]\nPlague [DS:H00297]",
+    "therapeutic_category": "6241",
+    "atc_code": "J01MA02",
+    "drug_class": [
+      "Antibacterial",
+      "Quinolone",
+      "Fluoroquinolone",
+      "Metabolizing enzyme inhibitor",
+      "CYP1A2 inhibitor"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": [
+      {
+        "name": "腱障害",
+        "name_en": "Tendon disorder",
+        "frequency": "low"
+      },
+      {
+        "name": "QT延長",
+        "name_en": "QT prolongation",
+        "frequency": "low"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      },
+      {
+        "name": "光線過敏症",
+        "name_en": "Photosensitivity",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "cat_6241",
+    "type": "category",
+    "name_ja": "分類6241",
+    "name_en": "",
+    "code": "6241"
+  },
+  {
+    "id": "D00874",
+    "type": "drug",
+    "name_en": "Moxifloxacin hydrochloride (JAN/USP)",
+    "name_ja": "モキシフロキサシン",
+    "names_alt": [
+      "Avelox (TN)",
+      "Vigamox (TN)"
+    ],
+    "search_name": "Moxifloxacin",
+    "formula": "C21H24FN3O4. HCl",
+    "efficacy": "Antibacterial, Nucleic acid biosynthesis inhibitor\nDISEASE   Plague [DS:H00297]\nBacterial conjunctivitis [DS:H01366]",
+    "therapeutic_category": "1319",
+    "atc_code": "J01MA14",
+    "drug_class": [
+      "Antibacterial",
+      "Quinolone",
+      "Fluoroquinolone"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": [
+      {
+        "name": "腱障害",
+        "name_en": "Tendon disorder",
+        "frequency": "low"
+      },
+      {
+        "name": "QT延長",
+        "name_en": "QT prolongation",
+        "frequency": "low"
+      },
+      {
+        "name": "消化器症状",
+        "name_en": "GI symptoms",
+        "frequency": "medium"
+      },
+      {
+        "name": "光線過敏症",
+        "name_en": "Photosensitivity",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "D00850",
+    "type": "drug",
+    "name_en": "Minocycline hydrochloride (JP18/USP)",
+    "name_ja": "ミノサイクリン",
+    "names_alt": [
+      "Arestin (TN)",
+      "Dynacin (TN)",
+      "Minocin (TN)",
+      "Solodyn (TN)"
+    ],
+    "search_name": "Minocycline",
+    "formula": "C23H27N3O7. HCl",
+    "efficacy": "Antibacterial, Protein biosynthesis inhibitor\nDISEASE   Rocky Mountain spotted fever [DS:H00323]\nTyphus fever [DS:H00322]\nQ fever [DS:H00310]\nLymphogranuloma venereum [DS:H00348]\nPsittacosis [DS:H00350]\nTrachoma [DS:H00349]\nRelapsing fever [DS:H00427]\nChancroid [DS:H00305]\nPlague [DS:H00297]\nTularemia [DS:H00312]\nCholera [DS:H00110]\nCampylobacter fetus infections [DS:H00321]\nBrucellosis [DS:H00325]\nBartonellosis [DS:H00326]\nGranuloma inguinale [DS:H01415]\nSyphilis [DS:H00354]\nYaws [DS:H01318]\nListeriosis [DS:H00332]\nAnthrax [DS:H00328]\nVincent's infection [DS:H01440]\nActinomycosis [DS:H01325]\nAcute intestinal amebiasis [DS:H00360]\nAcne vulgaris [DS:H01445]",
+    "therapeutic_category": "2760",
+    "atc_code": "A01AB23",
+    "drug_class": [
+      "Antibacterial",
+      "Tetracycline antibiotic"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2760",
+    "type": "category",
+    "name_ja": "分類2760",
+    "name_en": "",
+    "code": "2760"
+  },
+  {
+    "id": "D00307",
+    "type": "drug",
+    "name_en": "Doxycycline (USP)",
+    "name_ja": "ドキシサイクリン",
+    "names_alt": [
+      "Doxycycline hydrate",
+      "Monodox (TN)",
+      "Oracea (TN)",
+      "Vibramycin (TN)"
+    ],
+    "search_name": "Doxycycline",
+    "formula": "C22H24N2O8. H2O",
+    "efficacy": "Antibacterial, Protein biosynthesis inhibitor\nDISEASE   Rocky Mountain spotted fever [DS:H00323]\nTyphus fever [DS:H00322]\nQ fever [DS:H00310]\nRickettsialpox [DS:H02379]\nLymphogranuloma venereum [DS:H00348]\nPsittacosis [DS:H00350]\nTrachoma [DS:H00349]\nRelapsing fever [DS:H00427]\nChancroid [DS:H00305]\nPlague [DS:H00297]\nTularemia [DS:H00312]\nCholera [DS:H00110]\nCampylobacter fetus infections [DS:H00321]\nBrucellosis [DS:H00325]\nBartonellosis [DS:H00326]\nGranuloma inguinale [DS:H01415]\nAnthrax [DS:H00328]\nGonorrhea [DS:H00315]\nSyphilis [DS:H00354]\nYaws [DS:H01318]\nListeriosis [DS:H00332]\nVincent's infection [DS:H01440]\nActinomycosis [DS:H01325]\nAmebiasis [DS:H00360]\nSevere acne [DS:H01445]",
+    "therapeutic_category": "",
+    "atc_code": "A01AB22",
+    "drug_class": [
+      "Antibacterial",
+      "Tetracycline antibiotic"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00447",
+    "type": "drug",
+    "name_en": "Sulfamethoxazole (JP18/USP/INN)",
+    "name_ja": "スルファメトキサゾール",
+    "names_alt": [
+      "Gantanol (TN)"
+    ],
+    "search_name": "Sulfamethoxazole",
+    "formula": "C10H11N3O3S",
+    "efficacy": "Antibacterial, Folic acid biosynthesis inhibitor",
+    "therapeutic_category": "",
+    "atc_code": "J01EC01",
+    "drug_class": [
+      "Antibacterial",
+      "Sulfonamide antibacterial",
+      "Intermediate-acting sulfonamide"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00212",
+    "type": "drug",
+    "name_en": "Vancomycin (USP)",
+    "name_ja": "バンコマイシン",
+    "names_alt": [
+      "Vancocin (TN)"
+    ],
+    "search_name": "Vancomycin",
+    "formula": "C66H75Cl2N9O24",
+    "efficacy": "Antibacterial, Cell wall biosynthesis inhibitor",
+    "therapeutic_category": "",
+    "atc_code": "A07AA09",
+    "drug_class": [
+      "Antibacterial",
+      "Glycopeptide antibiotic"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D02222",
+    "type": "drug",
+    "name_en": "Meropenem (USP)",
+    "name_ja": "メロペネム",
+    "names_alt": [
+      "Meropenem hydrate (JP18)",
+      "Meropenem trihydrate",
+      "Merrem (TN)"
+    ],
+    "search_name": "Meropenem",
+    "formula": "C17H25N3O5S. 3H2O",
+    "efficacy": "Antibacterial, Cell wall biosynthesis inhibitor",
+    "therapeutic_category": "6139",
+    "atc_code": "J01DH02",
+    "drug_class": [
+      "Antibacterial",
+      "beta-Lactam antibiotic",
+      "Penicillin skeleton group",
+      "Carbapenem"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": [
+      {
+        "name": "高カリウム血症",
+        "name_en": "Hyperkalemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "めまい",
+        "name_en": "Dizziness",
+        "frequency": "medium"
+      },
+      {
+        "name": "腎機能障害",
+        "name_en": "Renal impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "id": "cat_6139",
+    "type": "category",
+    "name_ja": "分類6139",
+    "name_en": "",
+    "code": "6139"
+  },
+  {
+    "id": "ae_26",
+    "type": "adverse_effect",
+    "name_ja": "高カリウム血症",
+    "name_en": "Hyperkalemia"
+  },
+  {
+    "id": "ae_27",
+    "type": "adverse_effect",
+    "name_ja": "めまい",
+    "name_en": "Dizziness"
+  },
+  {
+    "id": "D00409",
+    "type": "drug",
+    "name_en": "Metronidazole (JP18/USP/INN)",
+    "name_ja": "メトロニダゾール",
+    "names_alt": [
+      "Flagyl (TN)",
+      "Noritate (TN)",
+      "Nuvessa (TN)",
+      "Vandazole (TN)"
+    ],
+    "search_name": "Metronidazole",
+    "formula": "C6H9N3O3",
+    "efficacy": "Antibacterial, Antiprotozoal, DNA synthesis inhibitor\nDISEASE   Bacterial vaginosis [DS:H01380]\nTrichomoniasis [DS:H00812]\nIntestinal amebiasis; amebic dysentery [DS:H00360]\nBacterial endocarditis [DS:H00334]\nAnaerobic bacterial infections [DS:H01410]",
+    "therapeutic_category": "2529",
+    "atc_code": "A01AB17",
+    "drug_class": [
+      "Antiparasitic",
+      "Imidazole antiprotozoal",
+      "Metabolizing enzyme substrate",
+      "CYP2A6 substrate",
+      "Metabolizing enzyme inhibitor",
+      "CYP2C9 inhibitor"
+    ],
+    "cyp_enzymes": [
+      "CYP2A6"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2529",
+    "type": "category",
+    "name_ja": "分類2529",
+    "name_en": "",
+    "code": "2529"
+  },
+  {
+    "id": "cyp_CYP2A6",
+    "type": "cyp",
+    "name_en": "CYP2A6",
+    "name_ja": "CYP2A6"
+  },
+  {
+    "id": "D00293",
+    "type": "drug",
+    "name_en": "Diazepam (JP18/USP/INN)",
+    "name_ja": "ジアゼパム",
+    "names_alt": [
+      "Diastat (TN)",
+      "Valium (TN)"
+    ],
+    "search_name": "Diazepam",
+    "formula": "C16H13ClN2O",
+    "efficacy": "Antianxiety, Antiepileptic, Minor tranquilizer, Sedative-hypnotic\nDISEASE   Anxiety disorders [DS:H01662]",
+    "therapeutic_category": "1124",
+    "atc_code": "N05BA01",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Benzodiazepine sedative-hypnotics",
+      "GABA-A receptor agonist",
+      "Anxiolytics, benzodiazepine derivatives",
+      "Antiepileptic agent",
+      "Metabolizing enzyme substrate",
+      "CYP2C19 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2C19",
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      },
+      {
+        "name": "ふらつき",
+        "name_en": "Unsteadiness",
+        "frequency": "high"
+      },
+      {
+        "name": "記憶障害",
+        "name_en": "Memory impairment",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "cat_1124",
+    "type": "category",
+    "name_ja": "分類1124",
+    "name_en": "",
+    "code": "1124"
+  },
+  {
+    "id": "ae_28",
+    "type": "adverse_effect",
+    "name_ja": "眠気",
+    "name_en": "Somnolence"
+  },
+  {
+    "id": "ae_29",
+    "type": "adverse_effect",
+    "name_ja": "依存性",
+    "name_en": "Dependence"
+  },
+  {
+    "id": "ae_30",
+    "type": "adverse_effect",
+    "name_ja": "ふらつき",
+    "name_en": "Unsteadiness"
+  },
+  {
+    "id": "ae_31",
+    "type": "adverse_effect",
+    "name_ja": "記憶障害",
+    "name_en": "Memory impairment"
+  },
+  {
+    "id": "D01514",
+    "type": "drug",
+    "name_en": "Etizolam (JP18/INN)",
+    "name_ja": "エチゾラム",
+    "names_alt": [
+      "Sedekopan (TN)"
+    ],
+    "search_name": "Etizolam",
+    "formula": "C17H15ClN4S",
+    "efficacy": "Antianxiety, Minor tranquilizer, Sedative-hypnotic",
+    "therapeutic_category": "1179",
+    "atc_code": "N05BA19",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Hypnotic",
+      "GABA-A receptor agonist",
+      "Anxiolytics, benzodiazepine derivatives",
+      "Metabolizing enzyme substrate",
+      "CYP2C9 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2C9",
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      },
+      {
+        "name": "ふらつき",
+        "name_en": "Unsteadiness",
+        "frequency": "high"
+      },
+      {
+        "name": "記憶障害",
+        "name_en": "Memory impairment",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "cat_1179",
+    "type": "category",
+    "name_ja": "分類1179",
+    "name_en": "",
+    "code": "1179"
+  },
+  {
+    "id": "D00225",
+    "type": "drug",
+    "name_en": "Alprazolam (JP18/USP/INN)",
+    "name_ja": "アルプラゾラム",
+    "names_alt": [
+      "Xanax (TN)"
+    ],
+    "search_name": "Alprazolam",
+    "formula": "C17H13ClN4",
+    "efficacy": "Antianxiety, Minor tranquilizer, Sedative-hypnotic\nDISEASE   Generalized anxiety disorder [DS:H01662]\nPanic disorder [DS:H01664]",
+    "therapeutic_category": "1124",
+    "atc_code": "N05BA12",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "GABA-A receptor agonist",
+      "Anxiolytics, benzodiazepine derivatives",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A"
+    ],
+    "adverse_effects": [
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      },
+      {
+        "name": "ふらつき",
+        "name_en": "Unsteadiness",
+        "frequency": "high"
+      },
+      {
+        "name": "記憶障害",
+        "name_en": "Memory impairment",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "D00365",
+    "type": "drug",
+    "name_en": "Lorazepam (JP18/USP/INN)",
+    "name_ja": "ロラゼパム",
+    "names_alt": [
+      "Ativan (TN)"
+    ],
+    "search_name": "Lorazepam",
+    "formula": "C15H10Cl2N2O2",
+    "efficacy": "Antianxiety, Anticonvulsant, Minor tranquilizer",
+    "therapeutic_category": "1124",
+    "atc_code": "N05BA06",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "GABA-A receptor agonist",
+      "Anxiolytics, benzodiazepine derivatives",
+      "Antiepileptic agent",
+      "Metabolizing enzyme substrate",
+      "UGT substrate",
+      "UGT2B7 substrate",
+      "UGT2B15 substrate"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": [
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      },
+      {
+        "name": "ふらつき",
+        "name_en": "Unsteadiness",
+        "frequency": "high"
+      },
+      {
+        "name": "記憶障害",
+        "name_en": "Memory impairment",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "D00280",
+    "type": "drug",
+    "name_en": "Clonazepam (JP18/USP/INN)",
+    "name_ja": "クロナゼパム",
+    "names_alt": [
+      "Klonopin (TN)"
+    ],
+    "search_name": "Clonazepam",
+    "formula": "C15H10ClN3O3",
+    "efficacy": "Anticonvulsant, Antiepileptic\nDISEASE   Lennox-Gastaut syndrome [DS:H01813]\nPanic disorder [DS:H01664]",
+    "therapeutic_category": "1139",
+    "atc_code": "N03AE01",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "GABA-A receptor agonist",
+      "Antiepileptic agent",
+      "Benzodiazepine derivative, antiepileptic"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": [
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      },
+      {
+        "name": "ふらつき",
+        "name_en": "Unsteadiness",
+        "frequency": "high"
+      },
+      {
+        "name": "記憶障害",
+        "name_en": "Memory impairment",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "cat_1139",
+    "type": "category",
+    "name_ja": "分類1139",
+    "name_en": "",
+    "code": "1139"
+  },
+  {
+    "id": "D00706",
+    "type": "drug",
+    "name_en": "Zolpidem tartrate (JP18/USP)",
+    "name_ja": "ゾルピデム",
+    "names_alt": [
+      "Ambien (TN)",
+      "Intermezzo (TN)"
+    ],
+    "search_name": "Zolpidem",
+    "formula": "(C19H21N3O)2. C4H6O6",
+    "efficacy": "Sedative-hypnotic\nDISEASE   Insomnia [DS:H01609]",
+    "therapeutic_category": "1129",
+    "atc_code": "N05CF02",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Non-benzodiazepine sedative-hypnotics",
+      "Hypnotic",
+      "GABA-A receptor agonist",
+      "Metabolizing enzyme substrate",
+      "CYP1A2 substrate",
+      "CYP2C9 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP1A2",
+      "CYP2C9",
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      },
+      {
+        "name": "ふらつき",
+        "name_en": "Unsteadiness",
+        "frequency": "high"
+      },
+      {
+        "name": "記憶障害",
+        "name_en": "Memory impairment",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "cat_1129",
+    "type": "category",
+    "name_ja": "分類1129",
+    "name_en": "",
+    "code": "1129"
+  },
+  {
+    "id": "D01372",
+    "type": "drug",
+    "name_en": "Zopiclone (JP18/INN)",
+    "name_ja": "ゾピクロン",
+    "names_alt": [
+      "Amoban (TN)"
+    ],
+    "search_name": "Zopiclone",
+    "formula": "C17H17ClN6O3",
+    "efficacy": "Sedative-hypnotic",
+    "therapeutic_category": "1129",
+    "atc_code": "N05CF01",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Non-benzodiazepine sedative-hypnotics",
+      "Hypnotic",
+      "GABA-A receptor agonist",
+      "Metabolizing enzyme substrate",
+      "CYP2C8 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2C8",
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      },
+      {
+        "name": "ふらつき",
+        "name_en": "Unsteadiness",
+        "frequency": "high"
+      },
+      {
+        "name": "記憶障害",
+        "name_en": "Memory impairment",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "D02624",
+    "type": "drug",
+    "name_en": "Eszopiclone (JAN/USP/INN)",
+    "name_ja": "エスゾピクロン",
+    "names_alt": [
+      "Estorra (TN)",
+      "Lunesta (TN)"
+    ],
+    "search_name": "Eszopiclone",
+    "formula": "C17H17ClN6O3",
+    "efficacy": "Sedative-hypnotic\nDISEASE   Insomnia [DS:H01609]",
+    "therapeutic_category": "1129",
+    "atc_code": "N05CF04",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Non-benzodiazepine sedative-hypnotics",
+      "Hypnotic",
+      "GABA-A receptor agonist",
+      "Metabolizing enzyme substrate",
+      "CYP2E1 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2E1",
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      },
+      {
+        "name": "ふらつき",
+        "name_en": "Unsteadiness",
+        "frequency": "high"
+      },
+      {
+        "name": "記憶障害",
+        "name_en": "Memory impairment",
+        "frequency": "medium"
+      }
+    ]
+  },
+  {
+    "id": "D10082",
+    "type": "drug",
+    "name_en": "Suvorexant (JAN/USAN)",
+    "name_ja": "スボレキサント",
+    "names_alt": [
+      "MK-4305",
+      "Belsomra (TN)"
+    ],
+    "search_name": "Suvorexant",
+    "formula": "C23H23ClN6O2",
+    "efficacy": "Hypnotic, Orexin receptor antagonist\nDISEASE   Insomnia [DS:H01609]",
+    "therapeutic_category": "1190",
+    "atc_code": "N05CJ01",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Orexin receptor antagonist",
+      "Hypnotic",
+      "Metabolizing enzyme substrate",
+      "CYP2C19 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "Transporter inhibitor",
+      "ABCB1 inhibitor"
+    ],
+    "cyp_enzymes": [
+      "CYP3A",
+      "CYP2C19"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_1190",
+    "type": "category",
+    "name_ja": "分類1190",
+    "name_en": "",
+    "code": "1190"
+  },
+  {
+    "id": "D11022",
+    "type": "drug",
+    "name_en": "Lemborexant (JAN/USAN/INN)",
+    "name_ja": "レンボレキサント",
+    "names_alt": [
+      "Dayvigo (TN)"
+    ],
+    "search_name": "Lemborexant",
+    "formula": "C22H20F2N4O2",
+    "efficacy": "Hypnotic, Orexin receptor antagonist\nDISEASE   Insomnia [DS:H01609]",
+    "therapeutic_category": "1190",
+    "atc_code": "N05CJ02",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Orexin receptor antagonist",
+      "Hypnotic",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate",
+      "CYP3A5 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A5",
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D02689",
+    "type": "drug",
+    "name_en": "Ramelteon (JAN/USAN/INN)",
+    "name_ja": "ラメルテオン",
+    "names_alt": [
+      "Rozerem (TN)"
+    ],
+    "search_name": "Ramelteon",
+    "formula": "C16H21NO2",
+    "efficacy": "Hypnotic, Melatonin receptor agonist\nDISEASE   Insomnia [DS:H01609]",
+    "therapeutic_category": "1190",
+    "atc_code": "N05CH02",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Melatonin receptor agonist",
+      "Hypnotic",
+      "Metabolizing enzyme substrate",
+      "CYP1A2 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP1A2"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00825",
+    "type": "drug",
+    "name_en": "Sertraline hydrochloride (JAN/USP)",
+    "name_ja": "セルトラリン",
+    "names_alt": [
+      "Zoloft (TN)"
+    ],
+    "search_name": "Sertraline",
+    "formula": "C17H17Cl2N. HCl",
+    "efficacy": "Antidepressant, Selective serotonin reuptake inhibitor (SSRI)\nDISEASE   Major depressive disorder [DS:H01646]\nObsessive-compulsive disorder [DS:H01450]\nPanic disorder [DS:H01664]\nSocial anxiety disorder [DS:H01670]",
+    "therapeutic_category": "1179",
+    "atc_code": "N06AB06",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Selective serotonin reuptake inhibitor (SSRI)",
+      "Metabolizing enzyme substrate",
+      "CYP2B6 substrate",
+      "CYP2C9 substrate",
+      "CYP2C19 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2B6",
+      "CYP2C19",
+      "CYP2C9",
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "悪心",
+        "name_en": "Nausea",
+        "frequency": "high"
+      },
+      {
+        "name": "性機能障害",
+        "name_en": "Sexual dysfunction",
+        "frequency": "high"
+      },
+      {
+        "name": "不眠",
+        "name_en": "Insomnia",
+        "frequency": "medium"
+      },
+      {
+        "name": "セロトニン症候群",
+        "name_en": "Serotonin syndrome",
+        "frequency": "rare"
+      }
+    ]
+  },
+  {
+    "id": "ae_32",
+    "type": "adverse_effect",
+    "name_ja": "悪心",
+    "name_en": "Nausea"
+  },
+  {
+    "id": "ae_33",
+    "type": "adverse_effect",
+    "name_ja": "性機能障害",
+    "name_en": "Sexual dysfunction"
+  },
+  {
+    "id": "ae_34",
+    "type": "adverse_effect",
+    "name_ja": "不眠",
+    "name_en": "Insomnia"
+  },
+  {
+    "id": "ae_35",
+    "type": "adverse_effect",
+    "name_ja": "セロトニン症候群",
+    "name_en": "Serotonin syndrome"
+  },
+  {
+    "id": "D02260",
+    "type": "drug",
+    "name_en": "Paroxetine hydrochloride hemihydrate (USP)",
+    "name_ja": "パロキセチン",
+    "names_alt": [
+      "Paroxetine hydrochloride hydrate (JP18)",
+      "Paxil (TN)"
+    ],
+    "search_name": "Paroxetine",
+    "formula": "(C19H20FNO3. HCl)2. H2O",
+    "efficacy": "Antidepressant, Selective serotonin reuptake inhibitor (SSRI)\nDISEASE   Major depressive disorder [DS:H01646]\nPanic disorder [DS:H01664]\nSocial anxiety disorder [DS:H01670]",
+    "therapeutic_category": "1179",
+    "atc_code": "N06AB05",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Selective serotonin reuptake inhibitor (SSRI)",
+      "Metabolizing enzyme substrate",
+      "CYP2D6 substrate",
+      "Metabolizing enzyme inhibitor",
+      "CYP2D6 inhibitor"
+    ],
+    "cyp_enzymes": [
+      "CYP2D6"
+    ],
+    "adverse_effects": [
+      {
+        "name": "悪心",
+        "name_en": "Nausea",
+        "frequency": "high"
+      },
+      {
+        "name": "性機能障害",
+        "name_en": "Sexual dysfunction",
+        "frequency": "high"
+      },
+      {
+        "name": "不眠",
+        "name_en": "Insomnia",
+        "frequency": "medium"
+      },
+      {
+        "name": "セロトニン症候群",
+        "name_en": "Serotonin syndrome",
+        "frequency": "rare"
+      }
+    ]
+  },
+  {
+    "id": "D02567",
+    "type": "drug",
+    "name_en": "Escitalopram oxalate (JAN/USP)",
+    "name_ja": "エスシタロプラム",
+    "names_alt": [
+      "Lexapro (TN)"
+    ],
+    "search_name": "Escitalopram",
+    "formula": "C20H21FN2O. C2H2O4",
+    "efficacy": "Antidepressant, Selective serotonin reuptake inhibitor (SSRI)\nDISEASE   Major depressive disorder [DS:H01646]\nGeneralized anxiety disorder [DS:H01662]",
+    "therapeutic_category": "1179",
+    "atc_code": "N06AB10",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Selective serotonin reuptake inhibitor (SSRI)",
+      "Metabolizing enzyme substrate",
+      "CYP2C19 substrate",
+      "CYP2D6 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate",
+      "AOX1 substrate",
+      "MAO substrate",
+      "Metabolizing enzyme inhibitor",
+      "CYP2D6 inhibitor"
+    ],
+    "cyp_enzymes": [
+      "CYP2D6",
+      "CYP2C19",
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "悪心",
+        "name_en": "Nausea",
+        "frequency": "high"
+      },
+      {
+        "name": "性機能障害",
+        "name_en": "Sexual dysfunction",
+        "frequency": "high"
+      },
+      {
+        "name": "不眠",
+        "name_en": "Insomnia",
+        "frequency": "medium"
+      },
+      {
+        "name": "セロトニン症候群",
+        "name_en": "Serotonin syndrome",
+        "frequency": "rare"
+      }
+    ]
+  },
+  {
+    "id": "D00824",
+    "type": "drug",
+    "name_en": "Fluvoxamine maleate (JP18/USP)",
+    "name_ja": "フルボキサミン",
+    "names_alt": [
+      "Luvox (TN)"
+    ],
+    "search_name": "Fluvoxamine",
+    "formula": "C15H21F3N2O2. C4H4O4",
+    "efficacy": "Antidepressant, Selective serotonin reuptake inhibitor (SSRI)\nDISEASE   Obsessive compulsive disorder [DS:H01450]",
+    "therapeutic_category": "1179",
+    "atc_code": "N06AB08",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Selective serotonin reuptake inhibitor (SSRI)",
+      "Metabolizing enzyme substrate",
+      "CYP2D6 substrate",
+      "Metabolizing enzyme inhibitor",
+      "CYP1A2 inhibitor",
+      "CYP2C9 inhibitor",
+      "CYP2C19 inhibitor",
+      "CYP2D6 inhibitor",
+      "CYP3A/CYP3A4 inhibitor",
+      "CYP3A4 inhibitor"
+    ],
+    "cyp_enzymes": [
+      "CYP2D6"
+    ],
+    "adverse_effects": [
+      {
+        "name": "悪心",
+        "name_en": "Nausea",
+        "frequency": "high"
+      },
+      {
+        "name": "性機能障害",
+        "name_en": "Sexual dysfunction",
+        "frequency": "high"
+      },
+      {
+        "name": "不眠",
+        "name_en": "Insomnia",
+        "frequency": "medium"
+      },
+      {
+        "name": "セロトニン症候群",
+        "name_en": "Serotonin syndrome",
+        "frequency": "rare"
+      }
+    ]
+  },
+  {
+    "id": "D01179",
+    "type": "drug",
+    "name_en": "Duloxetine hydrochloride (JAN/USP)",
+    "name_ja": "デュロキセチン",
+    "names_alt": [
+      "Cymbalta (TN)",
+      "Yentreve (TN)"
+    ],
+    "search_name": "Duloxetine",
+    "formula": "C18H19NOS. HCl",
+    "efficacy": "Antidepressant, Serotonin-noradrenaline reuptake inhibitor (SNRI)\nDISEASE   Major depressive disorder [DS:H01646]\nGeneralized anxiety disorder [DS:H01662]\nDiabetic peripheral neuropathic pain [DS:H01459]\nFibromyalgia [DS:H01636]",
+    "therapeutic_category": "1179",
+    "atc_code": "N06AX21",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Serotonin and norepinephrine reuptake inhibitor (SNRI)",
+      "Metabolizing enzyme substrate",
+      "CYP1A2 substrate",
+      "CYP2D6 substrate",
+      "Metabolizing enzyme inhibitor",
+      "CYP2D6 inhibitor"
+    ],
+    "cyp_enzymes": [
+      "CYP1A2",
+      "CYP2D6"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00821",
+    "type": "drug",
+    "name_en": "Venlafaxine hydrochloride (JAN/USP)",
+    "name_ja": "ベンラファキシン",
+    "names_alt": [
+      "Effexor (TN)"
+    ],
+    "search_name": "Venlafaxine",
+    "formula": "C17H27NO2. HCl",
+    "efficacy": "Antidepressant, Serotonin-noradrenaline reuptake inhibitor (SNRI)\nDISEASE   Major depressive disorder [DS:H01646]\nGeneralized anxiety disorder [DS:H01662]\nSocial anxiety disorder [DS:H01670]\nPanic disorder [DS:H01664]",
+    "therapeutic_category": "1179",
+    "atc_code": "N06AX16",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Serotonin and norepinephrine reuptake inhibitor (SNRI)",
+      "Metabolizing enzyme substrate",
+      "CYP2D6 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2D6",
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00563",
+    "type": "drug",
+    "name_en": "Mirtazapine (JAN/USP/INN)",
+    "name_ja": "ミルタザピン",
+    "names_alt": [
+      "Remeron (TN)",
+      "Reflex (TN)"
+    ],
+    "search_name": "Mirtazapine",
+    "formula": "C17H19N3",
+    "efficacy": "Antidepressant, Serotonin receptor antagonist\nDISEASE   Major depressive disorder [DS:H01646]",
+    "therapeutic_category": "1179",
+    "atc_code": "N06AX11",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Adrenergic receptor antagonist",
+      "alpha-Adrenergic receptor antagonist",
+      "alpha2-Adrenergic receptor antagonist",
+      "Neuropsychiatric agent",
+      "Tetracyclic antidepressant",
+      "Noradrenergic and specific serotonergic antidepressant (NaSSA)",
+      "Gastrointestinal agent",
+      "5-HT3-receptor antagonist",
+      "Metabolizing enzyme substrate",
+      "CYP1A2 substrate",
+      "CYP2D6 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP1A2",
+      "CYP2D6",
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00809",
+    "type": "drug",
+    "name_en": "Amitriptyline hydrochloride (JP18/USP)",
+    "name_ja": "アミトリプチリン",
+    "names_alt": [
+      "Elavil (TN)"
+    ],
+    "search_name": "Amitriptyline",
+    "formula": "C20H23N. HCl",
+    "efficacy": "Antidepressant\nDISEASE   Depression [DS:H01646]",
+    "therapeutic_category": "1179",
+    "atc_code": "N06AA09",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Non-selective monoamine reuptake inhibitor",
+      "Tricyclic antidepressant",
+      "Metabolizing enzyme substrate",
+      "CYP1A2 substrate",
+      "CYP2C19 substrate",
+      "CYP2D6 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP1A2",
+      "CYP2D6",
+      "CYP2C19",
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D01164",
+    "type": "drug",
+    "name_en": "Aripiprazole (JP18/USP/INN)",
+    "name_ja": "アリピプラゾール",
+    "names_alt": [
+      "Abilify (TN)"
+    ],
+    "search_name": "Aripiprazole",
+    "formula": "C23H27Cl2N3O2",
+    "efficacy": "Antipsychotic, Dopamine receptor partial agonist, Serotonin receptor agonist/antagonist\nDISEASE   Schizophrenia [DS:H01649]\nBipolar I disorder [DS:H01653]\nMajor depressive disorder [DS:H01646]",
+    "therapeutic_category": "1179",
+    "atc_code": "N05AX12",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Antipsychotic agent",
+      "Atypical antipsychotic",
+      "Metabolizing enzyme substrate",
+      "CYP2D6 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2D6",
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "体重増加",
+        "name_en": "Weight gain",
+        "frequency": "high"
+      },
+      {
+        "name": "代謝異常",
+        "name_en": "Metabolic disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "錐体外路症状",
+        "name_en": "Extrapyramidal symptoms",
+        "frequency": "medium"
+      },
+      {
+        "name": "QT延長",
+        "name_en": "QT prolongation",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "id": "ae_36",
+    "type": "adverse_effect",
+    "name_ja": "体重増加",
+    "name_en": "Weight gain"
+  },
+  {
+    "id": "ae_37",
+    "type": "adverse_effect",
+    "name_ja": "代謝異常",
+    "name_en": "Metabolic disorder"
+  },
+  {
+    "id": "ae_38",
+    "type": "adverse_effect",
+    "name_ja": "錐体外路症状",
+    "name_en": "Extrapyramidal symptoms"
+  },
+  {
+    "id": "D00454",
+    "type": "drug",
+    "name_en": "Olanzapine (JAN/USP/INN)",
+    "name_ja": "オランザピン",
+    "names_alt": [
+      "Zyprexa (TN)"
+    ],
+    "search_name": "Olanzapine",
+    "formula": "C17H20N4S",
+    "efficacy": "Antipsychotic\nDISEASE   Schizophrenia [DS:H01649]\nBipolar I disorder, manic or mixed episodes [DS:H01653]",
+    "therapeutic_category": "1179",
+    "atc_code": "N05AH03",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Adrenergic receptor antagonist",
+      "alpha-Adrenergic receptor antagonist",
+      "alpha1-Adrenergic receptor antagonist",
+      "Neuropsychiatric agent",
+      "Dopamine antagonist",
+      "Antipsychotic agent",
+      "Atypical antipsychotic",
+      "Anti-allergic agent",
+      "Histamine receptor antagonist",
+      "Histamine receptor H1 antagonist",
+      "Metabolizing enzyme substrate",
+      "CYP1A2 substrate",
+      "CYP2D6 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP1A2",
+      "CYP2D6"
+    ],
+    "adverse_effects": [
+      {
+        "name": "体重増加",
+        "name_en": "Weight gain",
+        "frequency": "high"
+      },
+      {
+        "name": "代謝異常",
+        "name_en": "Metabolic disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "錐体外路症状",
+        "name_en": "Extrapyramidal symptoms",
+        "frequency": "medium"
+      },
+      {
+        "name": "QT延長",
+        "name_en": "QT prolongation",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "id": "D00458",
+    "type": "drug",
+    "name_en": "Quetiapine fumarate (JP18/USP)",
+    "name_ja": "クエチアピン",
+    "names_alt": [
+      "Seroquel (TN)"
+    ],
+    "search_name": "Quetiapine",
+    "formula": "(C21H25N3O2S)2. C4H4O4",
+    "efficacy": "Antipsychotic\nDISEASE   Schizophrenia [DS:H01649]\nBipolar disorder [DS:H01653]",
+    "therapeutic_category": "1179",
+    "atc_code": "N05AH04",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Dopamine antagonist",
+      "Dopamine D2-receptor antagonist",
+      "Antipsychotic agent",
+      "Atypical antipsychotic",
+      "Anti-allergic agent",
+      "Histamine receptor antagonist",
+      "Histamine receptor H1 antagonist",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "体重増加",
+        "name_en": "Weight gain",
+        "frequency": "high"
+      },
+      {
+        "name": "代謝異常",
+        "name_en": "Metabolic disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "錐体外路症状",
+        "name_en": "Extrapyramidal symptoms",
+        "frequency": "medium"
+      },
+      {
+        "name": "QT延長",
+        "name_en": "QT prolongation",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "id": "D00426",
+    "type": "drug",
+    "name_en": "Risperidone (JP18/USP/INN)",
+    "name_ja": "リスペリドン",
+    "names_alt": [
+      "Risperdal (TN)"
+    ],
+    "search_name": "Risperidone",
+    "formula": "C23H27FN4O2",
+    "efficacy": "Antipsychotic, Neuroleptic\nDISEASE   Schizophrenia [DS:H01649]\nBipolar mania [DS:H01653]",
+    "therapeutic_category": "1179",
+    "atc_code": "N05AX08",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Dopamine antagonist",
+      "Dopamine D2-receptor antagonist",
+      "Serotonin-dopamine antagonist (SDA)",
+      "Antipsychotic agent",
+      "Atypical antipsychotic",
+      "Metabolizing enzyme substrate",
+      "CYP2D6 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2D6",
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "体重増加",
+        "name_en": "Weight gain",
+        "frequency": "high"
+      },
+      {
+        "name": "代謝異常",
+        "name_en": "Metabolic disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "錐体外路症状",
+        "name_en": "Extrapyramidal symptoms",
+        "frequency": "medium"
+      },
+      {
+        "name": "QT延長",
+        "name_en": "QT prolongation",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "id": "D00136",
+    "type": "drug",
+    "name_en": "Haloperidol (JP18/USP/INN)",
+    "name_ja": "ハロペリドール",
+    "names_alt": [
+      "Haldol (TN)"
+    ],
+    "search_name": "Haloperidol",
+    "formula": "C21H23ClFNO2",
+    "efficacy": "Antipsychotic, Antidyskinetic, Neuroleptic, Dopamine D2 receptor antagonist\nDISEASE   Tourette’s disorder [DS:H00862]",
+    "therapeutic_category": "1179",
+    "atc_code": "N05AD01",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Dopamine antagonist",
+      "Dopamine D2-receptor antagonist",
+      "Antipsychotic agent",
+      "Butyrophenone derivative",
+      "Metabolizing enzyme substrate",
+      "CYP2D6 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2D6",
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "体重増加",
+        "name_en": "Weight gain",
+        "frequency": "high"
+      },
+      {
+        "name": "代謝異常",
+        "name_en": "Metabolic disorder",
+        "frequency": "high"
+      },
+      {
+        "name": "錐体外路症状",
+        "name_en": "Extrapyramidal symptoms",
+        "frequency": "medium"
+      },
+      {
+        "name": "QT延長",
+        "name_en": "QT prolongation",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "id": "D00801",
+    "type": "drug",
+    "name_en": "Lithium carbonate (JP18/USP)",
+    "name_ja": "炭酸リチウム",
+    "names_alt": [
+      "Eskalith (TN)",
+      "Lithobid (TN)"
+    ],
+    "search_name": "Lithium carbonate",
+    "formula": "CO3. 2Li",
+    "efficacy": "Antimanic\nDISEASE   Bipolar disorder, manic episodes [DS:H01653]",
+    "therapeutic_category": "1179",
+    "atc_code": "N05AN01",
+    "drug_class": [],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00399",
+    "type": "drug",
+    "name_en": "Valproic acid (USP)",
+    "name_ja": "バルプロ酸",
+    "names_alt": [
+      "Depakene (TN)"
+    ],
+    "search_name": "Valproic acid",
+    "formula": "C8H16O2",
+    "efficacy": "Anticonvulsant",
+    "therapeutic_category": "",
+    "atc_code": "N03AG01",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Calcium channel blocker",
+      "Calcium channel T type blocker",
+      "Neuropsychiatric agent",
+      "Antiepileptic agent",
+      "Fatty acid antiepileptic"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00252",
+    "type": "drug",
+    "name_en": "Carbamazepine (JP18/USP/INN)",
+    "name_ja": "カルバマゼピン",
+    "names_alt": [
+      "Equetro (TN)",
+      "Tegretol (TN)"
+    ],
+    "search_name": "Carbamazepine",
+    "formula": "C15H12N2O",
+    "efficacy": "Analgesic, Antiepileptic\nDISEASE   Trigeminal neuralgia [DS:H01638]",
+    "therapeutic_category": "1139",
+    "atc_code": "N03AF01",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Antiepileptic agent",
+      "Carboxamide antiepileptic",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate",
+      "Metabolizing enzyme inducer",
+      "CYP3A/CYP3A4 inducer",
+      "CYP3A4 inducer",
+      "Transporter inducer",
+      "ABCB1 inducer"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "高カリウム血症",
+        "name_en": "Hyperkalemia",
+        "frequency": "medium"
+      },
+      {
+        "name": "めまい",
+        "name_en": "Dizziness",
+        "frequency": "medium"
+      },
+      {
+        "name": "腎機能障害",
+        "name_en": "Renal impairment",
+        "frequency": "low"
+      }
+    ]
+  },
+  {
+    "id": "D00354",
+    "type": "drug",
+    "name_en": "Lamotrigine (JAN/USP/INN)",
+    "name_ja": "ラモトリギン",
+    "names_alt": [
+      "Lamictal (TN)"
+    ],
+    "search_name": "Lamotrigine",
+    "formula": "C9H7Cl2N5",
+    "efficacy": "Anti-bipolar disorder, Anticonvulsant, Antiepileptic\nDISEASE   Lennox-Gastaut syndrome [DS:H01813]\nBipolar disorder [DS:H01653]",
+    "therapeutic_category": "1139",
+    "atc_code": "N03AX09",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Antiepileptic agent",
+      "Metabolizing enzyme substrate",
+      "UGT substrate",
+      "UGT1A4 substrate"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00059",
+    "type": "drug",
+    "name_en": "Levodopa (JP18/USP/INN)",
+    "name_ja": "レボドパ",
+    "names_alt": [
+      "Dopar (TN)"
+    ],
+    "search_name": "Levodopa",
+    "formula": "C9H11NO4",
+    "efficacy": "Antiparkinsonian\nDISEASE   Parkinson disease [DS:H00057]\nParkinsonism [DS:H01600]",
+    "therapeutic_category": "1164",
+    "atc_code": "N04BA01",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Dopamine agonist",
+      "Antiparkinson agent"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_1164",
+    "type": "category",
+    "name_ja": "分類1164",
+    "name_en": "",
+    "code": "1164"
+  },
+  {
+    "id": "D00559",
+    "type": "drug",
+    "name_en": "Pramipexole dihydrochloride (USP)",
+    "name_ja": "プラミペキソール",
+    "names_alt": [
+      "Pramipexole hydrochloride hydrate (JAN)",
+      "Pramipexole dihydrochloride monohydrate",
+      "Mirapex (TN)"
+    ],
+    "search_name": "Pramipexole",
+    "formula": "C10H17N3S. 2HCl. H2O",
+    "efficacy": "Antidepressant, Antiparkinsonian, Dopamine receptor agonist\nDISEASE   Parkinson disease [DS:H00057]\nRestless legs syndrome [DS:H01597]",
+    "therapeutic_category": "1169",
+    "atc_code": "N04BC05",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Dopamine agonist",
+      "Antiparkinson agent"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_1169",
+    "type": "category",
+    "name_ja": "分類1169",
+    "name_en": "",
+    "code": "1169"
+  },
+  {
+    "id": "D00784",
+    "type": "drug",
+    "name_en": "Ropinirole hydrochloride (JAN/USP)",
+    "name_ja": "ロピニロール",
+    "names_alt": [
+      "Requip (TN)"
+    ],
+    "search_name": "Ropinirole",
+    "formula": "C16H24N2O. HCl",
+    "efficacy": "Antiparkinsonian, Dopamine receptor agonist\nDISEASE   Parkinson disease [DS:H00057]\nRestless legs syndrome [DS:H01597]",
+    "therapeutic_category": "1169",
+    "atc_code": "N04BC04",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Dopamine agonist",
+      "Dopamine D2-receptor agonist",
+      "Antiparkinson agent",
+      "Metabolizing enzyme substrate",
+      "CYP1A2 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP1A2"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00670",
+    "type": "drug",
+    "name_en": "Donepezil hydrochloride (JP18/USP)",
+    "name_ja": "ドネペジル",
+    "names_alt": [
+      "Aricept (TN)"
+    ],
+    "search_name": "Donepezil",
+    "formula": "C24H29NO3. HCl",
+    "efficacy": "Dementia therapeutic agent, Acetylcholinesterase inhibitor\nDISEASE   Dementia of the Alzheimer's type [DS:H00056]",
+    "therapeutic_category": "1190",
+    "atc_code": "N06DA02",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Cholinesterase inhibitor",
+      "Acetylcholinesterase inhibitor",
+      "Antidementia agent",
+      "Metabolizing enzyme substrate",
+      "CYP2D6 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2D6",
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00529",
+    "type": "drug",
+    "name_en": "Montelukast sodium (JP18/USP)",
+    "name_ja": "モンテルカスト",
+    "names_alt": [
+      "Singulair (TN)"
+    ],
+    "search_name": "Montelukast",
+    "formula": "C35H35ClNO3S. Na",
+    "efficacy": "Antiallergic, Antiasthmatic, Leukotriene receptor antagonist\nDISEASE   Asthma [DS:H00079]\nAllergic rhinitis [DS:H01360]",
+    "therapeutic_category": "4490",
+    "atc_code": "R03DC03",
+    "drug_class": [
+      "Anti-allergic agent",
+      "Cysteinyl leukotriene receptor antagonist",
+      "Metabolizing enzyme substrate",
+      "CYP2C8 substrate",
+      "CYP2C9 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2C9",
+      "CYP2C8",
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_4490",
+    "type": "category",
+    "name_ja": "分類4490",
+    "name_en": "",
+    "code": "4490"
+  },
+  {
+    "id": "D02732",
+    "type": "drug",
+    "name_en": "Pranlukast hydrate (JP18)",
+    "name_ja": "プランルカスト",
+    "names_alt": [
+      "Onon (TN)"
+    ],
+    "search_name": "Pranlukast",
+    "formula": "(C27H23N5O4)2. H2O",
+    "efficacy": "Antiallergic, Antiasthmatic, Anti-inflammatory, Leukotriene receptor antagonist",
+    "therapeutic_category": "4490",
+    "atc_code": "R03DC02",
+    "drug_class": [
+      "Anti-allergic agent",
+      "Cysteinyl leukotriene receptor antagonist",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00371",
+    "type": "drug",
+    "name_en": "Theophylline (JP18)",
+    "name_ja": "テオフィリン",
+    "names_alt": [
+      "Elixophyllin (TN)",
+      "Quibron-t (TN)",
+      "Theo-24 (TN)",
+      "Theodur G (TN)",
+      "Theolair (TN)",
+      "Uniphyl (TN)"
+    ],
+    "search_name": "Theophylline",
+    "formula": "C7H8N4O2",
+    "efficacy": "Bronchodilator, Phosphodiesterase inhibitor\nDISEASE   Chronic asthma [DS:H00079]",
+    "therapeutic_category": "2251",
+    "atc_code": "R03DA04",
+    "drug_class": [
+      "Respiratory system agent",
+      "Xanthine derivative",
+      "Xanthine-type bronchodilator",
+      "Metabolizing enzyme substrate",
+      "CYP1A2 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP1A2"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2251",
+    "type": "category",
+    "name_ja": "分類2251",
+    "name_en": "",
+    "code": "2251"
+  },
+  {
+    "id": "D00246",
+    "type": "drug",
+    "name_en": "Budesonide (JP18/USP/INN)",
+    "name_ja": "ブデソニド",
+    "names_alt": [
+      "Entocort EC (TN)",
+      "Pulmicort (TN)",
+      "Rhinocort (TN)",
+      "Uceris (TN)"
+    ],
+    "search_name": "Budesonide",
+    "formula": "C25H34O6",
+    "efficacy": "Antiasthmatic, Anti-inflammatory, Glucocorticoid receptor agonist\nDISEASE   Asthma [DS:H00079]\nCrohn's disease [DS:H00286]\nPerennial allergic rhinitis [DS:H01360]\nDistal ulcerative colitis [DS:H01466]",
+    "therapeutic_category": "2290",
+    "atc_code": "A07EA06",
+    "drug_class": [
+      "Anti-inflammatory",
+      "Corticosteroid",
+      "Glucocorticoid",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2290",
+    "type": "category",
+    "name_ja": "分類2290",
+    "name_en": "",
+    "code": "2290"
+  },
+  {
+    "id": "D01708",
+    "type": "drug",
+    "name_en": "Fluticasone propionate (JAN/USP)",
+    "name_ja": "フルチカゾン",
+    "names_alt": [
+      "Cutivate (TN)",
+      "Flonase (TN)",
+      "Flovent (TN)"
+    ],
+    "search_name": "Fluticasone",
+    "formula": "C25H31F3O5S",
+    "efficacy": "Antiasthmatic, Anti-inflammatory, Glucocorticoid receptor agonist\nDISEASE   Asthma [DS:H00079]",
+    "therapeutic_category": "1329",
+    "atc_code": "D07AC17",
+    "drug_class": [
+      "Anti-inflammatory",
+      "Corticosteroid",
+      "Glucocorticoid",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_1329",
+    "type": "category",
+    "name_ja": "分類1329",
+    "name_en": "",
+    "code": "1329"
+  },
+  {
+    "id": "D00689",
+    "type": "drug",
+    "name_en": "Beclomethasone dipropionate (USP)",
+    "name_ja": "ベクロメタゾン",
+    "names_alt": [
+      "Beclometasone dipropionate (JP18)",
+      "Beclovent (TN)",
+      "Qnasl (TN)",
+      "Vanceril (TN)"
+    ],
+    "search_name": "Beclomethasone",
+    "formula": "C28H37ClO7",
+    "efficacy": "Antiasthmatic, Anti-inflammatory, Glucocorticoid receptor agonist\nDISEASE   Asthma [DS:H00079]\nAllergic rhinitis [DS:H01360]",
+    "therapeutic_category": "1329",
+    "atc_code": "A07EA07",
+    "drug_class": [
+      "Anti-inflammatory",
+      "Corticosteroid",
+      "Glucocorticoid",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D01929",
+    "type": "drug",
+    "name_en": "Tiotropium bromide hydrate (JAN)",
+    "name_ja": "チオトロピウム",
+    "names_alt": [
+      "Tiotropium bromide monohydrate",
+      "Spiriva (TN)"
+    ],
+    "search_name": "Tiotropium",
+    "formula": "C19H22NO4S2. Br. H2O",
+    "efficacy": "Bronchodilator, Muscarinic acetylcholine receptor antagonist\nDISEASE   Chronic obstructive pulmonary disease [DS:H01714]\nAsthma [DS:H00079]",
+    "therapeutic_category": "2259",
+    "atc_code": "R03BB04",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Muscarinic cholinergic receptor antagonist"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2259",
+    "type": "category",
+    "name_ja": "分類2259",
+    "name_en": "",
+    "code": "2259"
+  },
+  {
+    "id": "D00687",
+    "type": "drug",
+    "name_en": "Salmeterol xinafoate (JAN/USP)",
+    "name_ja": "サルメテロール",
+    "names_alt": [
+      "Serevent (TN)"
+    ],
+    "search_name": "Salmeterol",
+    "formula": "C25H37NO4. C11H8O3",
+    "efficacy": "Bronchodilator, beta2-Adrenergic receptor agonist\nDISEASE   Asthma [DS:H00079]\nChronic obstructive pulmonary disease [DS:H01714]",
+    "therapeutic_category": "2259",
+    "atc_code": "R03AC12",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Adrenergic receptor agonist",
+      "beta-Adrenergic receptor agonist",
+      "beta2-Adrenergic receptor agonist",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D01373",
+    "type": "drug",
+    "name_en": "Formoterol fumarate (USP)",
+    "name_ja": "ホルモテロール",
+    "names_alt": [
+      "Foradil (TN)"
+    ],
+    "search_name": "Formoterol",
+    "formula": "(C19H24N2O4)2. C4H4O4",
+    "efficacy": "Bronchodilator, beta2-Adrenergic receptor agonist\nDISEASE   Asthma [DS:H00079]\nChronic obstructive pulmonary disease [DS:H01714]",
+    "therapeutic_category": "",
+    "atc_code": "R03AC13",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Adrenergic receptor agonist",
+      "beta-Adrenergic receptor agonist",
+      "beta2-Adrenergic receptor agonist",
+      "Metabolizing enzyme substrate",
+      "UGT substrate"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00195",
+    "type": "drug",
+    "name_en": "Codeine (USP)",
+    "name_ja": "コデイン",
+    "names_alt": [
+      "Codeine hydrate"
+    ],
+    "search_name": "Codeine",
+    "formula": "C18H21NO3. H2O",
+    "efficacy": "Analgesic (narcotic), Antitussive, Opioid receptor agonist",
+    "therapeutic_category": "",
+    "atc_code": "R05DA04",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Opioid receptor agonist",
+      "mu-Opioid receptor agonist",
+      "Analgesic",
+      "Opioid analgesics",
+      "Metabolizing enzyme substrate",
+      "CYP2D6 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate",
+      "UGT substrate",
+      "UGT2B4 substrate",
+      "UGT2B7 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2D6",
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "便秘",
+        "name_en": "Constipation",
+        "frequency": "high"
+      },
+      {
+        "name": "悪心・嘔吐",
+        "name_en": "Nausea/vomiting",
+        "frequency": "high"
+      },
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "呼吸抑制",
+        "name_en": "Respiratory depression",
+        "frequency": "medium"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      }
+    ]
+  },
+  {
+    "id": "ae_39",
+    "type": "adverse_effect",
+    "name_ja": "便秘",
+    "name_en": "Constipation"
+  },
+  {
+    "id": "ae_40",
+    "type": "adverse_effect",
+    "name_ja": "悪心・嘔吐",
+    "name_en": "Nausea/vomiting"
+  },
+  {
+    "id": "ae_41",
+    "type": "adverse_effect",
+    "name_ja": "呼吸抑制",
+    "name_en": "Respiratory depression"
+  },
+  {
+    "id": "D00848",
+    "type": "drug",
+    "name_en": "Dextromethorphan hydrobromide (USP)",
+    "name_ja": "デキストロメトルファン",
+    "names_alt": [
+      "Dextromethorphan hydrobromide hydrate (JP18)",
+      "Benylin DM (TN)"
+    ],
+    "search_name": "Dextromethorphan",
+    "formula": "C18H25NO. HBr. H2O",
+    "efficacy": "Antitussive",
+    "therapeutic_category": "2223",
+    "atc_code": "R05DA09",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "NMDA receptor antagonist",
+      "Metabolizing enzyme substrate",
+      "CYP2D6 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2D6"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2223",
+    "type": "category",
+    "name_ja": "分類2223",
+    "name_en": "",
+    "code": "2223"
+  },
+  {
+    "id": "D00671",
+    "type": "drug",
+    "name_en": "Fexofenadine hydrochloride (JP18/USP)",
+    "name_ja": "フェキソフェナジン",
+    "names_alt": [
+      "Allegra (TN)"
+    ],
+    "search_name": "Fexofenadine",
+    "formula": "C32H39NO4. HCl",
+    "efficacy": "Antiallergic, H1 receptor antagonist\nDISEASE   Seasonal allergic rhinitis [DS:H01360]",
+    "therapeutic_category": "4490",
+    "atc_code": "R06AX26",
+    "drug_class": [
+      "Anti-allergic agent",
+      "Histamine receptor antagonist",
+      "Histamine receptor H1 antagonist",
+      "Dermatological agent",
+      "Atopic dermatitis agent"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00664",
+    "type": "drug",
+    "name_en": "Cetirizine hydrochloride (JP18/USP)",
+    "name_ja": "セチリジン",
+    "names_alt": [
+      "Zyrtec (TN)"
+    ],
+    "search_name": "Cetirizine",
+    "formula": "C21H25ClN2O3. 2HCl",
+    "efficacy": "Antiallergic, H1 receptor antagonist",
+    "therapeutic_category": "4490",
+    "atc_code": "R06AE07",
+    "drug_class": [
+      "Anti-allergic agent",
+      "Histamine receptor antagonist",
+      "Histamine receptor H1 antagonist",
+      "Dermatological agent",
+      "Atopic dermatitis agent",
+      "Transporter substrate",
+      "ABCB1 substrate",
+      "SLC22A2 substrate",
+      "Transporter inhibitor",
+      "SLC22A2 inhibitor"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00364",
+    "type": "drug",
+    "name_en": "Loratadine (JAN/USP/INN)",
+    "name_ja": "ロラタジン",
+    "names_alt": [
+      "Claritin (TN)"
+    ],
+    "search_name": "Loratadine",
+    "formula": "C22H23ClN2O2",
+    "efficacy": "Antiallergic, H1 receptor antagonist",
+    "therapeutic_category": "4490",
+    "atc_code": "R06AX13",
+    "drug_class": [
+      "Anti-allergic agent",
+      "Histamine receptor antagonist",
+      "Histamine receptor H1 antagonist",
+      "Dermatological agent",
+      "Atopic dermatitis agent",
+      "Metabolizing enzyme substrate",
+      "CYP2D6 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2D6",
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D03693",
+    "type": "drug",
+    "name_en": "Desloratadine (JAN/USP/INN)",
+    "name_ja": "デスロラタジン",
+    "names_alt": [
+      "Clarinex (TN)"
+    ],
+    "search_name": "Desloratadine",
+    "formula": "C19H19ClN2",
+    "efficacy": "Antiallergic, Antipruritic, H1 receptor antagonist\nDISEASE   Allergic rhinitis [DS:H01360]",
+    "therapeutic_category": "4490",
+    "atc_code": "R06AX27",
+    "drug_class": [
+      "Anti-allergic agent",
+      "Histamine receptor antagonist",
+      "Histamine receptor H1 antagonist",
+      "Dermatological agent",
+      "Atopic dermatitis agent"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D01192",
+    "type": "drug",
+    "name_en": "Olopatadine hydrochloride (JP18/USP)",
+    "name_ja": "オロパタジン",
+    "names_alt": [
+      "Allelock (TN)",
+      "Patanol (TN)",
+      "Opatanol (TN)"
+    ],
+    "search_name": "Olopatadine",
+    "formula": "C21H23NO3. HCl",
+    "efficacy": "Antiallergic, H1 receptor antagonist\nDISEASE   Seasonal allergic rhinitis [DS:H01360]",
+    "therapeutic_category": "1319",
+    "atc_code": "R01AC08",
+    "drug_class": [
+      "Anti-allergic agent",
+      "Histamine receptor antagonist",
+      "Histamine receptor H1 antagonist",
+      "Dermatological agent",
+      "Atopic dermatitis agent"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D01654",
+    "type": "drug",
+    "name_en": "Bepotastine besylate (USAN)",
+    "name_ja": "ベポタスチン",
+    "names_alt": [
+      "Bepotastine besilate (JP18)",
+      "Bepreve (TN)",
+      "Talion (TN)"
+    ],
+    "search_name": "Bepotastine",
+    "formula": "C21H25ClN2O3. C6H6O3S",
+    "efficacy": "Antiallergic, Antipruritic, H1 receptor antagonist",
+    "therapeutic_category": "4490",
+    "atc_code": "",
+    "drug_class": [
+      "Anti-allergic agent",
+      "Histamine receptor antagonist",
+      "Histamine receptor H1 antagonist",
+      "Dermatological agent",
+      "Atopic dermatitis agent"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D09570",
+    "type": "drug",
+    "name_en": "Bilastine (JAN/INN)",
+    "name_ja": "ビラスチン",
+    "names_alt": [
+      "Bilanoa (TN)"
+    ],
+    "search_name": "Bilastine",
+    "formula": "C28H37N3O3",
+    "efficacy": "Antiallergic, Antipruritic, H1 receptor antagonist",
+    "therapeutic_category": "4490",
+    "atc_code": "R06AX29",
+    "drug_class": [
+      "Anti-allergic agent",
+      "Histamine receptor antagonist",
+      "Histamine receptor H1 antagonist",
+      "Dermatological agent",
+      "Atopic dermatitis agent"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D01713",
+    "type": "drug",
+    "name_en": "Epinastine hydrochloride (JAN)",
+    "name_ja": "エピナスチン",
+    "names_alt": [
+      "Alesion (TN)",
+      "Elestat (TN)"
+    ],
+    "search_name": "Epinastine",
+    "formula": "C16H15N3. HCl",
+    "efficacy": "Antiallergic, H1 receptor antagonist",
+    "therapeutic_category": "1319",
+    "atc_code": "R06AX24",
+    "drug_class": [
+      "Anti-allergic agent",
+      "Histamine receptor antagonist",
+      "Histamine receptor H1 antagonist",
+      "Dermatological agent",
+      "Atopic dermatitis agent"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00407",
+    "type": "drug",
+    "name_en": "Methylprednisolone (JP18/USP/INN)",
+    "name_ja": "プレドニゾロン",
+    "names_alt": [
+      "Medrol (TN)"
+    ],
+    "search_name": "Prednisolone",
+    "formula": "C22H30O5",
+    "efficacy": "Antiallergic, Anti-inflammatory, Glucocorticoid receptor agonist\nDISEASE   Congenital adrenal hyperplasia [DS:H00216]\nRheumatoid arthritis [DS:H00630]\nJuvenile rheumatoid arthritis [DS:H01672]\nAnkylosing spondylitis [DS:H01674]\nPsoriatic arthritis [DS:H01507]\nSystemic lupus erythematosus [DS:H00080]\nSystemic dermatomyositis and polymyositis [DS:H01604]\nBullous dermatitis herpetiformis [DS:H01362]\nErythema multiforme [DS:H01695]\nStevens-Johnson syndrome [DS:H01694]\nSeborrheic dermatitis [DS:H01652]\nMycosis fungoides [DS:H01463]\nPemphigus [DS:H01648]\nSevere psoriasis [DS:H01656]\nSeasonal or perennial allergic rhinitis [DS:H01360]\nContact dermatitis [DS:H01357]\nBronchial asthma [DS:H00079]\nAtopic dermatitis [DS:H01358]\nOptic neuritis [DS:H01717]\nPulmonary tuberculosis [DS:H00342]\nAcquired (autoimmune) hemolytic anemia [DS:H01585]\nNephrotic syndrome [DS:H01657]\nUlcerative colitis [DS:H01466]\nMultiple sclerosis [DS:H01490]",
+    "therapeutic_category": "2456",
+    "atc_code": "D07AA01",
+    "drug_class": [
+      "Anti-inflammatory",
+      "Corticosteroid",
+      "Glucocorticoid",
+      "Dermatological agent",
+      "Atopic dermatitis agent",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2456",
+    "type": "category",
+    "name_ja": "分類2456",
+    "name_en": "",
+    "code": "2456"
+  },
+  {
+    "id": "D00292",
+    "type": "drug",
+    "name_en": "Dexamethasone (JP18/USP/INN)",
+    "name_ja": "デキサメタゾン",
+    "names_alt": [
+      "Decadron (TN)",
+      "Maxidex (TN)"
+    ],
+    "search_name": "Dexamethasone",
+    "formula": "C22H29FO5",
+    "efficacy": "Anti-inflammatory, Antipruritic, Glucocorticoid receptor agonist\nDISEASE   Diabetic macular edema [DS:H01651]\nAsthma [DS:H00079]\nAtopic dermatitis [DS:H01358]\nContact dermatitis [DS:H01357]\nAllergic rhinitis [DS:H01360]\nBullous dermatitis herpetiformis [DS:H01362]\nMycosis fungoides [DS:H01463]\nPemphigus [DS:H01648]\nErythema multiforme [DS:H01695]\nStevens-Johnson syndrome [DS:H01694]\nCongenital adrenal hyperplasia [DS:H00216]\nUlcerative colitis [DS:H01466]\nAcquired (autoimmune) hemolytic anemia [DS:H01585]\nCongenital (erythroid) hypoplastic anemia; Diamond-Blackfan anemia [DS:H00237]\nPure red cell aplasia [DS:H01586]\nMultiple sclerosis [DS:H01490]\nTemporal arteritis [DS:H01698]\nNephrotic syndrome [DS:H01657]\nPulmonary tuberculosis [DS:H00342]\nAcute gouty arthritis [DS:H01532]\nAnkylosing spondylitis [DS:H01674]\nPsoriatic arthritis [DS:H01507]\nRheumatoid arthritis [DS:H00630]\nJuvenile rheumatoid arthritis [DS:H01672]\nDermatomyositis and polymyositis [DS:H01604]\nSystemic lupus erythematosus [DS:H00080]",
+    "therapeutic_category": "1315",
+    "atc_code": "A01AC02",
+    "drug_class": [
+      "Anti-inflammatory",
+      "Corticosteroid",
+      "Glucocorticoid",
+      "Dermatological agent",
+      "Atopic dermatitis agent",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate",
+      "Metabolizing enzyme inducer",
+      "CYP3A/CYP3A4 inducer",
+      "CYP3A4 inducer"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_1315",
+    "type": "category",
+    "name_ja": "分類1315",
+    "name_en": "",
+    "code": "1315"
+  },
+  {
+    "id": "D00244",
+    "type": "drug",
+    "name_en": "Betamethasone (JP18/USP/INN)",
+    "name_ja": "ベタメタゾン",
+    "names_alt": [
+      "Celestone (TN)",
+      "Rinderon (TN)"
+    ],
+    "search_name": "Betamethasone",
+    "formula": "C22H29FO5",
+    "efficacy": "Anti-inflammatory, Antirheumatic, Glucocorticoid receptor agonist",
+    "therapeutic_category": "2454",
+    "atc_code": "A07EA04",
+    "drug_class": [
+      "Anti-inflammatory",
+      "Corticosteroid",
+      "Glucocorticoid",
+      "Dermatological agent",
+      "Atopic dermatitis agent"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2454",
+    "type": "category",
+    "name_ja": "分類2454",
+    "name_en": "",
+    "code": "2454"
+  },
+  {
+    "id": "D01024",
+    "type": "drug",
+    "name_en": "Tamsulosin hydrochloride (JP18/USP)",
+    "name_ja": "タムスロシン",
+    "names_alt": [
+      "Flomax (TN)",
+      "Harnal (TN)"
+    ],
+    "search_name": "Tamsulosin",
+    "formula": "C20H28N2O5S. HCl",
+    "efficacy": "Antidysuria, alpha1-Adrenergic receptor antagonist",
+    "therapeutic_category": "2590",
+    "atc_code": "G04CA02",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Adrenergic receptor antagonist",
+      "alpha-Adrenergic receptor antagonist",
+      "alpha1-Adrenergic receptor antagonist"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2590",
+    "type": "category",
+    "name_ja": "分類2590",
+    "name_en": "",
+    "code": "2590"
+  },
+  {
+    "id": "D01965",
+    "type": "drug",
+    "name_en": "Silodosin (JP18/INN)",
+    "name_ja": "シロドシン",
+    "names_alt": [
+      "KMD 3213",
+      "Rapaflo (TN)",
+      "Urief (TN)"
+    ],
+    "search_name": "Silodosin",
+    "formula": "C25H32F3N3O4",
+    "efficacy": "Antidysuria, alpha1-Adrenergic receptor antagonist",
+    "therapeutic_category": "2590",
+    "atc_code": "G04CA04",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Adrenergic receptor antagonist",
+      "alpha-Adrenergic receptor antagonist",
+      "alpha1-Adrenergic receptor antagonist",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate",
+      "UGT substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D01674",
+    "type": "drug",
+    "name_en": "Naftopidil (JP18/INN)",
+    "name_ja": "ナフトピジル",
+    "names_alt": [
+      "Flivas (TN)"
+    ],
+    "search_name": "Naftopidil",
+    "formula": "C24H28N2O3",
+    "efficacy": "Antidysuria, alpha1-Adrenergic receptor antagonist",
+    "therapeutic_category": "2590",
+    "atc_code": "",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Adrenergic receptor antagonist",
+      "alpha-Adrenergic receptor antagonist",
+      "alpha1-Adrenergic receptor antagonist"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D03820",
+    "type": "drug",
+    "name_en": "Dutasteride (JAN/USP/INN)",
+    "name_ja": "デュタステリド",
+    "names_alt": [
+      "Avodart (TN)"
+    ],
+    "search_name": "Dutasteride",
+    "formula": "C27H30F6N2O2",
+    "efficacy": "Prostatic hyperplasia treatment, Antiandrogen, 5alpha-Reductase inhibitor",
+    "therapeutic_category": "2499",
+    "atc_code": "G04CB02",
+    "drug_class": [
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate",
+      "CYP3A5 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A5",
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00321",
+    "type": "drug",
+    "name_en": "Finasteride (JAN/USP/INN)",
+    "name_ja": "フィナステリド",
+    "names_alt": [
+      "Propecia (TN)",
+      "Proscar (TN)"
+    ],
+    "search_name": "Finasteride",
+    "formula": "C23H36N2O2",
+    "efficacy": "Antiandrogen, 5alpha-Reductase inhibitor",
+    "therapeutic_category": "2499",
+    "atc_code": "D11AX10",
+    "drug_class": [
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D09535",
+    "type": "drug",
+    "name_en": "Mirabegron (JAN/USAN/INN)",
+    "name_ja": "ミラベグロン",
+    "names_alt": [
+      "Myrbetriq (TN)"
+    ],
+    "search_name": "Mirabegron",
+    "formula": "C21H24N4O2S",
+    "efficacy": "Overactive bladder agent, beta3-Adrenergic receptor agonist",
+    "therapeutic_category": "2590",
+    "atc_code": "G04BD12",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Adrenergic receptor agonist",
+      "beta-Adrenergic receptor agonist",
+      "beta3-Adrenergic receptor agonist",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate",
+      "Metabolizing enzyme inhibitor",
+      "CYP2D6 inhibitor",
+      "Transporter inhibitor",
+      "ABCB1 inhibitor"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D01269",
+    "type": "drug",
+    "name_en": "Solifenacin succinate (JAN/USAN/INN)",
+    "name_ja": "ソリフェナシン",
+    "names_alt": [
+      "Vesicare (TN)"
+    ],
+    "search_name": "Solifenacin",
+    "formula": "C23H26N2O2. C4H6O4",
+    "efficacy": "Overactive bladder agent, Muscarinic acetylcholine receptor antagonist",
+    "therapeutic_category": "2590",
+    "atc_code": "G04BD08",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Muscarinic cholinergic receptor antagonist",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D02008",
+    "type": "drug",
+    "name_en": "Tadalafil (JAN/USP/INN)",
+    "name_ja": "タダラフィル",
+    "names_alt": [
+      "Adcirca (TN)",
+      "Cialis (TN)",
+      "Zalutia (TN)"
+    ],
+    "search_name": "Tadalafil",
+    "formula": "C22H19N3O4",
+    "efficacy": "Antihypertensive, Impotence therapy, Phosphodiesterase V inhibitor\nDISEASE   Pulmonary arterial hypertension [DS:H01621]",
+    "therapeutic_category": "2190",
+    "atc_code": "G04BE08",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Phosphodiesterase V inhibitor",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00939",
+    "type": "drug",
+    "name_en": "Alendronate sodium (USP)",
+    "name_ja": "アレンドロン酸",
+    "names_alt": [
+      "Alendronate sodium hydrate (JP18)",
+      "Binosto (TN)",
+      "Fosamax (TN)"
+    ],
+    "search_name": "Alendronate",
+    "formula": "C4H12NO7P2. 3H2O. Na",
+    "efficacy": "Antiresorptive, Osteoporosis agent, Farnesylpyrophosphate synthetase inhibitor\nDISEASE   Osteoporosis [DS:H01593]\nGlucocorticoid-induced osteoporosis [DS:H01709]\nPaget's disease of bone [DS:H00437]",
+    "therapeutic_category": "3999",
+    "atc_code": "M05BA04",
+    "drug_class": [
+      "Musculo-skeletal system agent",
+      "Osteoporosis agent",
+      "Bisphosphonate"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_3999",
+    "type": "category",
+    "name_ja": "分類3999",
+    "name_en": "",
+    "code": "3999"
+  },
+  {
+    "id": "D00942",
+    "type": "drug",
+    "name_en": "Risedronate sodium (USP)",
+    "name_ja": "リセドロン酸",
+    "names_alt": [
+      "Actonel (TN)"
+    ],
+    "search_name": "Risedronate",
+    "formula": "C7H10NO7P2. Na",
+    "efficacy": "Antiresorptive, Osteoporosis agent, Farnesylpyrophosphate synthetase inhibitor\nDISEASE   Osteoporosis [DS:H01593]\nGlucocorticoid-induced osteoporosis [DS:H01709]\nPaget's disease of bone [DS:H00437]",
+    "therapeutic_category": "",
+    "atc_code": "M05BA07",
+    "drug_class": [
+      "Musculo-skeletal system agent",
+      "Osteoporosis agent",
+      "Bisphosphonate"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D03684",
+    "type": "drug",
+    "name_en": "Denosumab (USAN)",
+    "name_ja": "デノスマブ",
+    "names_alt": [
+      "Denosumab (genetical recombination) (JAN)",
+      "Denosumab (genetical recombination) [Denosumab biosimilar 1] (JAN)",
+      "Denosumab-dssb",
+      "Denosumab-bmwo",
+      "Ospomyv (TN)",
+      "Prolia (TN)",
+      "Ranmark (TN)",
+      "Xbryk (TN)",
+      "Xgeva (TN)"
+    ],
+    "search_name": "Denosumab",
+    "formula": "C6404H9912N1724O2004S50",
+    "efficacy": "Osteoporosis agent, Anti-RANKL antibody\nDISEASE   Osteoporosis [DS:H01593]\nMultiple myeloma [DS:H00010]\nGiant cell tumor of bone [DS:H01470]\nTYPE      Monoclonal antibody",
+    "therapeutic_category": "3999",
+    "atc_code": "M05BX04",
+    "drug_class": [
+      "Anti-inflammatory",
+      "Disease modifying anti-rheumatic drug (DMARD)",
+      "Musculo-skeletal system agent",
+      "Osteoporosis agent"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D07578",
+    "type": "drug",
+    "name_en": "Eldecalcitol (JAN/INN)",
+    "name_ja": "エルデカルシトール",
+    "names_alt": [
+      "Edirol (TN)"
+    ],
+    "search_name": "Eldecalcitol",
+    "formula": "C30H50O5",
+    "efficacy": "Antipsoriatic, Osteoporosis agent, Vitamin D receptor agonist",
+    "therapeutic_category": "3112",
+    "atc_code": "",
+    "drug_class": [
+      "Gastrointestinal agent",
+      "Vitamin D derivatives",
+      "Activated vitamin D3",
+      "Musculo-skeletal system agent",
+      "Osteoporosis agent"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_3112",
+    "type": "category",
+    "name_ja": "分類3112",
+    "name_en": "",
+    "code": "3112"
+  },
+  {
+    "id": "D01518",
+    "type": "drug",
+    "name_en": "Alfacalcidol (JAN/INN)",
+    "name_ja": "アルファカルシドール",
+    "names_alt": [
+      "Alsiodol (TN)"
+    ],
+    "search_name": "Alfacalcidol",
+    "formula": "C27H44O2",
+    "efficacy": "Osteoporosis agent, Vitamin D receptor agonist",
+    "therapeutic_category": "3112",
+    "atc_code": "A11CC03",
+    "drug_class": [
+      "Gastrointestinal agent",
+      "Vitamin D derivatives",
+      "Activated vitamin D3",
+      "Musculo-skeletal system agent",
+      "Osteoporosis agent"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D01010",
+    "type": "drug",
+    "name_en": "Levothyroxine sodium (USP)",
+    "name_ja": "レボチロキシン",
+    "names_alt": [
+      "Levothyroxine sodium hydrate (JP18)",
+      "Levothroid (TN)",
+      "Levoxyl (TN)",
+      "Synthroid (TN)"
+    ],
+    "search_name": "Levothyroxine",
+    "formula": "C15H10I4NO4. Na. xH2O",
+    "efficacy": "Replenisher (thyroid hormone)\nDISEASE   Hypothyroidism [DS:H00250]\nHashimoto's thyroiditis [DS:H00081]",
+    "therapeutic_category": "2431",
+    "atc_code": "H03AA01",
+    "drug_class": [
+      "Hormonal agent",
+      "Thyroid preparation",
+      "Thyroid hormone replenisher"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2431",
+    "type": "category",
+    "name_ja": "分類2431",
+    "name_en": "",
+    "code": "2431"
+  },
+  {
+    "id": "D00401",
+    "type": "drug",
+    "name_en": "Methimazole (USP)",
+    "name_ja": "チアマゾール",
+    "names_alt": [
+      "Thiamazole (JP18/INN)",
+      "Tapazole (TN)"
+    ],
+    "search_name": "Thiamazole",
+    "formula": "C4H6N2S",
+    "efficacy": "Antithyroid, Thyroid hormone synthesis inhibitor\nDISEASE   Graves' disease [DS:H00082]\nHyperthyroidism [DS:H01645]",
+    "therapeutic_category": "2432",
+    "atc_code": "H03BB02",
+    "drug_class": [
+      "Hormonal agent",
+      "Antithyroid agent"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2432",
+    "type": "category",
+    "name_ja": "分類2432",
+    "name_en": "",
+    "code": "2432"
+  },
+  {
+    "id": "D00224",
+    "type": "drug",
+    "name_en": "Allopurinol (JP18/USP/INN)",
+    "name_ja": "アロプリノール",
+    "names_alt": [
+      "Zyloprim (TN)"
+    ],
+    "search_name": "Allopurinol",
+    "formula": "C5H4N4O",
+    "efficacy": "Gout suppressant, Uric acid biosynthesis inhibitor, Xanthine oxidase inhibitor\nDISEASE   Primary or secondary gout [DS:H01532]",
+    "therapeutic_category": "3943",
+    "atc_code": "M04AA01",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Xanthine dehydrogenase inhibitor",
+      "Musculo-skeletal system agent",
+      "Xanthin oxidase inhibitor",
+      "Metabolizing enzyme inhibitor",
+      "CYP1A2 inhibitor"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_3943",
+    "type": "category",
+    "name_ja": "分類3943",
+    "name_en": "",
+    "code": "3943"
+  },
+  {
+    "id": "D01206",
+    "type": "drug",
+    "name_en": "Febuxostat (JP18/USAN/INN)",
+    "name_ja": "フェブキソスタット",
+    "names_alt": [
+      "Uloric (TN)",
+      "Feburic (TN)"
+    ],
+    "search_name": "Febuxostat",
+    "formula": "C16H16N2O3S",
+    "efficacy": "Gout suppressant, Uric acid biosynthesis inhibitor, Xanthine oxidase inhibitor\nDISEASE   Gout [DS:H01532]",
+    "therapeutic_category": "3949",
+    "atc_code": "M04AA03",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Xanthine dehydrogenase inhibitor",
+      "Musculo-skeletal system agent",
+      "Xanthin oxidase inhibitor"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_3949",
+    "type": "category",
+    "name_ja": "分類3949",
+    "name_en": "",
+    "code": "3949"
+  },
+  {
+    "id": "D00570",
+    "type": "drug",
+    "name_en": "Colchicine (JP18/USP)",
+    "name_ja": "コルヒチン",
+    "names_alt": [],
+    "search_name": "Colchicine",
+    "formula": "C22H25NO6",
+    "efficacy": "Gout suppressant, Leukocyte (neutrophil) migration inhibitor, Tubulin polymerization inhibitor\nDISEASE   Gout flares [DS:H01532]\nFamilial mediterranean fever [DS:H00288]",
+    "therapeutic_category": "3941",
+    "atc_code": "M04AC01",
+    "drug_class": [
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate",
+      "Transporter substrate",
+      "ABCB1 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_3941",
+    "type": "category",
+    "name_ja": "分類3941",
+    "name_en": "",
+    "code": "3941"
+  },
+  {
+    "id": "D01056",
+    "type": "drug",
+    "name_en": "Benzbromarone (JP18/USAN/INN)",
+    "name_ja": "ベンズブロマロン",
+    "names_alt": [
+      "Uroleap (TN)"
+    ],
+    "search_name": "Benzbromarone",
+    "formula": "C17H12Br2O3",
+    "efficacy": "Gout suppressant, Uricosuric",
+    "therapeutic_category": "3949",
+    "atc_code": "M04AB03",
+    "drug_class": [
+      "Musculo-skeletal system agent",
+      "Uricosurics",
+      "Urate transporter inhibitor",
+      "Metabolizing enzyme substrate",
+      "CYP2C9 substrate",
+      "Metabolizing enzyme inhibitor",
+      "CYP2C9 inhibitor"
+    ],
+    "cyp_enzymes": [
+      "CYP2C9"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00222",
+    "type": "drug",
+    "name_en": "Acyclovir (USP)",
+    "name_ja": "アシクロビル",
+    "names_alt": [
+      "Aciclovir (JP18/INN)",
+      "Sitavig (TN)",
+      "Zovirax (TN)"
+    ],
+    "search_name": "Acyclovir",
+    "formula": "C8H11N5O3",
+    "efficacy": "Antiviral, DNA polymerase inhibitor\nDISEASE   Herpes simplex virus infection [DS:H00365]\nHerpes zoster infection [DS:H00366]\nChickenpox [DS:H00366]",
+    "therapeutic_category": "1319",
+    "atc_code": "D06BB03",
+    "drug_class": [
+      "Antiviral",
+      "Anti-herpesvirus agent",
+      "Transporter substrate",
+      "SLC22A1 substrate",
+      "SLC22A6 substrate",
+      "SLC22A8 substrate"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00398",
+    "type": "drug",
+    "name_en": "Valacyclovir hydrochloride (USP)",
+    "name_ja": "バラシクロビル",
+    "names_alt": [
+      "Valaciclovir hydrochloride (JP18)",
+      "Valtrex (TN)"
+    ],
+    "search_name": "Valacyclovir",
+    "formula": "C13H20N6O4. HCl",
+    "efficacy": "Antiviral, DNA polymerase inhibitor\nDISEASE   Herpes labialis [DS:H00365]\nGenital herpes [DS:H00365]\nHerpes zoster [DS:H00366]\nChickenpox [DS:H00366]",
+    "therapeutic_category": "6250",
+    "atc_code": "J05AB11",
+    "drug_class": [
+      "Antiviral",
+      "Anti-herpesvirus agent"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_6250",
+    "type": "category",
+    "name_ja": "分類6250",
+    "name_en": "",
+    "code": "6250"
+  },
+  {
+    "id": "D00900",
+    "type": "drug",
+    "name_en": "Oseltamivir phosphate (JAN/USP)",
+    "name_ja": "オセルタミビル",
+    "names_alt": [
+      "Tamiflu (TN)",
+      "Ebilfumin (TN)"
+    ],
+    "search_name": "Oseltamivir",
+    "formula": "C16H28N2O4. H3PO4",
+    "efficacy": "Antiviral, Neuraminidase inhibitor\nDISEASE   Influenza [DS:H00398]",
+    "therapeutic_category": "6250",
+    "atc_code": "J05AH02",
+    "drug_class": [
+      "Antiviral",
+      "Anti-influenza virus agent",
+      "Neuraminidase inhibitor"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D11021",
+    "type": "drug",
+    "name_en": "Baloxavir marboxil (JAN/USAN/INN)",
+    "name_ja": "バロキサビル マルボキシル",
+    "names_alt": [
+      "Xofluza (TN)"
+    ],
+    "search_name": "Baloxavir marboxil",
+    "formula": "C27H23F2N3O7S",
+    "efficacy": "Antiviral, cap-dependent endonuclease inhibitor\nDISEASE   Influenza [DS:H00398]",
+    "therapeutic_category": "6250",
+    "atc_code": "J05AX25",
+    "drug_class": [
+      "Antiviral",
+      "Anti-influenza virus agent"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00322",
+    "type": "drug",
+    "name_en": "Fluconazole (JP18/USP/INN)",
+    "name_ja": "フルコナゾール",
+    "names_alt": [
+      "Diflucan (TN)"
+    ],
+    "search_name": "Fluconazole",
+    "formula": "C13H12F2N6O",
+    "efficacy": "Antifungal, Ergosterol biosynthesis inhibitor\nDISEASE   Candidiasis [DS:H00363]\nCryptococcal meningitis [DS:H00364]",
+    "therapeutic_category": "6290",
+    "atc_code": "D01AC15",
+    "drug_class": [
+      "Antifungal",
+      "Triazole antifungal",
+      "Metabolizing enzyme inhibitor",
+      "CYP2C9 inhibitor",
+      "CYP2C19 inhibitor",
+      "CYP3A/CYP3A4 inhibitor",
+      "CYP3A4 inhibitor"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_6290",
+    "type": "category",
+    "name_ja": "分類6290",
+    "name_en": "",
+    "code": "6290"
+  },
+  {
+    "id": "D00350",
+    "type": "drug",
+    "name_en": "Itraconazole (JP18/USP)",
+    "name_ja": "イトラコナゾール",
+    "names_alt": [
+      "Itrizole (TN)",
+      "Sporanox (TN)\nABBR      ITC"
+    ],
+    "search_name": "Itraconazole",
+    "formula": "C35H38Cl2N8O4",
+    "efficacy": "Antifungal, Ergosterol biosynthesis inhibitor\nDISEASE   Blastomycosis [DS:H01501]\nHistoplasmosis [DS:H01062]\nAspergillosis [DS:H01328]\nOnychomycosis of the toenail, fingernail [DS:H01316]",
+    "therapeutic_category": "6290",
+    "atc_code": "J02AC02",
+    "drug_class": [
+      "Antifungal",
+      "Triazole antifungal",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate",
+      "Metabolizing enzyme inhibitor",
+      "CYP3A/CYP3A4 inhibitor",
+      "CYP3A4 inhibitor",
+      "Transporter inhibitor",
+      "ABCB1 inhibitor"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D02219",
+    "type": "drug",
+    "name_en": "Terbinafine hydrochloride (JP18/USP)",
+    "name_ja": "テルビナフィン",
+    "names_alt": [
+      "Lamisil (TN)"
+    ],
+    "search_name": "Terbinafine",
+    "formula": "C21H25N. HCl",
+    "efficacy": "Antifungal, Ergosterol biosynthesis inhibitor\nDISEASE   Onychomycosis [DS:H01316]\nTinea unguium [DS:H01316]\nTinea capitis [DS:H01316]",
+    "therapeutic_category": "2659",
+    "atc_code": "D01AE15",
+    "drug_class": [
+      "Metabolizing enzyme substrate",
+      "CYP1A2 substrate",
+      "CYP2C8 substrate",
+      "CYP2C9 substrate",
+      "CYP2C19 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate",
+      "Metabolizing enzyme inhibitor",
+      "CYP2D6 inhibitor"
+    ],
+    "cyp_enzymes": [
+      "CYP1A2",
+      "CYP2C9",
+      "CYP2C8",
+      "CYP2C19",
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2659",
+    "type": "category",
+    "name_ja": "分類2659",
+    "name_en": "",
+    "code": "2659"
+  },
+  {
+    "id": "D00107",
+    "type": "drug",
+    "name_en": "Tacrolimus (USP/INN)",
+    "name_ja": "タクロリムス",
+    "names_alt": [
+      "Tacrolimus hydrate (JP18)",
+      "Prograf (TN)",
+      "Protopic (TN)"
+    ],
+    "search_name": "Tacrolimus",
+    "formula": "C44H69NO12. H2O",
+    "efficacy": "Antiallergic, Immunosuppressant, Calcineurin inhibitor\nDISEASE   Organ rejection in kidney transplant [DS:H00083]\nOrgan rejection in liver transplant [DS:H00083]\nOrgan rejection in heart transplant [DS:H00083]\nAtopic dermatitis [DS:H01358]",
+    "therapeutic_category": "1319",
+    "atc_code": "D11AH01",
+    "drug_class": [
+      "Immunological agent",
+      "Calcineurin inhibitor",
+      "Anti-inflammatory",
+      "Disease modifying anti-rheumatic drug (DMARD)",
+      "Dermatological agent",
+      "Atopic dermatitis agent",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00184",
+    "type": "drug",
+    "name_en": "Cyclosporine (USP)",
+    "name_ja": "シクロスポリン",
+    "names_alt": [
+      "Ciclosporin (JP18)",
+      "Gengraf (TN)",
+      "Neoral (TN)",
+      "Restasis (TN)",
+      "Sandimmune (TN)"
+    ],
+    "search_name": "Cyclosporine",
+    "formula": "C62H111N11O12",
+    "efficacy": "Immunosuppressant, Calcineurin inhibitor\nDISEASE   Keratoconjunctivitis sicca [DS:H01641]\nOrgan rejection in kidney, liver, and heart allogeneic transplants [DS:H00083]\nRheumatoid arthritis [DS:H00630]\nPsoriasis [DS:H01656]",
+    "therapeutic_category": "1319",
+    "atc_code": "L04AD01",
+    "drug_class": [
+      "Immunological agent",
+      "Calcineurin inhibitor",
+      "Dermatological agent",
+      "Atopic dermatitis agent",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate",
+      "Metabolizing enzyme inhibitor",
+      "CYP3A/CYP3A4 inhibitor",
+      "CYP3A4 inhibitor",
+      "Transporter inhibitor",
+      "ABCB1 inhibitor"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00752",
+    "type": "drug",
+    "name_en": "Mycophenolate mofetil (JAN/USP)",
+    "name_ja": "ミコフェノール酸モフェチル",
+    "names_alt": [
+      "Cellcept (TN)"
+    ],
+    "search_name": "Mycophenolate mofetil",
+    "formula": "C23H31NO7",
+    "efficacy": "Immunosuppressant, Inosine monophosphate dehydrogenase inhibitor\nDISEASE   Prophylaxis of organ rejection [DS:H00083]",
+    "therapeutic_category": "3999",
+    "atc_code": "L04AA06",
+    "drug_class": [],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00300",
+    "type": "drug",
+    "name_en": "Diphenhydramine (JP18/INN)",
+    "name_ja": "ジフェンヒドラミン",
+    "names_alt": [
+      "Restamin (TN)"
+    ],
+    "search_name": "Diphenhydramine",
+    "formula": "C17H21NO",
+    "efficacy": "Antiallergic, H1 receptor antagonist",
+    "therapeutic_category": "2642",
+    "atc_code": "D04AA32",
+    "drug_class": [
+      "Anti-allergic agent",
+      "Histamine receptor antagonist",
+      "Histamine receptor H1 antagonist"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2642",
+    "type": "category",
+    "name_ja": "分類2642",
+    "name_en": "",
+    "code": "2642"
+  },
+  {
+    "id": "D00665",
+    "type": "drug",
+    "name_en": "Chlorpheniramine maleate (JP18/USP)",
+    "name_ja": "クロルフェニラミン",
+    "names_alt": [
+      "Chlor-trimeton (TN)",
+      "Teldrin (TN)"
+    ],
+    "search_name": "Chlorpheniramine",
+    "formula": "C16H19ClN2. C4H4O4",
+    "efficacy": "Antiallergic, H1 receptor antagonist",
+    "therapeutic_category": "4419",
+    "atc_code": "R06AB04",
+    "drug_class": [
+      "Anti-allergic agent",
+      "Histamine receptor antagonist",
+      "Histamine receptor H1 antagonist"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_4419",
+    "type": "category",
+    "name_ja": "分類4419",
+    "name_en": "",
+    "code": "4419"
+  },
+  {
+    "id": "D00528",
+    "type": "drug",
+    "name_en": "Caffeine (USP)",
+    "name_ja": "カフェイン",
+    "names_alt": [
+      "Anhydrous caffeine (JP18)",
+      "Anhydrous caffeine (TN)",
+      "Respia (TN)"
+    ],
+    "search_name": "Caffeine",
+    "formula": "C8H10N4O2",
+    "efficacy": "Stimulant (central), Adenosine receptor antagonist, Phosphodiesterase inhibitor",
+    "therapeutic_category": "2115",
+    "atc_code": "D11AX26",
+    "drug_class": [
+      "Respiratory system agent",
+      "Xanthine derivative",
+      "Xanthine-type central nervous system stimulant",
+      "Metabolizing enzyme substrate",
+      "CYP1A2 substrate",
+      "CYP2E1 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP1A2",
+      "CYP2E1",
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2115",
+    "type": "category",
+    "name_ja": "分類2115",
+    "name_en": "",
+    "code": "2115"
+  },
+  {
+    "id": "D00729",
+    "type": "drug",
+    "name_en": "Loperamide hydrochloride (JAN/USP)",
+    "name_ja": "ロペラミド",
+    "names_alt": [
+      "Imodium (TN)"
+    ],
+    "search_name": "Loperamide",
+    "formula": "C29H33ClN2O2. HCl",
+    "efficacy": "Antidiarrheal, Antiperistaltic, Opioid receptor agonist",
+    "therapeutic_category": "2319",
+    "atc_code": "A07DA03",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Opioid receptor agonist",
+      "Metabolizing enzyme substrate",
+      "CYP2C8 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate",
+      "Transporter substrate",
+      "ABCB1 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2C8",
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "便秘",
+        "name_en": "Constipation",
+        "frequency": "high"
+      },
+      {
+        "name": "悪心・嘔吐",
+        "name_en": "Nausea/vomiting",
+        "frequency": "high"
+      },
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "呼吸抑制",
+        "name_en": "Respiratory depression",
+        "frequency": "medium"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      }
+    ]
+  },
+  {
+    "id": "cat_2319",
+    "type": "category",
+    "name_ja": "分類2319",
+    "name_en": "",
+    "code": "2319"
+  },
+  {
+    "id": "D00728",
+    "type": "drug",
+    "name_en": "Bismuth subsalicylate (JAN/USP)",
+    "name_ja": "次サリチル酸ビスマス",
+    "names_alt": [
+      "Pepto-bismol (TN)"
+    ],
+    "search_name": "Bismuth",
+    "formula": "C7H5BiO4",
+    "efficacy": "Antacid, Antidiarrheal, Anti-ulcerative",
+    "therapeutic_category": "",
+    "atc_code": "",
+    "drug_class": [
+      "Gastrointestinal agent",
+      "Agents for peptic ulcer",
+      "Antacid"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D01167",
+    "type": "drug",
+    "name_en": "Magnesium oxide (JP18/USP)",
+    "name_ja": "酸化マグネシウム",
+    "names_alt": [
+      "Magmitt (TN)"
+    ],
+    "search_name": "Magnesium oxide",
+    "formula": "MgO",
+    "efficacy": "Antacid, Laxative, Pharmaceutic aid (sorbent)",
+    "therapeutic_category": "2344",
+    "atc_code": "A02AA02",
+    "drug_class": [
+      "Gastrointestinal agent",
+      "Agents for peptic ulcer",
+      "Antacid",
+      "Laxative",
+      "Magnesium containing preparation"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2344",
+    "type": "category",
+    "name_ja": "分類2344",
+    "name_en": "",
+    "code": "2344"
+  },
+  {
+    "id": "D02060",
+    "type": "drug",
+    "name_en": "Potassium chloride (JP18/USP)",
+    "name_ja": "塩化カリウム",
+    "names_alt": [
+      "K-dur (TN)",
+      "KCL (TN)",
+      "Kaon-Cl (TN)",
+      "Klor-con (TN)",
+      "Klotrix (TN)"
+    ],
+    "search_name": "Potassium chloride",
+    "formula": "K. Cl",
+    "efficacy": "Supplement (potassium), Replenisher (electrolyte)\nDISEASE   Hypokalemic familial periodic paralysis [DS:H00746]",
+    "therapeutic_category": "3229",
+    "atc_code": "A12BA01",
+    "drug_class": [
+      "Gastrointestinal agent",
+      "Potassium"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_3229",
+    "type": "category",
+    "name_ja": "分類3229",
+    "name_en": "",
+    "code": "3229"
+  },
+  {
+    "id": "D00331",
+    "type": "drug",
+    "name_en": "Furosemide (JP18/USP/INN)",
+    "name_ja": "フロセミド",
+    "names_alt": [
+      "Frusemide",
+      "Lasix (TN)"
+    ],
+    "search_name": "Furosemide",
+    "formula": "C12H11ClN2O5S",
+    "efficacy": "Diuretic, Na-K-Cl cotransporter inhibitor\nDISEASE   Hypertension [DS:H01633]",
+    "therapeutic_category": "2139",
+    "atc_code": "C03CA01",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Sulfonamide diuretic",
+      "Furosemide type diuretic",
+      "Loop diuretic",
+      "Furosemide type diuretic",
+      "Transporter substrate",
+      "ABCC4 substrate",
+      "SLC22A6 substrate",
+      "SLC22A8 substrate"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2139",
+    "type": "category",
+    "name_ja": "分類2139",
+    "name_en": "",
+    "code": "2139"
+  },
+  {
+    "id": "D00340",
+    "type": "drug",
+    "name_en": "Hydrochlorothiazide (JP18/USP/INN)",
+    "name_ja": "ヒドロクロロチアジド",
+    "names_alt": [
+      "Esidrix (TN)",
+      "Microzide (TN)"
+    ],
+    "search_name": "Hydrochlorothiazide",
+    "formula": "C7H8ClN3O4S2",
+    "efficacy": "Antihypertensive, Diuretic, Na+-Cl- symport inhibitor\nDISEASE   Hypertension [DS:H01633]",
+    "therapeutic_category": "2132",
+    "atc_code": "C03AA03",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Antihypertensive",
+      "Thiazide diuretic",
+      "Sulfonamide diuretic",
+      "Thiazide diuretic"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2132",
+    "type": "category",
+    "name_ja": "分類2132",
+    "name_en": "",
+    "code": "2132"
+  },
+  {
+    "id": "D00443",
+    "type": "drug",
+    "name_en": "Spironolactone (JP18/USP/INN)",
+    "name_ja": "スピロノラクトン",
+    "names_alt": [
+      "Aldactone (TN)"
+    ],
+    "search_name": "Spironolactone",
+    "formula": "C24H32O4S",
+    "efficacy": "Antihypertensive, Diuretic, Aldosterone antagonist\nDISEASE   Primary hyperaldosteronism [DS:H01603]\nNephrotic syndrome [DS:H01657]\nEssential hypertension [DS:H01633]",
+    "therapeutic_category": "2133",
+    "atc_code": "C03DA01",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Antihypertensive",
+      "Aldosterone antagonist",
+      "Potassium-sparing diuretic"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2133",
+    "type": "category",
+    "name_ja": "分類2133",
+    "name_en": "",
+    "code": "2133"
+  },
+  {
+    "id": "D01115",
+    "type": "drug",
+    "name_en": "Eplerenone (JP18/USAN/INN)",
+    "name_ja": "エプレレノン",
+    "names_alt": [
+      "Inspra (TN)"
+    ],
+    "search_name": "Eplerenone",
+    "formula": "C24H30O6",
+    "efficacy": "Antihypertensive, Aldosterone antagonist\nDISEASE   Hypertension [DS:H01633]",
+    "therapeutic_category": "2149",
+    "atc_code": "C03DA04",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Antihypertensive",
+      "Aldosterone antagonist",
+      "Potassium-sparing diuretic",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00298",
+    "type": "drug",
+    "name_en": "Digoxin (JP18/USP)",
+    "name_ja": "ジゴキシン",
+    "names_alt": [
+      "Lanoxicaps (TN)",
+      "Lanoxin (TN)"
+    ],
+    "search_name": "Digoxin",
+    "formula": "C41H64O14",
+    "efficacy": "Cardiotonic",
+    "therapeutic_category": "2113",
+    "atc_code": "C01AA05",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Cardiotonic",
+      "Cardiac glycoside",
+      "Digitalis cardiac glycoside",
+      "Antiarrhythmics",
+      "Transporter substrate",
+      "ABCB1 substrate"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2113",
+    "type": "category",
+    "name_ja": "分類2113",
+    "name_en": "",
+    "code": "2113"
+  },
+  {
+    "id": "D00636",
+    "type": "drug",
+    "name_en": "Amiodarone hydrochloride (JP18/USP)",
+    "name_ja": "アミオダロン",
+    "names_alt": [
+      "Ancaron (TN)",
+      "Cordarone (TN)",
+      "Nexterone (TN)"
+    ],
+    "search_name": "Amiodarone",
+    "formula": "C25H29I2NO3. HCl",
+    "efficacy": "Antiarrhythmic, Potassium channel blocker",
+    "therapeutic_category": "2129",
+    "atc_code": "C01BD01",
+    "drug_class": [
+      "Cardiovascular agent",
+      "Adrenergic receptor agonist",
+      "beta-Adrenergic receptor agonist",
+      "beta1-Adrenergic receptor agonist",
+      "Antiarrhythmics",
+      "Class III antiarrhythmic agent",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": []
+  },
+  {
+    "id": "cat_2129",
+    "type": "category",
+    "name_ja": "分類2129",
+    "name_en": "",
+    "code": "2129"
+  },
+  {
+    "id": "D01810",
+    "type": "drug",
+    "name_en": "Nicorandil (JP18/USAN/INN)",
+    "name_ja": "ニコランジル",
+    "names_alt": [
+      "Sigmart (TN)"
+    ],
+    "search_name": "Nicorandil",
+    "formula": "C8H9N3O4",
+    "efficacy": "Vasodilator (coronary)",
+    "therapeutic_category": "2171",
+    "atc_code": "C01DX16",
+    "drug_class": [
+      "Cardiovascular agent",
+      "ATP-sensitive potassium channel opener",
+      "Nitrovasodilator",
+      "Blood modifier agent",
+      "Antithrombotic agent",
+      "Antiplatelet agent"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D00332",
+    "type": "drug",
+    "name_en": "Gabapentin (JAN/USP/INN)",
+    "name_ja": "ガバペンチン",
+    "names_alt": [
+      "Neurontin (TN)",
+      "Gralise (TN)"
+    ],
+    "search_name": "Gabapentin",
+    "formula": "C9H17NO2",
+    "efficacy": "Anticonvulsant, Antiepileptic\nDISEASE   Postherpetic neuralgia [DS:H01624]",
+    "therapeutic_category": "1139",
+    "atc_code": "N02BF01",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Antiepileptic agent",
+      "GABA mimetic antiepileptic",
+      "Calcium channel alpha-2 delta blocker"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D02716",
+    "type": "drug",
+    "name_en": "Pregabalin (JAN/USAN/INN)",
+    "name_ja": "プレガバリン",
+    "names_alt": [
+      "Lyrica (TN)"
+    ],
+    "search_name": "Pregabalin",
+    "formula": "C8H17NO2",
+    "efficacy": "Anticonvulsant, Pain relief\nDISEASE   Diabetic peripheral neuropathy [DS:H01459]\nPostherpetic neuralgia [DS:H01624]\nFibromyalgia [DS:H01636]",
+    "therapeutic_category": "1190",
+    "atc_code": "N02BF02",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Antiepileptic agent",
+      "GABA mimetic antiepileptic",
+      "Calcium channel alpha-2 delta blocker"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": []
+  },
+  {
+    "id": "D01355",
+    "type": "drug",
+    "name_en": "Tramadol hydrochloride (JP18/USP)",
+    "name_ja": "トラマドール",
+    "names_alt": [
+      "Ultram (TN)"
+    ],
+    "search_name": "Tramadol",
+    "formula": "C16H25NO2. HCl",
+    "efficacy": "Analgesic, Opioid receptor agonist",
+    "therapeutic_category": "1149",
+    "atc_code": "N02AX02",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Opioid receptor agonist",
+      "mu-Opioid receptor agonist",
+      "Analgesic",
+      "Opioid analgesics",
+      "Metabolizing enzyme substrate",
+      "CYP2D6 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2D6",
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "便秘",
+        "name_en": "Constipation",
+        "frequency": "high"
+      },
+      {
+        "name": "悪心・嘔吐",
+        "name_en": "Nausea/vomiting",
+        "frequency": "high"
+      },
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "呼吸抑制",
+        "name_en": "Respiratory depression",
+        "frequency": "medium"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      }
+    ]
+  },
+  {
+    "id": "D00842",
+    "type": "drug",
+    "name_en": "Morphine sulfate (USP)",
+    "name_ja": "モルヒネ",
+    "names_alt": [
+      "Morphine sulfate hydrate (JP18)",
+      "Morphine sulfate pentahydrate",
+      "Astramor PH (TN)",
+      "Avinza (TN)",
+      "Depodur (TN)",
+      "Kadian (TN)",
+      "MS contin (TN)"
+    ],
+    "search_name": "Morphine",
+    "formula": "(C17H19NO3)2. H2SO4. 5H2O",
+    "efficacy": "Analgesic (narcotic), Opioid receptor agonist",
+    "therapeutic_category": "8114",
+    "atc_code": "N02AA01",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Opioid receptor agonist",
+      "mu-Opioid receptor agonist",
+      "Analgesic",
+      "Opioid analgesics",
+      "Metabolizing enzyme substrate",
+      "UGT substrate"
+    ],
+    "cyp_enzymes": [],
+    "adverse_effects": [
+      {
+        "name": "便秘",
+        "name_en": "Constipation",
+        "frequency": "high"
+      },
+      {
+        "name": "悪心・嘔吐",
+        "name_en": "Nausea/vomiting",
+        "frequency": "high"
+      },
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "呼吸抑制",
+        "name_en": "Respiratory depression",
+        "frequency": "medium"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      }
+    ]
+  },
+  {
+    "id": "cat_8114",
+    "type": "category",
+    "name_ja": "分類8114",
+    "name_en": "",
+    "code": "8114"
+  },
+  {
+    "id": "D00320",
+    "type": "drug",
+    "name_en": "Fentanyl (JAN/USP/INN)",
+    "name_ja": "フェンタニル",
+    "names_alt": [
+      "Duragesic (TN)",
+      "Subsys (TN)"
+    ],
+    "search_name": "Fentanyl",
+    "formula": "C22H28N2O",
+    "efficacy": "Analgesic (narcotic), Opioid receptor agonist",
+    "therapeutic_category": "8219",
+    "atc_code": "N01AH01",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Anesthetics",
+      "General anesthetics",
+      "Opioid anesthetics",
+      "Opioid receptor agonist",
+      "mu-Opioid receptor agonist",
+      "Analgesic",
+      "Opioid analgesics",
+      "Metabolizing enzyme substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "便秘",
+        "name_en": "Constipation",
+        "frequency": "high"
+      },
+      {
+        "name": "悪心・嘔吐",
+        "name_en": "Nausea/vomiting",
+        "frequency": "high"
+      },
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "呼吸抑制",
+        "name_en": "Respiratory depression",
+        "frequency": "medium"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      }
+    ]
+  },
+  {
+    "id": "cat_8219",
+    "type": "category",
+    "name_ja": "分類8219",
+    "name_en": "",
+    "code": "8219"
+  },
+  {
+    "id": "D00847",
+    "type": "drug",
+    "name_en": "Oxycodone hydrochloride (USP)",
+    "name_ja": "オキシコドン",
+    "names_alt": [
+      "Oxecta (TN)",
+      "Oxycontin (TN)",
+      "Roxicodone (TN)"
+    ],
+    "search_name": "Oxycodone",
+    "formula": "C18H21NO4. HCl",
+    "efficacy": "Analgesic (narcotic), Opioid receptor agonist",
+    "therapeutic_category": "",
+    "atc_code": "N02AA05",
+    "drug_class": [
+      "Neuropsychiatric agent",
+      "Opioid receptor agonist",
+      "Analgesic",
+      "Opioid analgesics",
+      "Metabolizing enzyme substrate",
+      "CYP2D6 substrate",
+      "CYP3A/CYP3A4 substrate",
+      "CYP3A4 substrate"
+    ],
+    "cyp_enzymes": [
+      "CYP2D6",
+      "CYP3A4"
+    ],
+    "adverse_effects": [
+      {
+        "name": "便秘",
+        "name_en": "Constipation",
+        "frequency": "high"
+      },
+      {
+        "name": "悪心・嘔吐",
+        "name_en": "Nausea/vomiting",
+        "frequency": "high"
+      },
+      {
+        "name": "眠気",
+        "name_en": "Somnolence",
+        "frequency": "high"
+      },
+      {
+        "name": "呼吸抑制",
+        "name_en": "Respiratory depression",
+        "frequency": "medium"
+      },
+      {
+        "name": "依存性",
+        "name_en": "Dependence",
+        "frequency": "high"
+      }
+    ]
+  }
+]
