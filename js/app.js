@@ -770,7 +770,7 @@ const KusuriApp = (() => {
               <div class="detail-ddi-item">
                 <span class="detail-ddi-severity ${item.severity === 'CI' ? 'CI' : 'P'}">${item.severity === 'CI' ? '禁忌' : '注意'}</span>
                 <a class="detail-link" data-id="${item.partnerId}" href="#">${escHtml(item.partnerName)}</a>
-                ${item.mechanism ? `<span style="color:var(--text-dim);font-size:11px">${escHtml(item.mechanism)}</span>` : ''}
+                ${item.mechanism && item.mechanism !== 'unclassified' ? `<span style="color:var(--text-dim);font-size:11px">${escHtml(item.mechanism)}</span>` : ''}
               </div>
             `).join('')}
           </div>
