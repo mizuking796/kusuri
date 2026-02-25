@@ -48,7 +48,7 @@ const KusuriGraph = (() => {
       {
         selector: 'node',
         style: {
-          'label': 'data(label)',
+          'label': '',
           'text-valign': 'bottom',
           'text-halign': 'center',
           'text-margin-y': 4,
@@ -58,10 +58,9 @@ const KusuriGraph = (() => {
           'text-outline-width': 1.5,
           'text-max-width': 90,
           'text-wrap': 'ellipsis',
-          'min-zoomed-font-size': 8,
-          'width': 24,
-          'height': 24,
-          'border-width': 1.5,
+          'width': 4,
+          'height': 4,
+          'border-width': 0,
           'border-color': '#2d3348',
         }
       },
@@ -70,8 +69,8 @@ const KusuriGraph = (() => {
         selector: 'edge',
         style: {
           'curve-style': 'bezier',
-          'opacity': 0.6,
-          'width': 1,
+          'opacity': 0.08,
+          'width': 0.5,
         }
       },
     ];
@@ -83,8 +82,8 @@ const KusuriGraph = (() => {
         style: {
           'background-color': cfg.color,
           'shape': cfg.shape,
-          'width': type === 'drug' ? 28 : type === 'category' ? 24 : 20,
-          'height': type === 'drug' ? 28 : type === 'category' ? 24 : 20,
+          'width': type === 'drug' ? 4 : type === 'category' ? 5 : 3,
+          'height': type === 'drug' ? 4 : type === 'category' ? 5 : 3,
           'font-size': type === 'drug' ? 10 : 8,
         }
       });
@@ -110,6 +109,7 @@ const KusuriGraph = (() => {
       {
         selector: 'node.highlighted',
         style: {
+          'label': 'data(label)',
           'border-width': 3,
           'border-color': '#ffffff',
           'z-index': 999,
@@ -120,6 +120,7 @@ const KusuriGraph = (() => {
       {
         selector: 'node.neighbor',
         style: {
+          'label': 'data(label)',
           'opacity': 1,
           'border-width': 2,
           'border-color': '#5b8def',
@@ -193,22 +194,35 @@ const KusuriGraph = (() => {
 
     switch (layoutName) {
       case 'concentric': {
-        const w = cy.width();
-        const h = cy.height();
-        const scale = 0.55;
+        // 5リング preset レイアウト（等間隔）
+        const radii = [0, 120, 240, 360, 480, 600];
+        const rings = [[], [], [], [], [], []];
+        cy.nodes().forEach(node => {
+          const d = node.degree();
+          let ring;
+          if (d > 50) ring = 0;
+          else if (d > 15) ring = 1;
+          else if (d > 5) ring = 2;
+          else if (d > 2) ring = 3;
+          else if (d > 0) ring = 4;
+          else ring = 5;
+          rings[ring].push(node.id());
+        });
+
+        const positions = {};
+        rings.forEach((ids, ringIdx) => {
+          const r = radii[ringIdx];
+          ids.forEach((id, i) => {
+            const angle = (2 * Math.PI * i) / ids.length;
+            positions[id] = { x: Math.cos(angle) * r, y: Math.sin(angle) * r };
+          });
+        });
+
         options = {
-          name: 'concentric',
+          name: 'preset',
+          positions: node => positions[node.id()] || { x: 0, y: 0 },
           fit: true,
           padding: 20,
-          boundingBox: {
-            x1: w * (1 - scale) / 2,
-            y1: h * (1 - scale) / 2,
-            w: w * scale,
-            h: h * scale,
-          },
-          concentric: node => node.degree(),
-          levelWidth: () => 3,
-          minNodeSpacing: 5,
           animate: false,
         };
         break;
@@ -239,17 +253,21 @@ const KusuriGraph = (() => {
     cy.layout(options).run();
   }
 
-  /** クラスターレイアウト（薬効分類別） */
+  /** クラスターレイアウト（薬効分類別・銀河風） */
   function applyClusterLayout() {
     const groups = KusuriData.CATEGORY_GROUPS;
     const catNodes = cy.nodes('[type="category"]');
     const drugNodes = cy.nodes('[type="drug"]');
 
-    // Group center positions (circular arrangement)
+    // グループの中心を大きな円上に配置
     const groupNames = Object.keys(groups);
     const cx = cy.width() / 2;
     const cy_ = cy.height() / 2;
-    const groupRadius = Math.min(cx, cy_) * 0.6;
+    const groupRadius = Math.min(cx, cy_) * 6.0;
+
+    // seed ベース乱数（毎回同じ配置）
+    let _seed = 42;
+    const srand = () => { _seed = (_seed * 9301 + 49297) % 233280; return _seed / 233280; };
 
     const groupPositions = {};
     groupNames.forEach((name, i) => {
@@ -260,55 +278,70 @@ const KusuriGraph = (() => {
       };
     });
 
-    // Assign each node to a group
-    const nodePositions = {};
+    // ノードをグループに振り分け
+    const groupMembers = {};
+    groupNames.forEach(n => { groupMembers[n] = []; });
+    if (!groupMembers['その他']) groupMembers['その他'] = [];
 
-    // Category nodes: place at group center
+    const assignGroup = (prefix2) => {
+      for (const [gName, prefixes] of Object.entries(groups)) {
+        if (prefixes.includes(prefix2)) return gName;
+      }
+      return 'その他';
+    };
+
     catNodes.forEach(node => {
       const code = node.data('code') || '';
-      const prefix2 = code.substring(0, 2);
-      let assignedGroup = 'その他';
-      for (const [gName, prefixes] of Object.entries(groups)) {
-        if (prefixes.includes(prefix2)) {
-          assignedGroup = gName;
-          break;
-        }
-      }
-      const gPos = groupPositions[assignedGroup] || groupPositions['その他'];
-      const jitter = (Math.random() - 0.5) * 80;
-      nodePositions[node.id()] = { x: gPos.x + jitter, y: gPos.y + jitter };
+      const g = assignGroup(code.substring(0, 2));
+      groupMembers[g].push(node.id());
     });
 
-    // Drug nodes: place near their category
     drugNodes.forEach(node => {
       const tc = node.data('therapeutic_category') || '';
-      const prefix2 = tc.substring(0, 2);
-      let assignedGroup = 'その他';
-      for (const [gName, prefixes] of Object.entries(groups)) {
-        if (prefixes.includes(prefix2)) {
-          assignedGroup = gName;
-          break;
-        }
-      }
-      const gPos = groupPositions[assignedGroup] || groupPositions['その他'];
-      const angle = Math.random() * 2 * Math.PI;
-      const r = 40 + Math.random() * 120;
-      nodePositions[node.id()] = { x: gPos.x + r * Math.cos(angle), y: gPos.y + r * Math.sin(angle) };
+      const g = assignGroup(tc.substring(0, 2));
+      groupMembers[g].push(node.id());
     });
 
-    // Other nodes (CYP, adverse effects): center area
+    // 各グループを小さな同心円（銀河風）に配置
+    const nodePositions = {};
+    for (const [gName, ids] of Object.entries(groupMembers)) {
+      const gPos = groupPositions[gName] || { x: cx, y: cy_ };
+      const count = ids.length;
+      if (count === 0) continue;
+
+      // ノード数に応じて同心円リングに分配
+      const nodesPerRing = 12;
+      const ringSpacing = 150;
+      let placed = 0;
+      let ringIdx = 0;
+
+      while (placed < count) {
+        const r = ringIdx * ringSpacing;
+        const capacity = ringIdx === 0 ? 1 : Math.floor(2 * Math.PI * r / 8);
+        const n = Math.min(capacity || 1, count - placed);
+        for (let i = 0; i < n; i++) {
+          const angle = (2 * Math.PI * i) / n + srand() * 0.15;
+          const jitterR = r + (srand() - 0.5) * ringSpacing * 0.3;
+          nodePositions[ids[placed]] = {
+            x: gPos.x + Math.cos(angle) * jitterR,
+            y: gPos.y + Math.sin(angle) * jitterR,
+          };
+          placed++;
+        }
+        ringIdx++;
+      }
+    }
+
+    // CYP・副作用ノード: 中心付近
     cy.nodes().forEach(node => {
       if (!nodePositions[node.id()]) {
         const type = node.data('type');
+        const angle = srand() * 2 * Math.PI;
         if (type === 'cyp') {
-          // CYP nodes: slightly offset from center
-          const angle = Math.random() * 2 * Math.PI;
-          const r = 30 + Math.random() * 60;
+          const r = 20 + srand() * 50;
           nodePositions[node.id()] = { x: cx + r * Math.cos(angle), y: cy_ + r * Math.sin(angle) };
         } else {
-          // Adverse effects: outer ring
-          const angle = Math.random() * 2 * Math.PI;
-          const r = groupRadius * 1.1 + Math.random() * 80;
+          const r = groupRadius * 0.3 + srand() * groupRadius * 0.3;
           nodePositions[node.id()] = { x: cx + r * Math.cos(angle), y: cy_ + r * Math.sin(angle) };
         }
       }

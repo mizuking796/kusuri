@@ -3,10 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="医薬品の相互作用・副作用・薬効分類をグラフで可視化するデータベース。2,600種の医薬品情報を収録。医療従事者・学術研究者向け。">
+<meta name="keywords" content="医薬品,相互作用,副作用,薬効分類,データベース,グラフ,可視化,DDI,CYP">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="kusuri Light — 医薬品関連図データベース">
+<meta property="og:description" content="2,600種の医薬品の相互作用・副作用・薬効分類をグラフで可視化">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://mizuking796.github.io/kusuri/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
 <title>kusuri Light — 医薬品関連図データベース</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💊</text></svg>">
 <link rel="stylesheet" href="css/style.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.31.0/cytoscape.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.31.0/cytoscape.min.js" integrity="sha384-a3lAgs3eLbtOvHHmZ2OzDl67flt1FwKNRXeA3LxrXdFQif6oD5pbrqYSg9x+GWG0" crossorigin="anonymous"></script>
 <script>
 // Override data file path before app.js loads
 window.__KUSURI_DATA = 'data/graph/graph-light.json';
@@ -131,11 +139,11 @@ window.__KUSURI_DATA = 'data/graph/graph-light.json';
       <section class="filter-section">
         <h3>レイアウト</h3>
         <label class="filter-item">
-          <input type="radio" name="layout" value="concentric" checked>
+          <input type="radio" name="layout" value="concentric">
           <span>同心円</span>
         </label>
         <label class="filter-item">
-          <input type="radio" name="layout" value="cluster">
+          <input type="radio" name="layout" value="cluster" checked>
           <span>クラスター（薬効分類別）</span>
         </label>
       </section>

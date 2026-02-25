@@ -1,4 +1,29 @@
+# Intermediate / cache data (large, regenerable from scripts)
+data/all_ddi_cache.json
+data/ddi_all.json
+data/ddi_internal.json
+data/all_drugs_detail.json
+data/initial_drugs.json
+data/drug_search_results.json
+data/adverse_effects.json
+data/kegg_jp_drugs.json
+data/kegg_jp_drugs_raw.tsv
+data/jader_raw/
+data/graph/edges.json
+data/graph/nodes.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Python
 .venv/
 __pycache__/
 *.pyc
-.DS_Store

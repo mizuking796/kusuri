@@ -79,8 +79,9 @@ const KusuriApp = (() => {
     try {
       // Phase 1: Fetch data
       setProgress(10, 'データをダウンロード中...');
-      const dataFile = window.__KUSURI_DATA || new URLSearchParams(location.search).get('data') || 'data/graph/graph.json';
+      const dataFile = window.__KUSURI_DATA || 'data/graph/graph.json';
       const res = await fetch(dataFile);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
       setProgress(30, 'データを解析中...');
       graphData = await res.json();
 
@@ -111,7 +112,7 @@ const KusuriApp = (() => {
       // Phase 5: Apply layout + fit
       setProgress(85, 'レイアウトを適用中...');
       await new Promise(r => setTimeout(r, 0));
-      KusuriGraph.applyLayout('concentric');
+      KusuriGraph.applyLayout('cluster');
       setProgress(95, '表示を調整中...');
       // Wait 500ms to ensure container is fully sized
       await new Promise(r => setTimeout(r, 500));
@@ -125,9 +126,15 @@ const KusuriApp = (() => {
 
     } catch (err) {
       console.error('Failed to load data:', err);
-      document.getElementById('loading').innerHTML =
-        `<p style="color: var(--adverse_effect)">データの読み込みに失敗しました</p>
-         <p style="color: var(--text-dim); font-size: 13px; margin-top: 8px">${err.message}</p>`;
+      const errEl = document.getElementById('loading');
+      errEl.textContent = '';
+      const p1 = document.createElement('p');
+      p1.style.color = 'var(--adverse_effect)';
+      p1.textContent = 'データの読み込みに失敗しました';
+      const p2 = document.createElement('p');
+      p2.style.cssText = 'color: var(--text-dim); font-size: 13px; margin-top: 8px';
+      p2.textContent = err.message;
+      errEl.append(p1, p2);
     }
   }
 
