@@ -457,8 +457,8 @@ const KusuriApp = (() => {
     { id: 'ddi',      label: '飲み合わせ注意 TOP20',  badgeClass: 'ci' },
     { id: 'ae',       label: '副作用が多い薬 TOP20',  badgeClass: 'ae' },
     { id: 'cyp',      label: 'CYP代謝が多い薬 TOP20', badgeClass: 'cyp' },
-    { id: 'cyp-node', label: '薬が多いCYP酵素',       badgeClass: 'cyp' },
-    { id: 'ae-node',  label: '薬が多い副作用',         badgeClass: 'ae' },
+    { id: 'cyp-node', label: '関連薬が多いCYP酵素',   badgeClass: 'cyp' },
+    { id: 'ae-node',  label: '関連薬が多い副作用',     badgeClass: 'ae' },
   ];
 
   let rankingCache = null;
