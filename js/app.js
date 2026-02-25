@@ -590,7 +590,11 @@ const KusuriApp = (() => {
   function setupZoomControls() {
     document.getElementById('zoom-in').addEventListener('click', KusuriGraph.zoomIn);
     document.getElementById('zoom-out').addEventListener('click', KusuriGraph.zoomOut);
-    document.getElementById('zoom-fit').addEventListener('click', KusuriGraph.zoomFit);
+    document.getElementById('zoom-fit').addEventListener('click', () => {
+      KusuriGraph.deselectAll();
+      hideDetail();
+      KusuriGraph.zoomFit();
+    });
   }
 
   // ===== Sidebar (Mobile) =====
