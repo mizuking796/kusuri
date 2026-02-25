@@ -394,8 +394,9 @@ const KusuriGraph = (() => {
   }
 
   /** フィルタ適用 */
-  function applyFilters(filters) {
+  function applyFilters(filters, opts) {
     if (!cy) return;
+    const hideOrphans = opts && opts.hideOrphans;
 
     // Node type filter
     for (const [type, visible] of Object.entries(filters.nodes)) {
@@ -415,6 +416,16 @@ const KusuriGraph = (() => {
         edge.addClass('hidden');
       }
     });
+
+    // Hide orphan nodes (no visible edges)
+    if (hideOrphans) {
+      cy.nodes().not('.hidden').forEach(node => {
+        const visibleEdges = node.connectedEdges().not('.hidden');
+        if (visibleEdges.length === 0) {
+          node.addClass('hidden');
+        }
+      });
+    }
 
     return getVisibleStats();
   }

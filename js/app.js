@@ -215,7 +215,7 @@ const KusuriApp = (() => {
     });
   }
 
-  function applyFilters() {
+  function applyFilters(opts) {
     const filters = { nodes: {}, edges: {} };
 
     document.querySelectorAll('[data-filter="node"]').forEach(cb => {
@@ -225,7 +225,7 @@ const KusuriApp = (() => {
       filters.edges[cb.dataset.type] = cb.checked;
     });
 
-    KusuriGraph.applyFilters(filters);
+    KusuriGraph.applyFilters(filters, opts);
     updateStats();
   }
 
@@ -252,7 +252,7 @@ const KusuriApp = (() => {
             setAllCheckboxes('[data-filter="edge"]', false);
             document.querySelector('[data-filter="node"][data-type="drug"]').checked = true;
             document.querySelector('[data-filter="edge"][data-type="contraindication"]').checked = true;
-            applyFilters();
+            applyFilters({ hideOrphans: true });
             break;
 
           case 'drug-only':
@@ -261,7 +261,7 @@ const KusuriApp = (() => {
             document.querySelector('[data-filter="node"][data-type="drug"]').checked = true;
             document.querySelector('[data-filter="edge"][data-type="contraindication"]').checked = true;
             document.querySelector('[data-filter="edge"][data-type="precaution"]').checked = true;
-            applyFilters();
+            applyFilters({ hideOrphans: true });
             break;
 
           case 'reset':
