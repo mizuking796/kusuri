@@ -12,6 +12,8 @@ data/jader_raw/
 data/graph/graph.json
 data/graph/edges.json
 data/graph/nodes.json
+data/ssk_yakka_master.csv
+data/ssk_yakka_master.csv.zip
 
 # OS
 .DS_Store
