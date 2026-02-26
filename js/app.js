@@ -73,7 +73,7 @@ const KusuriApp = (() => {
       setProgress(10, 'データをダウンロード中...');
       const dataFile = window.__KUSURI_DATA || 'data/graph/graph-light.json';
       const res = await fetch(dataFile);
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      if (!res.ok) throw new Error(res.status === 404 ? 'データファイルが見つかりません' : `HTTP ${res.status}`);
       setProgress(30, 'データを解析中...');
       graphData = await res.json();
 
@@ -303,6 +303,21 @@ const KusuriApp = (() => {
     filterInput.addEventListener('input', () => {
       renderLookupTags(lookupType, filterInput.value.trim().toLowerCase());
     });
+
+    // Tag click events (event delegation)
+    document.getElementById('lookup-tags').addEventListener('click', e => {
+      const tag = e.target.closest('.lookup-tag');
+      if (!tag) return;
+      const id = tag.dataset.id;
+      if (lookupSelected.has(id)) {
+        lookupSelected.delete(id);
+        tag.classList.remove('selected');
+      } else {
+        lookupSelected.add(id);
+        tag.classList.add('selected');
+      }
+      renderLookupResults(lookupType);
+    });
   }
 
   function openLookupModal(type) {
@@ -351,21 +366,6 @@ const KusuriApp = (() => {
         const selected = lookupSelected.has(n.id) ? ' selected' : '';
         return `<span class="lookup-tag ${tagClass}${selected}" data-id="${n.id}">${escHtml(name)}</span>`;
       }).join('');
-
-    // Tag click events
-    container.querySelectorAll('.lookup-tag').forEach(tag => {
-      tag.addEventListener('click', () => {
-        const id = tag.dataset.id;
-        if (lookupSelected.has(id)) {
-          lookupSelected.delete(id);
-          tag.classList.remove('selected');
-        } else {
-          lookupSelected.add(id);
-          tag.classList.add('selected');
-        }
-        renderLookupResults(type);
-      });
-    });
   }
 
   function renderLookupResults(type) {
@@ -547,19 +547,25 @@ const KusuriApp = (() => {
     return cache;
   }
 
+  let _rankingTabsDelegated = false;
+
   function renderRankingTabs(activeTabId) {
     const tabsContainer = document.getElementById('ranking-tabs');
     tabsContainer.innerHTML = RANKING_TABS.map(tab =>
       `<button class="ranking-tab${tab.id === activeTabId ? ' active' : ''}" data-tab="${tab.id}">${tab.label}</button>`
     ).join('');
 
-    tabsContainer.querySelectorAll('.ranking-tab').forEach(btn => {
-      btn.addEventListener('click', () => {
+    // Event delegation (register once)
+    if (!_rankingTabsDelegated) {
+      _rankingTabsDelegated = true;
+      tabsContainer.addEventListener('click', e => {
+        const btn = e.target.closest('.ranking-tab');
+        if (!btn) return;
         tabsContainer.querySelectorAll('.ranking-tab').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         renderRankingList(btn.dataset.tab);
       });
-    });
+    }
 
     renderRankingList(activeTabId);
   }

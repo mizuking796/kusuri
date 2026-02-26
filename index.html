@@ -11,6 +11,7 @@
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://mizuking796.github.io/kusuri/ogp.png">
 <meta name="twitter:card" content="summary_large_image">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.mymemory.translated.net;">
 <title>kusuri — 医薬品関連図データベース</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💊</text></svg>">
 <link rel="stylesheet" href="css/style.css">
@@ -33,7 +34,7 @@
       <ul>
         <li>本ツールは情報提供を目的としており、医療行為の代替ではありません</li>
         <li>臨床判断は必ず添付文書・最新のガイドライン等を確認のうえ行ってください</li>
-        <li>データソース: DDinter 2.0 (CC-BY-NC-SA 4.0) / 厚生労働省薬価基準収載品目リスト / ChEMBL (CC BY-SA 3.0) / 社会保険診療報酬支払基金 薬価基準マスター</li>
+        <li>データソース: KEGG DRUG (学術利用) / DDinter 2.0 (CC-BY-NC-SA 4.0) / 厚生労働省薬価基準収載品目リスト / ChEMBL (CC BY-SA 3.0) / Wikidata (CC0) / 社会保険診療報酬支払基金 薬価基準マスター</li>
       </ul>
     </div>
     <div class="gate-question">
@@ -194,7 +195,7 @@
 
     <!-- Graph -->
     <div id="graph-container">
-      <div id="cy"></div>
+      <div id="cy" role="img" aria-label="医薬品関連グラフ"></div>
       <div id="graph-controls">
         <button id="zoom-in" title="ズームイン">+</button>
         <button id="zoom-out" title="ズームアウト">−</button>
@@ -214,6 +215,12 @@
     </aside>
 
   </div>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <span>データソース: KEGG DRUG / DDinter 2.0 / 厚労省薬価基準 / ChEMBL / Wikidata</span>
+    <span>本ツールは情報提供目的であり医療行為の代替ではありません</span>
+  </footer>
 </div>
 
 <script src="js/data.js"></script>

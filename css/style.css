@@ -120,7 +120,7 @@ input[type="text"] { font: inherit; }
 .search-item-sub { color: var(--text-dim); font-size: 12px; }
 
 /* ===== Main Layout ===== */
-#main { display: flex; flex: 1; overflow: hidden; height: calc(100vh - 56px); position: relative; }
+#main { display: flex; flex: 1; overflow: hidden; position: relative; }
 .app { display: flex; flex-direction: column; height: 100vh; }
 
 /* ===== Sidebar ===== */
@@ -410,6 +410,14 @@ input[type="text"] { font: inherit; }
 .ranking-count.ae { background: rgba(224,108,117,0.12); color: var(--adverse_effect); }
 .ranking-count.cyp { background: rgba(198,120,221,0.2); color: var(--cyp); }
 .ranking-count.cat { background: rgba(78,201,160,0.2); color: var(--category); }
+
+/* ===== Footer ===== */
+.app-footer {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 4px 16px; font-size: 11px; color: var(--text-dim);
+  background: var(--surface); border-top: 1px solid var(--border);
+  flex-shrink: 0; gap: 12px;
+}
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
