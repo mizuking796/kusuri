@@ -10,6 +10,9 @@ new_07_build_graph.py
   data/adverse_effects_new.json — 副作用
   data/brand_names_new.json    — 商品名
   data/ssk_yakka_master.csv    — SSK薬価基準マスター（薬効分類コード取得）
+  /tmp/mhlw_drugs.xlsx         — 厚労省薬価基準Excel（注射薬）
+  /tmp/mhlw_usage.xlsx         — 厚労省薬価基準Excel（内用薬）
+  data/wikidata_atc.json       — Wikidata DrugBank→ATCマッピング
 
 出力:
   data/graph/graph-light.json  — Cytoscape.js用グラフデータ
@@ -38,8 +41,150 @@ INPUT_FILES = {
 
 SSK_CSV = DATA_DIR / "ssk_yakka_master.csv"
 OLD_GRAPH = GRAPH_DIR / "graph-light.json"
+MHLW_EXCELS = [Path("/tmp/mhlw_drugs.xlsx"), Path("/tmp/mhlw_usage.xlsx")]
+WIKIDATA_ATC = DATA_DIR / "wikidata_atc.json"
 
 OUTPUT = GRAPH_DIR / "graph-light.json"
+
+# ATC level 1-2 → 薬効分類3-4桁コード（最長一致で検索）
+ATC_TO_JTC = {
+    # A: 消化器官・代謝
+    "A02BA": "2323",  # H2遮断剤
+    "A02BC": "2329",  # PPI
+    "A02B": "232",    # 消化性潰瘍用剤
+    "A03": "124",     # 鎮けい剤
+    "A04A": "2391",   # 制吐剤
+    "A05": "236",     # 利胆剤
+    "A06": "235",     # 下剤
+    "A07": "231",     # 止しゃ剤・整腸剤
+    "A09": "237",     # 消化酵素
+    "A10A": "3969",   # インスリン
+    "A10B": "396",    # 糖尿病用剤（経口）
+    "A11": "319",     # ビタミン剤
+    "A12A": "321",    # カルシウム剤
+    "A12B": "322",    # 無機質製剤
+    "A16": "399",     # その他の代謝性医薬品
+    # B: 血液
+    "B01AA": "3332",  # ワルファリン類
+    "B01AB": "3339",  # ヘパリン類
+    "B01AC": "3399",  # 抗血小板剤→その他の血液用薬
+    "B01AE": "3339",  # 直接トロンビン阻害
+    "B01AF": "3339",  # 直接Xa阻害
+    "B01A": "333",    # 血液凝固阻止剤
+    "B02": "332",     # 止血剤
+    "B03": "322",     # 貧血用剤→無機質製剤
+    "B05": "331",     # 血液代用剤
+    # C: 循環器
+    "C01A": "211",    # 強心配糖体
+    "C01B": "212",    # 不整脈用剤
+    "C01C": "211",    # 強心剤
+    "C01D": "217",    # 血管拡張剤
+    "C02": "214",     # 血圧降下剤
+    "C03": "213",     # 利尿剤
+    "C07": "212",     # β遮断剤
+    "C08": "217",     # Ca拮抗剤
+    "C09A": "214",    # ACE阻害剤
+    "C09B": "214",    # ACE阻害+利尿配合
+    "C09C": "214",    # ARB
+    "C09D": "214",    # ARB配合
+    "C09": "214",     # RAS阻害剤
+    "C10AA": "2183",  # HMG-CoA還元酵素阻害
+    "C10A": "218",    # 高脂血症用剤
+    "C10": "218",     # 高脂血症用剤
+    # D: 皮膚科
+    "D01": "265",     # 抗真菌→寄生性皮膚疾患用剤
+    "D06": "266",     # 化膿性疾患用剤
+    "D07": "2452",    # 副腎皮質ステロイド（外用）
+    "D10": "269",     # その他の外皮用薬
+    # G: 泌尿器・生殖器
+    "G01": "252",     # 生殖器官用剤
+    "G02": "253",     # 子宮収縮剤
+    "G03A": "254",    # 避妊剤
+    "G03C": "247",    # 卵胞ホルモン
+    "G03D": "247",    # 黄体ホルモン
+    "G03H": "246",    # 抗アンドロゲン
+    "G04": "251",     # 泌尿器官用剤
+    # H: ホルモン
+    "H01": "241",     # 脳下垂体ホルモン
+    "H02": "245",     # 副腎ホルモン剤
+    "H03": "243",     # 甲状腺ホルモン
+    "H04": "249",     # その他のホルモン
+    "H05": "243",     # 副甲状腺ホルモン
+    # J: 抗感染症
+    "J01A": "6152",   # テトラサイクリン系
+    "J01CA": "6132",  # 広域ペニシリン
+    "J01CE": "6131",  # ペニシリン系
+    "J01CF": "6131",  # ペニシリン系
+    "J01CR": "6132",  # ペニシリン配合
+    "J01C": "613",    # ペニシリン系広域
+    "J01DB": "6131",  # セフェム系第1世代
+    "J01DC": "6132",  # セフェム系第2世代
+    "J01DD": "6132",  # セフェム系第3世代
+    "J01DE": "6132",  # セフェム系第4世代
+    "J01D": "613",    # セフェム系
+    "J01FA": "6141",  # マクロライド系
+    "J01F": "614",    # マクロライド・リンコマイシン系
+    "J01GB": "612",   # アミノグリコシド系
+    "J01MA": "6241",  # ニューキノロン系
+    "J01M": "624",    # 合成抗菌剤
+    "J01XA": "611",   # グリコペプチド系
+    "J01": "613",     # 抗菌薬（その他）
+    "J02": "617",     # 抗真菌剤
+    "J04": "616",     # 抗結核・抗酸菌
+    "J05A": "625",    # 抗ウイルス剤（直接作用）
+    "J05": "622",     # 抗ウイルス剤
+    # L: 抗腫瘍・免疫
+    "L01A": "421",    # アルキル化剤
+    "L01B": "422",    # 代謝拮抗剤
+    "L01C": "424",    # 植物アルカロイド
+    "L01D": "423",    # 抗腫瘍性抗生物質
+    "L01E": "429",    # 分子標的薬（キナーゼ阻害等）
+    "L01F": "429",    # 分子標的薬（抗体）
+    "L01X": "429",    # その他の腫瘍用薬
+    "L01": "429",     # 抗腫瘍用薬
+    "L02": "429",     # ホルモン療法（腫瘍）
+    "L03": "449",     # 免疫刺激剤
+    "L04": "449",     # 免疫抑制剤
+    # M: 筋骨格
+    "M01A": "114",    # 解熱鎮痛消炎剤（NSAIDs）
+    "M03": "122",     # 骨格筋弛緩剤
+    "M04": "394",     # 痛風治療剤
+    "M05": "399",     # 骨粗鬆症→代謝性医薬品
+    # N: 神経系
+    "N01A": "111",    # 全身麻酔剤
+    "N01B": "121",    # 局所麻酔剤
+    "N02A": "811",    # オピオイド鎮痛
+    "N02B": "114",    # 解熱鎮痛消炎剤
+    "N02C": "119",    # 片頭痛治療→その他の中枢神経系用薬
+    "N03": "113",     # 抗てんかん剤
+    "N04": "116",     # 抗パーキンソン剤
+    "N05A": "117",    # 抗精神病薬
+    "N05B": "112",    # 抗不安剤
+    "N05C": "112",    # 催眠鎮静剤
+    "N06A": "117",    # 抗うつ剤→精神神経用剤
+    "N06B": "115",    # 中枢興奮剤（ADHD等）
+    "N06D": "119",    # 抗認知症薬→その他の中枢神経系用薬
+    "N07": "119",     # その他の中枢神経系用薬
+    # P: 抗寄生虫
+    "P01": "625",     # 抗原虫剤
+    "P02": "629",     # 駆虫剤→その他の化学療法剤
+    # R: 呼吸器
+    "R01": "132",     # 耳鼻科用剤（鼻用）
+    "R03A": "225",    # β2刺激（吸入）
+    "R03B": "225",    # 気管支喘息治療剤（吸入ステロイド等）
+    "R03C": "221",    # 気管支拡張剤
+    "R03D": "225",    # 気管支喘息治療剤（テオフィリン等）
+    "R03": "225",     # 気管支喘息治療剤
+    "R05C": "223",    # 去たん剤
+    "R05D": "224",    # 鎮咳剤
+    "R06": "125",     # 抗ヒスタミン剤
+    # S: 感覚器
+    "S01": "131",     # 眼科用剤
+    "S02": "132",     # 耳鼻科用剤
+    # V: その他
+    "V03AB": "392",   # 解毒剤
+    "V08": "399",     # 造影剤→その他
+}
 
 # 日本語の薬効分類（3桁中分類 + 4桁小分類）
 # 4桁コードが見つからない場合は先頭3桁で親カテゴリにフォールバック
@@ -198,6 +343,34 @@ NAME_TO_CATEGORY_REGEX = {
     r"(pamil|tilazem)$": "2171",  # Ca拮抗
 }
 
+# 日本語名先頭一致→薬効分類マッピング（英名がない日本固有薬のフォールバック）
+JA_PREFIX_TO_CATEGORY = {
+    "インスリン": "3969",        # 糖尿病用剤
+    "エポエチン": "339",         # 血液用薬（造血因子）
+    "ダルベポエチン": "339",     # 血液用薬（造血因子）
+    "フィルグラスチム": "339",   # 血液用薬（G-CSF）
+    "エタネルセプト": "449",     # 免疫抑制（生物学的製剤）
+    "アダリムマブ": "449",       # 免疫抑制（抗TNFα）
+    "インフリキシマブ": "449",   # 免疫抑制（抗TNFα）
+    "ウステキヌマブ": "449",     # 免疫抑制（抗IL）
+    "トラスツズマブ": "429",     # 抗腫瘍（抗体）
+    "ベバシズマブ": "429",       # 抗腫瘍（抗体）
+    "リツキシマブ": "429",       # 抗腫瘍（抗体）
+    "ニボルマブ": "429",         # 抗腫瘍（免疫CP）
+    "ペムブロリズマブ": "429",   # 抗腫瘍（免疫CP）
+    "テリパラチド": "243",       # 副甲状腺ホルモン
+    "ヨウ化": "243",             # 甲状腺関連
+    "ヨード": "243",             # 甲状腺関連
+    "ガリウム": "429",           # 放射性医薬品（腫瘍）
+    "ヒト(遺伝子組換え": "339",  # 遺伝子組換え血液製剤
+    "グリコピロニウム": "225",   # 気管支喘息治療剤（LAMA）
+    "ウメクリジニウム": "225",   # 気管支喘息治療剤（LAMA）
+    "アクリノール": "261",       # 外皮用殺菌消毒剤
+    "テノホビル": "622",         # 抗ウイルス剤
+    "エムトリシタビン": "622",   # 抗ウイルス剤
+    "ダルナビル": "622",         # 抗ウイルス剤
+}
+
 # SSK剤形リスト（名前クリーニング用）
 SSK_DOSAGE_FORMS = [
     "ドライシロップ", "シロップ", "カプセル", "ローション",
@@ -220,6 +393,15 @@ def _extract_ssk_ingredient(generic: str) -> str:
     return name
 
 
+def _clean_biosimilar(name: str) -> str:
+    """バイオシミラー名から後続品表記・括弧を除去
+    例: アダリムマブ［アダリムマブ後続１］ → アダリムマブ
+    """
+    cleaned = re.sub(r"［.*?］", "", name).strip()
+    cleaned = re.sub(r"（.*?）", "", cleaned).strip()
+    return cleaned
+
+
 def _strip_salt(name: str) -> str:
     """塩酸塩などの塩形式を除去"""
     return re.sub(
@@ -230,16 +412,78 @@ def _strip_salt(name: str) -> str:
     ).strip()
 
 
+def _atc_to_jtc(atc_code: str) -> str:
+    """ATC コードから薬効分類コードへ変換（最長一致）"""
+    if not atc_code:
+        return ""
+    # 最長一致: "J05AG" → "J05A" → "J05" → "J" の順で検索
+    for length in range(len(atc_code), 0, -1):
+        prefix = atc_code[:length]
+        if prefix in ATC_TO_JTC:
+            return ATC_TO_JTC[prefix]
+    return ""
+
+
+def _load_mhlw_excel() -> dict:
+    """厚労省薬価基準Excelから成分名→4桁薬効分類コード辞書を構築"""
+    mhlw_dict = {}
+    try:
+        import openpyxl
+    except ImportError:
+        print("  MHLW Excel: openpyxl not installed (skipping)")
+        return mhlw_dict
+
+    for xlsx_path in MHLW_EXCELS:
+        if not xlsx_path.exists():
+            print(f"  MHLW Excel: {xlsx_path.name} not found")
+            continue
+        wb = openpyxl.load_workbook(xlsx_path, read_only=True)
+        ws = wb[wb.sheetnames[0]]
+        count = 0
+        for i, row in enumerate(ws.iter_rows(values_only=True)):
+            if i == 0:
+                continue  # ヘッダー行
+            code12 = str(row[1] or "").strip()
+            ingredient = str(row[2] or "").strip()
+            if len(code12) >= 4 and ingredient:
+                code4 = code12[:4]
+                mhlw_dict.setdefault(ingredient, code4)
+                count += 1
+        wb.close()
+        print(f"  MHLW Excel: {xlsx_path.name} → {count} rows")
+
+    print(f"  MHLW Excel: {len(mhlw_dict)} unique ingredients, "
+          f"{len(set(mhlw_dict.values()))} codes")
+    return mhlw_dict
+
+
+def _load_wikidata_atc() -> dict:
+    """Wikidata ATC マッピングを読み込み（DrugBank ID → ATC コードリスト）"""
+    if not WIKIDATA_ATC.exists():
+        print("  Wikidata ATC: not found (skipping)")
+        return {}
+    with open(WIKIDATA_ATC, encoding="utf-8") as f:
+        data = json.load(f)
+    print(f"  Wikidata ATC: {len(data)} DrugBank IDs loaded")
+    return data
+
+
 def build_category_lookup(drugs: list, brand_data: dict) -> dict:
     """複数ソースから薬効分類コード（4桁）を解決する。
 
     Priority:
-      1. SSK薬価基準マスター（一般名マッチ）— 最も権威的
-      2. 旧graph-light.json（name_enマッチ）— KEGGベース
-      3. 英名接尾辞の正規表現推定
+      0. 厚労省薬価基準Excel（成分名→4桁コード）— 最も権威的
+      1. SSK薬価基準マスター（一般名マッチ）
+      2. Wikidata ATC→薬効分類変換
+      3. 旧graph-light.json（name_enマッチ）— KEGGベース
+      4. 英名接尾辞の正規表現推定
+      5. 日本語名先頭一致（バイオ医薬品・インスリン等）
     """
     drug_to_code = {}
     source_stats = Counter()
+
+    # ===== Source 0: 厚労省薬価基準 Excel =====
+    mhlw_name_to_code = _load_mhlw_excel()
 
     # ===== Source 1: SSK 薬価基準マスター =====
     ssk_name_to_code = {}
@@ -282,7 +526,10 @@ def build_category_lookup(drugs: list, brand_data: dict) -> dict:
         ssk_brand_to_code = {}
         print("  SSK: not found (skipping)")
 
-    # ===== Source 2: 旧グラフの薬効分類 =====
+    # ===== Source 2: Wikidata ATC =====
+    wikidata_atc = _load_wikidata_atc()
+
+    # ===== Source 3: 旧グラフの薬効分類 =====
     old_tc_map = {}
     # Try reading old graph from git
     try:
@@ -319,33 +566,69 @@ def build_category_lookup(drugs: list, brand_data: dict) -> dict:
         name_ja = drug.get("name_ja", "")
         yakka_name = drug.get("yakka_name", "")
         name_en = drug.get("name_en", "")
+        drugbank_id = drug.get("drugbank_id", "")
         if not name_ja:
             continue
 
         code = None
         src = None
 
-        # Priority 1: SSK generic name
-        for name_try in [name_ja, yakka_name]:
+        # Priority 0: MHLW Excel (成分名→4桁コード)
+        # バイオシミラー名クリーニング版も候補に追加
+        name_variants = [name_ja, yakka_name]
+        for n in [name_ja, yakka_name]:
+            if n:
+                cleaned = _clean_biosimilar(n)
+                if cleaned != n and cleaned not in name_variants:
+                    name_variants.append(cleaned)
+        for name_try in name_variants:
             if not name_try:
                 continue
-            code = ssk_name_to_code.get(name_try)
+            code = mhlw_name_to_code.get(name_try)
             if code:
-                src = "ssk_generic"
+                src = "mhlw_exact"
                 break
             norm = _strip_salt(name_try)
-            code = ssk_name_to_code.get(norm)
-            if code:
-                src = "ssk_norm"
-                break
-            for ing, c in ssk_name_to_code.items():
-                if len(ing) >= 3 and len(name_try) >= 3:
-                    if ing in name_try or name_try in ing:
+            if norm != name_try:
+                code = mhlw_name_to_code.get(norm)
+                if code:
+                    src = "mhlw_norm"
+                    break
+        if not code:
+            # MHLW 部分一致（MHLW成分名 ⊂ drug名 or drug名 ⊂ MHLW成分名）
+            for name_try in name_variants:
+                if not name_try or len(name_try) < 3:
+                    continue
+                for ing, c in mhlw_name_to_code.items():
+                    if len(ing) >= 3 and (ing in name_try or name_try in ing):
                         code = c
-                        src = "ssk_sub"
+                        src = "mhlw_sub"
                         break
-            if code:
-                break
+                if code:
+                    break
+
+        # Priority 1: SSK generic name
+        if not code:
+            for name_try in [name_ja, yakka_name]:
+                if not name_try:
+                    continue
+                code = ssk_name_to_code.get(name_try)
+                if code:
+                    src = "ssk_generic"
+                    break
+                norm = _strip_salt(name_try)
+                code = ssk_name_to_code.get(norm)
+                if code:
+                    src = "ssk_norm"
+                    break
+                for ing, c in ssk_name_to_code.items():
+                    if len(ing) >= 3 and len(name_try) >= 3:
+                        if ing in name_try or name_try in ing:
+                            code = c
+                            src = "ssk_sub"
+                            break
+                if code:
+                    break
 
         # Priority 1b: SSK brand name
         if not code:
@@ -356,7 +639,17 @@ def build_category_lookup(drugs: list, brand_data: dict) -> dict:
                     src = "ssk_brand"
                     break
 
-        # Priority 2: Old graph
+        # Priority 2: Wikidata ATC → 薬効分類変換
+        if not code and drugbank_id and drugbank_id in wikidata_atc:
+            atc_list = wikidata_atc[drugbank_id]
+            for atc in atc_list:
+                jtc = _atc_to_jtc(atc)
+                if jtc:
+                    code = jtc
+                    src = "wikidata_atc"
+                    break
+
+        # Priority 3: Old graph
         if not code and name_en:
             en_lower = name_en.strip().lower()
             code = old_tc_map.get(en_lower)
@@ -379,13 +672,22 @@ def build_category_lookup(drugs: list, brand_data: dict) -> dict:
                         if code:
                             src = "old_first"
 
-        # Priority 3: Regex suffix
+        # Priority 4: Regex suffix
         if not code and name_en:
             lower = name_en.lower()
             for pattern, c in NAME_TO_CATEGORY_REGEX.items():
                 if re.search(pattern, lower):
                     code = c
                     src = "regex"
+                    break
+
+        # Priority 5: 日本語名先頭一致（バイオ医薬品・インスリン等）
+        if not code and name_ja:
+            base = _clean_biosimilar(name_ja)
+            for prefix, c in JA_PREFIX_TO_CATEGORY.items():
+                if base.startswith(prefix):
+                    code = c
+                    src = "ja_prefix"
                     break
 
         if code:

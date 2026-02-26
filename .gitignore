@@ -24,6 +24,7 @@ data/unmatched_review.json
 data/cyp_data.json
 data/adverse_effects_new.json
 data/brand_names_new.json
+data/wikidata_atc.json
 
 # OS
 .DS_Store
