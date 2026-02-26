@@ -69,7 +69,7 @@ const KusuriGraph = (() => {
         selector: 'edge',
         style: {
           'curve-style': 'bezier',
-          'opacity': 0.08,
+          'opacity': 0.12,
           'width': 0.5,
         }
       },
@@ -265,7 +265,7 @@ const KusuriGraph = (() => {
     const groupNames = Object.keys(groups);
     const cx = cy.width() / 2;
     const cy_ = cy.height() / 2;
-    const groupRadius = Math.min(cx, cy_) * 6.0;
+    const groupRadius = Math.min(cx, cy_) * 4.5;
 
     // seed ベース乱数（毎回同じ配置）
     let _seed = 42;
