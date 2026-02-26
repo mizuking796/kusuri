@@ -113,8 +113,22 @@ const KusuriApp = (() => {
       setProgress(100, '完了');
       updateStats();
 
-      // Detail close button (register once)
+      // Detail panel event delegation (register once)
       document.getElementById('detail-close').addEventListener('click', hideDetail);
+      const detailContent = document.getElementById('detail-content');
+      detailContent.addEventListener('click', e => {
+        const link = e.target.closest('.detail-link');
+        if (link) {
+          e.preventDefault();
+          const id = link.dataset.id;
+          if (id) KusuriGraph.focusNode(id);
+          return;
+        }
+        const btn = e.target.closest('.translate-btn');
+        if (btn && !btn.disabled) {
+          handleTranslate(btn);
+        }
+      });
 
       // Hide loading
       document.getElementById('loading').classList.add('hidden');
@@ -318,6 +332,14 @@ const KusuriApp = (() => {
       }
       renderLookupResults(lookupType);
     });
+
+    // Drug result click events (event delegation)
+    document.getElementById('lookup-results').addEventListener('click', e => {
+      const drug = e.target.closest('.lookup-drug');
+      if (!drug) return;
+      document.getElementById('lookup-modal').hidden = true;
+      KusuriGraph.focusNode(drug.dataset.id);
+    });
   }
 
   function openLookupModal(type) {
@@ -435,14 +457,6 @@ const KusuriApp = (() => {
     }
 
     container.innerHTML = html;
-
-    // Click to focus drug on graph
-    container.querySelectorAll('.lookup-drug').forEach(el => {
-      el.addEventListener('click', () => {
-        document.getElementById('lookup-modal').hidden = true;
-        KusuriGraph.focusNode(el.dataset.id);
-      });
-    });
   }
 
   // ===== Ranking =====
@@ -672,19 +686,6 @@ const KusuriApp = (() => {
     content.innerHTML = html;
     content.scrollTop = 0;
     panel.hidden = false;
-
-    // Link clicks
-    content.querySelectorAll('.detail-link').forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
-        const id = link.dataset.id;
-        if (id) KusuriGraph.focusNode(id);
-      });
-    });
-
-    // Translate buttons
-    setupTranslateButtons();
-
   }
 
   function hideDetail() {
@@ -916,37 +917,32 @@ const KusuriApp = (() => {
     }
   }
 
-  function setupTranslateButtons() {
-    document.getElementById('detail-content').querySelectorAll('.translate-btn').forEach(btn => {
-      btn.addEventListener('click', async () => {
-        const text = btn.dataset.text;
-        const target = btn.dataset.translateTarget;
-        btn.textContent = '翻訳中...';
-        btn.disabled = true;
+  async function handleTranslate(btn) {
+    const text = btn.dataset.text;
+    const target = btn.dataset.translateTarget;
+    btn.textContent = '翻訳中...';
+    btn.disabled = true;
 
-        const result = await translateText(text);
-        if (result) {
-          if (target === 'name') {
-            const nameEl = document.getElementById('detail-drug-name');
-            if (nameEl) {
-              // Show Japanese name as main, English as sub
-              nameEl.textContent = result;
-              const enSub = document.createElement('div');
-              enSub.className = 'detail-name-en';
-              enSub.textContent = text;
-              nameEl.after(enSub);
-            }
-          } else if (target === 'efficacy') {
-            const p = btn.previousElementSibling;
-            if (p) p.textContent = result;
-          }
-          btn.textContent = '✓ 翻訳済み';
-        } else {
-          btn.textContent = '翻訳失敗（再試行）';
-          btn.disabled = false;
+    const result = await translateText(text);
+    if (result) {
+      if (target === 'name') {
+        const nameEl = document.getElementById('detail-drug-name');
+        if (nameEl) {
+          nameEl.textContent = result;
+          const enSub = document.createElement('div');
+          enSub.className = 'detail-name-en';
+          enSub.textContent = text;
+          nameEl.after(enSub);
         }
-      });
-    });
+      } else if (target === 'efficacy') {
+        const p = btn.previousElementSibling;
+        if (p) p.textContent = result;
+      }
+      btn.textContent = '✓ 翻訳済み';
+    } else {
+      btn.textContent = '翻訳失敗（再試行）';
+      btn.disabled = false;
+    }
   }
 
   // ===== Utility =====
