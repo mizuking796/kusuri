@@ -9,12 +9,17 @@ new_07_build_graph.py
   data/cyp_data.json           — CYP代謝情報
   data/adverse_effects_new.json — 副作用
   data/brand_names_new.json    — 商品名
+  data/ssk_yakka_master.csv    — SSK薬価基準マスター（薬効分類コード取得）
 
 出力:
   data/graph/graph-light.json  — Cytoscape.js用グラフデータ
 """
 
+import csv
+import io
 import json
+import re
+import subprocess
 import sys
 from pathlib import Path
 from collections import Counter, defaultdict
@@ -31,10 +36,15 @@ INPUT_FILES = {
     "brand_names": DATA_DIR / "brand_names_new.json",
 }
 
+SSK_CSV = DATA_DIR / "ssk_yakka_master.csv"
+OLD_GRAPH = GRAPH_DIR / "graph-light.json"
+
 OUTPUT = GRAPH_DIR / "graph-light.json"
 
-# 日本語の薬効分類（04_build_graph_data.py 由来）
+# 日本語の薬効分類（3桁中分類 + 4桁小分類）
+# 4桁コードが見つからない場合は先頭3桁で親カテゴリにフォールバック
 THERAPEUTIC_CATEGORIES = {
+    # === 3桁（中分類） ===
     "111": "全身麻酔剤", "112": "催眠鎮静剤・抗不安剤", "113": "抗てんかん剤",
     "114": "解熱鎮痛消炎剤", "115": "覚せい剤・精神神経用剤", "116": "抗パーキンソン剤",
     "117": "精神神経用剤", "118": "総合感冒剤", "119": "その他の中枢神経系用薬",
@@ -84,41 +94,318 @@ THERAPEUTIC_CATEGORIES = {
     "631": "ワクチン類", "632": "毒素・トキソイド類",
     "634": "血液製剤類", "639": "その他の生物学的製剤",
     "811": "あへんアルカロイド系麻薬", "821": "合成麻薬",
+    # === 4桁（小分類）===
+    "1115": "バルビツール酸系製剤", "1116": "亜酸化窒素",
+    "1119": "その他の全身麻酔剤",
+    "1123": "催眠鎮静剤", "1124": "ベンゾジアゼピン系製剤",
+    "1125": "バルビツール酸系製剤", "1126": "催眠鎮静剤",
+    "1129": "その他の催眠鎮静剤",
+    "1131": "フェナセミド系製剤", "1132": "ヒダントイン系製剤",
+    "1133": "抗てんかん剤", "1135": "抗てんかん剤",
+    "1137": "抗てんかん剤", "1139": "その他の抗てんかん剤",
+    "1141": "アニリン系製剤", "1143": "サリチル酸系製剤",
+    "1145": "インドメタシン系製剤", "1147": "解熱鎮痛消炎剤",
+    "1148": "解熱鎮痛消炎剤", "1149": "その他の解熱鎮痛消炎剤",
+    "1151": "中枢興奮剤", "1152": "精神神経用剤",
+    "1159": "その他の精神神経用剤",
+    "1160": "抗パーキンソン剤", "1169": "その他の抗パーキンソン剤",
+    "1171": "フェノチアジン系製剤", "1172": "精神神経用剤",
+    "1179": "その他の精神神経用剤",
+    "1190": "中枢神経系用薬", "1199": "その他の中枢神経系用薬",
+    "1211": "局所麻酔剤", "1214": "局所麻酔剤",
+    "1221": "骨格筋弛緩剤", "1229": "その他の骨格筋弛緩剤",
+    "1231": "自律神経剤",
+    "1241": "鎮けい剤", "1249": "その他の鎮けい剤",
+    "1259": "その他の抗ヒスタミン剤",
+    "2112": "強心配糖体製剤", "2119": "その他の強心剤",
+    "2121": "不整脈用剤", "2123": "β遮断剤", "2129": "その他の不整脈用剤",
+    "2131": "チアジド系製剤", "2132": "ループ利尿剤", "2139": "その他の利尿剤",
+    "2141": "降圧レセルピン系製剤", "2144": "ACE阻害剤",
+    "2149": "その他の血圧降下剤",
+    "2171": "カルシウム拮抗剤", "2179": "その他の血管拡張剤",
+    "2183": "HMG-CoA還元酵素阻害剤", "2189": "その他の高脂血症用剤",
+    "2190": "循環器官用薬",
+    "2219": "気管支拡張剤", "2259": "気管支喘息治療剤",
+    "2291": "その他の呼吸器官用薬",
+    "2319": "止しゃ剤", "2323": "H2遮断剤", "2325": "消化性潰瘍用剤",
+    "2329": "プロトンポンプ阻害剤", "2399": "その他の消化器官用薬",
+    "2391": "制吐剤",
+    "2452": "副腎皮質ステロイド", "2454": "副腎皮質ステロイド",
+    "2474": "卵胞ホルモン", "2478": "黄体ホルモン",
+    "3332": "クマリン系製剤", "3339": "その他の血液凝固阻止剤",
+    "3929": "その他の解毒剤", "3941": "痛風治療剤",
+    "3961": "スルホニル尿素系製剤", "3969": "その他の糖尿病用剤",
+    "3999": "他に分類されない代謝性医薬品",
+    "4211": "アルキル化剤", "4219": "その他のアルキル化剤",
+    "4221": "代謝拮抗剤", "4229": "その他の代謝拮抗剤",
+    "4231": "抗腫瘍性抗生物質", "4235": "抗腫瘍性抗生物質",
+    "4241": "抗腫瘍性植物成分製剤",
+    "4291": "その他の腫瘍用薬",
+    "4413": "抗アレルギー剤", "4490": "その他のアレルギー用薬",
+    "6131": "ペニシリン系", "6132": "広域ペニシリン系",
+    "6141": "マクロライド系", "6149": "その他の抗生物質",
+    "6152": "テトラサイクリン系",
+    "6171": "ポリエン系抗真菌", "6179": "その他の抗真菌剤",
+    "6231": "抗結核剤", "6241": "ニューキノロン系",
+    "6250": "抗ウイルス剤", "6259": "その他の抗ウイルス剤",
+    "6290": "その他の化学療法剤",
+    "8114": "モルヒネ系製剤", "8119": "その他のあへんアルカロイド系",
+    "8211": "合成麻薬", "8219": "その他の合成麻薬",
 }
 
-# 薬効分類推定（英名の接尾辞ベース）
-NAME_TO_CATEGORY = {
-    r"statin$": "218",      # 高脂血症用剤
-    r"sartan$": "214",      # 血圧降下剤
-    r"pril$": "214",        # ACE阻害（降圧）
-    r"dipine$": "214",      # Ca拮抗（降圧）
-    r"olol$": "214",        # β遮断（降圧）
-    r"semide$": "213",      # 利尿剤
-    r"gliptin$": "396",     # 糖尿病用剤
-    r"gliflozin$": "396",   # SGLT2阻害
-    r"glutide$": "396",     # GLP-1
-    r"prazole$": "232",     # PPI
-    r"floxacin$": "624",    # ニューキノロン
-    r"cillin$": "613",      # ペニシリン系
-    r"mycin$": "614",       # マクロライド系
-    r"azole$": "617",       # 抗真菌
-    r"(pam|lam|zepam|zolam)$": "112",  # ベンゾ
-    r"(oxetine|aline)$": "117",  # 抗うつ
-    r"(apine|idone)$": "117",    # 抗精神病
-    r"profen$": "114",      # NSAIDs
-    r"(xaban|gatran)$": "333",   # 抗凝固
-    r"(platin|taxel|rubicin)$": "429",  # 抗がん
-    r"(mab|zumab)$": "429",      # 分子標的薬
-    r"vir$": "622",         # 抗ウイルス
+# 薬効分類推定（英名の接尾辞ベース、4桁コード）
+NAME_TO_CATEGORY_REGEX = {
+    r"statin$": "2183",      # HMG-CoA還元酵素阻害剤
+    r"sartan$": "2149",      # ARB（降圧）
+    r"pril$": "2144",        # ACE阻害（降圧）
+    r"dipine$": "2171",      # Ca拮抗（降圧）
+    r"olol$": "2123",        # β遮断（降圧・不整脈）
+    r"semide$": "2132",      # ループ利尿
+    r"thiazide$": "2132",    # チアジド利尿
+    r"gliptin$": "3969",     # DPP-4阻害（糖尿病）
+    r"gliflozin$": "3969",   # SGLT2阻害（糖尿病）
+    r"glutide$": "3969",     # GLP-1（糖尿病）
+    r"glimepiride|glipizide|glyburide|glibenclamide": "3961",  # SU剤
+    r"prazole$": "2329",     # PPI
+    r"floxacin$": "6241",    # ニューキノロン
+    r"cillin$": "6131",      # ペニシリン系
+    r"mycin$": "6141",       # マクロライド系
+    r"cycline$": "6152",     # テトラサイクリン系
+    r"azole$": "6179",       # 抗真菌
+    r"(pam|lam|zepam|zolam)$": "1124",  # ベンゾジアゼピン
+    r"barbit(al|one)$": "1125",  # バルビツール酸
+    r"(oxetine|aline|amine|pramine)$": "1179",  # 抗うつ
+    r"(apine|idone|peridol)$": "1179",    # 抗精神病
+    r"profen$": "1149",      # NSAIDs
+    r"(fenac|coxib)$": "1149",  # NSAIDs
+    r"(xaban|gatran)$": "3339",  # DOAC（抗凝固）
+    r"farin$": "3332",       # ワルファリン
+    r"(platin)$": "4291",    # 白金系抗がん
+    r"(taxel|taxane)$": "4241",  # タキサン系
+    r"(rubicin)$": "4231",   # 抗腫瘍性抗生物質
+    r"(mab|zumab|ximab|mumab)$": "4291",  # 分子標的薬（抗体）
+    r"(tinib|nib)$": "4291",  # 分子標的薬（キナーゼ阻害）
+    r"vir$": "6250",         # 抗ウイルス
+    r"navir$": "6250",       # プロテアーゼ阻害（HIV）
+    r"caine$": "1214",       # 局所麻酔
+    r"(solone|sone|olone)$": "2452",  # 副腎皮質ステロイド
+    r"(diol|estradiol)$": "2474",  # 卵胞ホルモン
+    r"lukast$": "4490",      # ロイコトリエン拮抗
+    r"(tadine|tizine)$": "4413",  # 抗ヒスタミン
+    r"terol$": "2259",       # β2刺激（気管支拡張）
+    r"(setron|ansetron)$": "2391",  # 5-HT3拮抗（制吐）
+    r"(done|orphan)$": "8114",  # オピオイド
+    r"(pamil|tilazem)$": "2171",  # Ca拮抗
 }
 
-import re
+# SSK剤形リスト（名前クリーニング用）
+SSK_DOSAGE_FORMS = [
+    "ドライシロップ", "シロップ", "カプセル", "ローション",
+    "スプレー", "クリーム", "テープ", "パップ", "吸入", "点眼",
+    "点鼻", "注射", "軟膏", "顆粒", "細粒", "散", "錠", "液",
+    "坐剤", "ゼリー", "ゲル", "粉末",
+]
+
+
+def _extract_ssk_ingredient(generic: str) -> str:
+    """【般】ファモチジン散２％ → ファモチジン"""
+    name = generic.replace("【般】", "").strip()
+    for form in sorted(SSK_DOSAGE_FORMS, key=len, reverse=True):
+        idx = name.find(form)
+        if idx > 0:
+            name = name[:idx]
+            break
+    name = re.sub(r"[\d０-９．・％%ｍｇμＬｋｇｍＬ]+$", "", name).strip()
+    name = re.sub(r"（.*?）$", "", name).strip()
+    return name
+
+
+def _strip_salt(name: str) -> str:
+    """塩酸塩などの塩形式を除去"""
+    return re.sub(
+        r"(塩酸塩|硫酸塩|酢酸エステル|酢酸|リン酸|マレイン酸|フマル酸|"
+        r"コハク酸|酒石酸|安息香酸|臭化水素酸|メシル酸|ベシル酸|トシル酸|"
+        r"ナトリウム|カリウム|カルシウム|マグネシウム|水和物|無水物|エステル)$",
+        "", name
+    ).strip()
+
+
+def build_category_lookup(drugs: list, brand_data: dict) -> dict:
+    """複数ソースから薬効分類コード（4桁）を解決する。
+
+    Priority:
+      1. SSK薬価基準マスター（一般名マッチ）— 最も権威的
+      2. 旧graph-light.json（name_enマッチ）— KEGGベース
+      3. 英名接尾辞の正規表現推定
+    """
+    drug_to_code = {}
+    source_stats = Counter()
+
+    # ===== Source 1: SSK 薬価基準マスター =====
+    ssk_name_to_code = {}
+    if SSK_CSV.exists():
+        with open(SSK_CSV, "rb") as f:
+            text = f.read().decode("shift_jis", errors="replace")
+        reader = csv.reader(io.StringIO(text))
+        for row in reader:
+            if len(row) < 38:
+                continue
+            yj = row[31]
+            generic = row[37].strip()
+            if len(yj) < 4 or not generic.startswith("【般】"):
+                continue
+            code4 = yj[:4]
+            ing = _extract_ssk_ingredient(generic)
+            if len(ing) >= 2:
+                ssk_name_to_code.setdefault(ing, code4)
+
+        # Also build brand→code for additional matching
+        ssk_brand_to_code = {}
+        reader2 = csv.reader(io.StringIO(text))
+        for row in reader2:
+            if len(row) < 35:
+                continue
+            yj = row[31]
+            if len(yj) < 4:
+                continue
+            brand = row[4].strip()
+            for form in sorted(SSK_DOSAGE_FORMS, key=len, reverse=True):
+                idx = brand.find(form)
+                if idx > 0:
+                    brand = brand[:idx]
+                    break
+            brand = re.sub(r"[\d０-９．・％%ｍｇμＬ]+$", "", brand).strip()
+            if len(brand) >= 2:
+                ssk_brand_to_code.setdefault(brand, yj[:4])
+        print(f"  SSK: {len(ssk_name_to_code)} generic, {len(ssk_brand_to_code)} brand mappings")
+    else:
+        ssk_brand_to_code = {}
+        print("  SSK: not found (skipping)")
+
+    # ===== Source 2: 旧グラフの薬効分類 =====
+    old_tc_map = {}
+    # Try reading old graph from git
+    try:
+        result = subprocess.run(
+            ["git", "show", "HEAD~1:data/graph/graph-light.json"],
+            capture_output=True, text=True, cwd=str(DATA_DIR.parent)
+        )
+        if result.returncode == 0:
+            old_graph = json.loads(result.stdout)
+            for n in old_graph["nodes"]:
+                if n.get("type") != "drug":
+                    continue
+                tc = n.get("therapeutic_category", "")
+                if not tc:
+                    continue
+                sn = n.get("search_name", "").strip().lower()
+                if sn:
+                    old_tc_map[sn] = tc
+                en = re.sub(r"\s*\(.*?\)\s*$", "", n.get("name_en", "")).strip().lower()
+                if en:
+                    old_tc_map[en] = tc
+                first = en.split()[0] if en else ""
+                if first and len(first) >= 5:
+                    old_tc_map.setdefault(first, tc)
+            print(f"  Old graph: {len(old_tc_map)} name→tc mappings")
+        else:
+            print("  Old graph: not available from git")
+    except Exception:
+        print("  Old graph: git read failed")
+
+    # ===== Resolve for each drug =====
+    for drug in drugs:
+        did = drug["id"]
+        name_ja = drug.get("name_ja", "")
+        yakka_name = drug.get("yakka_name", "")
+        name_en = drug.get("name_en", "")
+        if not name_ja:
+            continue
+
+        code = None
+        src = None
+
+        # Priority 1: SSK generic name
+        for name_try in [name_ja, yakka_name]:
+            if not name_try:
+                continue
+            code = ssk_name_to_code.get(name_try)
+            if code:
+                src = "ssk_generic"
+                break
+            norm = _strip_salt(name_try)
+            code = ssk_name_to_code.get(norm)
+            if code:
+                src = "ssk_norm"
+                break
+            for ing, c in ssk_name_to_code.items():
+                if len(ing) >= 3 and len(name_try) >= 3:
+                    if ing in name_try or name_try in ing:
+                        code = c
+                        src = "ssk_sub"
+                        break
+            if code:
+                break
+
+        # Priority 1b: SSK brand name
+        if not code:
+            drug_brands = brand_data.get(did, [])
+            for brand in drug_brands:
+                code = ssk_brand_to_code.get(brand)
+                if code:
+                    src = "ssk_brand"
+                    break
+
+        # Priority 2: Old graph
+        if not code and name_en:
+            en_lower = name_en.strip().lower()
+            code = old_tc_map.get(en_lower)
+            if code:
+                src = "old_graph"
+            else:
+                en_base = re.sub(
+                    r"\s+(hydrochloride|sodium|potassium|calcium|sulfate|"
+                    r"acetate|phosphate|mesylate|besylate|maleate|fumarate|"
+                    r"tartrate|succinate|citrate|bromide|chloride)$",
+                    "", en_lower
+                )
+                code = old_tc_map.get(en_base)
+                if code:
+                    src = "old_norm"
+                else:
+                    first = en_lower.split()[0]
+                    if len(first) >= 5:
+                        code = old_tc_map.get(first)
+                        if code:
+                            src = "old_first"
+
+        # Priority 3: Regex suffix
+        if not code and name_en:
+            lower = name_en.lower()
+            for pattern, c in NAME_TO_CATEGORY_REGEX.items():
+                if re.search(pattern, lower):
+                    code = c
+                    src = "regex"
+                    break
+
+        if code:
+            drug_to_code[did] = code
+            source_stats[src] += 1
+
+    total_ja = len([d for d in drugs if d.get("name_ja")])
+    print(f"\n  薬効分類解決: {len(drug_to_code)}/{total_ja} "
+          f"({len(drug_to_code)/total_ja*100:.1f}%), "
+          f"{len(set(drug_to_code.values()))} unique codes")
+    for src, cnt in source_stats.most_common():
+        print(f"    {src}: {cnt}")
+
+    return drug_to_code
 
 
 def estimate_category(name_en: str) -> str:
-    """英名から薬効分類コードを推定"""
+    """英名から薬効分類コードを推定（フォールバック）"""
     lower = name_en.lower()
-    for pattern, code in NAME_TO_CATEGORY.items():
+    for pattern, code in NAME_TO_CATEGORY_REGEX.items():
         if re.search(pattern, lower):
             return code
     return ""
@@ -147,6 +434,10 @@ def build_graph(data: dict) -> dict:
     cyp_data = data.get("cyp_data", {}).get("cyp_data", {})
     ae_data = data.get("adverse_effects", {}).get("adverse_effects", [])
     brand_data = data.get("brand_names", {}).get("brand_names", {})
+
+    # ============ 薬効分類コード解決（複数ソース） ============
+    print(f"\n=== 薬効分類コード解決 ===")
+    drug_to_tc = build_category_lookup(all_drugs, brand_data)
 
     print(f"\n=== 入力データ（フィルタ前） ===")
     print(f"薬数: {len(all_drugs)}")
@@ -237,8 +528,8 @@ def build_graph(data: dict) -> dict:
         brands = brand_data.get(drug_id, [])
         names_alt = brands.copy()
 
-        # 薬効分類推定
-        tc = drug.get("therapeutic_category", "") or estimate_category(name_en)
+        # 薬効分類（複数ソースから解決済み）
+        tc = drug_to_tc.get(drug_id, "")
 
         node = {
             "id": drug_id,
@@ -256,7 +547,12 @@ def build_graph(data: dict) -> dict:
 
         # Category node
         if tc and tc not in category_nodes:
-            cat_name = THERAPEUTIC_CATEGORIES.get(tc, f"分類{tc}")
+            # 4桁→3桁フォールバックで名前解決
+            cat_name = THERAPEUTIC_CATEGORIES.get(tc)
+            if not cat_name and len(tc) == 4:
+                cat_name = THERAPEUTIC_CATEGORIES.get(tc[:3])
+            if not cat_name:
+                cat_name = f"分類{tc}"
             cat_id = f"cat_{tc}"
             category_nodes[tc] = cat_id
             nodes.append({
@@ -338,7 +634,7 @@ def build_graph(data: dict) -> dict:
     # Category edges
     for drug in drugs:
         drug_id = drug["id"]
-        tc = drug.get("therapeutic_category", "") or estimate_category(drug.get("name_en", ""))
+        tc = drug_to_tc.get(drug_id, "")
         if tc and tc in category_nodes:
             edge_id += 1
             edges.append({
