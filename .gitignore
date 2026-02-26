@@ -15,6 +15,16 @@ data/graph/nodes.json
 data/ssk_yakka_master.csv
 data/ssk_yakka_master.csv.zip
 
+# New pipeline intermediate data (regenerable from scripts)
+data/yakka_ingredients.json
+data/ddinter_drugs.json
+data/ddinter_interactions.json
+data/drug_master.json
+data/unmatched_review.json
+data/cyp_data.json
+data/adverse_effects_new.json
+data/brand_names_new.json
+
 # OS
 .DS_Store
 Thumbs.db

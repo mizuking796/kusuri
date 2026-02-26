@@ -804,7 +804,7 @@ const KusuriApp = (() => {
         <div class="detail-section">
           <h4>その他情報</h4>
           <p style="font-size:13px;color:var(--text-dim)">
-            KEGG: ${escHtml(d.kegg_id || d.id)}<br>
+            DrugBank: ${escHtml(d.drugbank_id || d.id)}<br>
             ATC: ${escHtml(d.atc_code)}<br>
             ${d.formula ? `分子式: ${escHtml(d.formula)}` : ''}
           </p>
