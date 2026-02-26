@@ -265,7 +265,7 @@ const KusuriGraph = (() => {
     const groupNames = Object.keys(groups);
     const cx = cy.width() / 2;
     const cy_ = cy.height() / 2;
-    const groupRadius = Math.min(cx, cy_) * 8.0;
+    const groupRadius = Math.min(cx, cy_) * 6.0;
 
     // seed ベース乱数（毎回同じ配置）
     let _seed = 42;
