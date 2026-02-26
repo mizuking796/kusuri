@@ -82,9 +82,11 @@ const KusuriGraph = (() => {
         style: {
           'background-color': cfg.color,
           'shape': cfg.shape,
-          'width': type === 'drug' ? 4 : type === 'category' ? 5 : 3,
-          'height': type === 'drug' ? 4 : type === 'category' ? 5 : 3,
-          'font-size': type === 'drug' ? 10 : 8,
+          'width': type === 'drug' ? 4 : type === 'category' ? 'mapData(degree, 1, 50, 6, 25)' : 3,
+          'height': type === 'drug' ? 4 : type === 'category' ? 'mapData(degree, 1, 50, 6, 25)' : 3,
+          'font-size': type === 'drug' ? 10 : type === 'category' ? 11 : 8,
+          'label': type === 'category' ? 'data(label)' : '',
+          'text-opacity': type === 'category' ? 0.85 : 1,
         }
       });
     }
@@ -263,22 +265,13 @@ const KusuriGraph = (() => {
     const groupNames = Object.keys(groups);
     const cx = cy.width() / 2;
     const cy_ = cy.height() / 2;
-    const groupRadius = Math.min(cx, cy_) * 6.0;
+    const groupRadius = Math.min(cx, cy_) * 8.0;
 
     // seed ベース乱数（毎回同じ配置）
     let _seed = 42;
     const srand = () => { _seed = (_seed * 9301 + 49297) % 233280; return _seed / 233280; };
 
-    const groupPositions = {};
-    groupNames.forEach((name, i) => {
-      const angle = (2 * Math.PI * i) / groupNames.length - Math.PI / 2;
-      groupPositions[name] = {
-        x: cx + groupRadius * Math.cos(angle),
-        y: cy_ + groupRadius * Math.sin(angle),
-      };
-    });
-
-    // ノードをグループに振り分け
+    // ノードをグループに振り分け（先に集計してサイズ把握）
     const groupMembers = {};
     groupNames.forEach(n => { groupMembers[n] = []; });
     if (!groupMembers['その他']) groupMembers['その他'] = [];
@@ -302,6 +295,18 @@ const KusuriGraph = (() => {
       groupMembers[g].push(node.id());
     });
 
+    // グループサイズに応じた配置半径を計算
+    const maxGroupSize = Math.max(...groupNames.map(n => (groupMembers[n] || []).length), 1);
+
+    const groupPositions = {};
+    groupNames.forEach((name, i) => {
+      const angle = (2 * Math.PI * i) / groupNames.length - Math.PI / 2;
+      groupPositions[name] = {
+        x: cx + groupRadius * Math.cos(angle),
+        y: cy_ + groupRadius * Math.sin(angle),
+      };
+    });
+
     // 各グループを小さな同心円（銀河風）に配置
     const nodePositions = {};
     for (const [gName, ids] of Object.entries(groupMembers)) {
@@ -309,9 +314,9 @@ const KusuriGraph = (() => {
       const count = ids.length;
       if (count === 0) continue;
 
-      // ノード数に応じて同心円リングに分配
-      const nodesPerRing = 12;
-      const ringSpacing = 150;
+      // グループサイズに応じてリング間隔を調整（大グループ=広い、小グループ=密）
+      const sizeRatio = count / maxGroupSize;
+      const ringSpacing = 80 + sizeRatio * 120;
       let placed = 0;
       let ringIdx = 0;
 
